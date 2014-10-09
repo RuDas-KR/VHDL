@@ -1,0 +1,7 @@
+V3 3
+FL D:/VHDL/ANDGate_Test/ANDGate.vhd 2014/09/12.14:52:51 K.39
+EN work/ANDGate 1410501330 FL D:/VHDL/ANDGate_Test/ANDGate.vhd \
+      PB ieee/std_logic_1164 1217055545 PB ieee/std_logic_arith 1217055546 \
+      PB ieee/STD_LOGIC_UNSIGNED 1217055547
+AR work/ANDGate/Behavioral 1410501331 \
+      FL D:/VHDL/ANDGate_Test/ANDGate.vhd EN work/ANDGate 1410501330

@@ -1,0 +1,10 @@
+//! **************************************************************************
+// Written by: Map K.39 on Fri Sep 12 14:55:41 2014
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "A" LOCATE = SITE "P68" LEVEL 1;
+COMP "B" LOCATE = SITE "P69" LEVEL 1;
+COMP "Y" LOCATE = SITE "P95" LEVEL 1;
+SCHEMATIC END;
+

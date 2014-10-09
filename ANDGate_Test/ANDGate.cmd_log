@@ -1,0 +1,7 @@
+xst -ise "D:/VHDL/ANDGate_Test/ANDGate_Test.ise" -intstyle ise -ifn "D:/VHDL/ANDGate_Test/ANDGate.xst" -ofn "D:/VHDL/ANDGate_Test/ANDGate.syr"
+xst -ise "D:/VHDL/ANDGate_Test/ANDGate_Test.ise" -intstyle ise -ifn "D:/VHDL/ANDGate_Test/ANDGate.xst" -ofn "D:/VHDL/ANDGate_Test/ANDGate.syr"
+ngdbuild -ise "D:/VHDL/ANDGate_Test/ANDGate_Test.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s100-pq208-5 "ANDGate.ngc" ANDGate.ngd
+map -ise "D:/VHDL/ANDGate_Test/ANDGate_Test.ise" -intstyle ise -p xc2s100-pq208-5 -cm area -pr off -k 4 -c 100 -tx off -o ANDGate_map.ncd ANDGate.ngd ANDGate.pcf
+par -ise "D:/VHDL/ANDGate_Test/ANDGate_Test.ise" -w -intstyle ise -ol std -t 1 ANDGate_map.ncd ANDGate.ncd ANDGate.pcf
+trce -ise "D:/VHDL/ANDGate_Test/ANDGate_Test.ise" -intstyle ise -v 3 -s 5 -xml ANDGate ANDGate.ncd -o ANDGate.twr ANDGate.pcf -ucf ANDGate.ucf
+bitgen -ise "D:/VHDL/ANDGate_Test/ANDGate_Test.ise" -intstyle ise -f ANDGate.ut ANDGate.ncd

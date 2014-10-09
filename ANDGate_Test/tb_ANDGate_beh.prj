@@ -1,0 +1,2 @@
+vhdl work "ANDGate.vhd"
+vhdl work "tb_ANDGate.vhd"
