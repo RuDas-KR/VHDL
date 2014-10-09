@@ -1,0 +1,6 @@
+xst -ise "C:/Xilinx/CodeConverter/BinarytoBCD/BinarytoBCD.ise" -intstyle ise -ifn "C:/Xilinx/CodeConverter/BinarytoBCD/binarytobcd.xst" -ofn "C:/Xilinx/CodeConverter/BinarytoBCD/binarytobcd.syr"
+ngdbuild -ise "C:/Xilinx/CodeConverter/BinarytoBCD/BinarytoBCD.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s100-pq208-5 "binarytobcd.ngc" binarytobcd.ngd
+map -ise "C:/Xilinx/CodeConverter/BinarytoBCD/BinarytoBCD.ise" -intstyle ise -p xc2s100-pq208-5 -cm area -pr off -k 4 -c 100 -tx off -o binarytobcd_map.ncd binarytobcd.ngd binarytobcd.pcf
+par -ise "C:/Xilinx/CodeConverter/BinarytoBCD/BinarytoBCD.ise" -w -intstyle ise -ol std -t 1 binarytobcd_map.ncd binarytobcd.ncd binarytobcd.pcf
+trce -ise "C:/Xilinx/CodeConverter/BinarytoBCD/BinarytoBCD.ise" -intstyle ise -v 3 -s 5 -xml binarytobcd binarytobcd.ncd -o binarytobcd.twr binarytobcd.pcf -ucf binarytobcd.ucf
+bitgen -ise "C:/Xilinx/CodeConverter/BinarytoBCD/BinarytoBCD.ise" -intstyle ise -f binarytobcd.ut binarytobcd.ncd

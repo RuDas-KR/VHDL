@@ -1,0 +1,8 @@
+V3 3
+FL C:/Xilinx/CodeConverter/BinarytoBCD/binarytobcd.vhd 2014/10/09.15:42:09 K.39
+EN work/binarytobcd 1412836936 \
+      FL C:/Xilinx/CodeConverter/BinarytoBCD/binarytobcd.vhd \
+      PB ieee/std_logic_1164 1217055545 PB ieee/std_logic_arith 1217055546 \
+      PB ieee/STD_LOGIC_UNSIGNED 1217055547
+AR work/binarytobcd/Behavioral 1412836937 \
+      FL C:/Xilinx/CodeConverter/BinarytoBCD/binarytobcd.vhd EN work/binarytobcd 1412836936

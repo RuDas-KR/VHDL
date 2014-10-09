@@ -1,0 +1,2 @@
+vhdl isim_temp "binarytobcd.vhd"
+vhdl isim_temp "tb_binarytobcd.vhd"

@@ -1,0 +1,137 @@
+Release 10.1.03 par K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+JEONG-PC::  Thu Oct 09 15:47:20 2014
+
+par -w -intstyle ise -ol std -t 1 binarytobcd_map.ncd binarytobcd.ncd
+binarytobcd.pcf 
+
+
+Constraints file: binarytobcd.pcf.
+Loading device for application Rf_Device from file 'v100.nph' in environment C:\Xilinx\10.1\ISE.
+   "binarytobcd" is an NCD, version 3.2, device xc2s100, package pq208, speed -5
+
+Initializing temperature to 85.000 Celsius. (default - Range: -40.000 to 100.000 Celsius)
+Initializing voltage to 2.375 Volts. (default - Range: 2.375 to 2.625 Volts)
+
+INFO:Par:282 - No user timing constraints were detected or you have set the option to ignore timing constraints ("par
+   -x"). Place and Route will run in "Performance Evaluation Mode" to automatically improve the performance of all
+   internal clocks in this design. The PAR timing summary will list the performance achieved for each clock. Note: For
+   the fastest runtime, set the effort level to "std".  For best performance, set the effort level to "high". For a
+   balance between the fastest runtime and best performance, set the effort level to "med".
+
+Device speed data version:  "PRODUCTION 1.27 2008-01-09".
+
+
+Device Utilization Summary:
+
+   Number of External IOBs                  10 out of 140     7%
+      Number of LOCed IOBs                  10 out of 10    100%
+
+   Number of SLICEs                          3 out of 1200    1%
+
+
+Overall effort level (-ol):   Standard 
+Placer effort level (-pl):    High 
+Placer cost table entry (-t): 1
+Router effort level (-rl):    Standard 
+
+
+Starting Placer
+
+Phase 1.1
+Phase 1.1 (Checksum:3d95) REAL time: 0 secs 
+
+Phase 2.7
+Phase 2.7 (Checksum:3d95) REAL time: 0 secs 
+
+Phase 3.31
+Phase 3.31 (Checksum:3d95) REAL time: 0 secs 
+
+Phase 4.23
+Phase 4.23 (Checksum:3d95) REAL time: 0 secs 
+
+Phase 5.3
+Phase 5.3 (Checksum:3d95) REAL time: 0 secs 
+
+Phase 6.5
+Phase 6.5 (Checksum:3d95) REAL time: 0 secs 
+
+Phase 7.8
+.
+Phase 7.8 (Checksum:4d14) REAL time: 0 secs 
+
+Phase 8.5
+Phase 8.5 (Checksum:4d14) REAL time: 0 secs 
+
+Phase 9.18
+Phase 9.18 (Checksum:4d54) REAL time: 0 secs 
+
+Phase 10.5
+Phase 10.5 (Checksum:4d54) REAL time: 0 secs 
+
+REAL time consumed by placer: 0 secs 
+CPU  time consumed by placer: 0 secs 
+Writing design to file binarytobcd.ncd
+
+
+Total REAL time to Placer completion: 0 secs 
+Total CPU time to Placer completion: 0 secs 
+
+Starting Router
+
+Phase 1: 18 unrouted;       REAL time: 0 secs 
+
+Phase 2: 18 unrouted;       REAL time: 0 secs 
+
+Phase 3: 4 unrouted;       REAL time: 0 secs 
+
+Phase 4: 4 unrouted; (0)      REAL time: 0 secs 
+
+Phase 5: 4 unrouted; (0)      REAL time: 0 secs 
+
+Phase 6: 0 unrouted; (0)      REAL time: 0 secs 
+
+Phase 7: 0 unrouted; (0)      REAL time: 0 secs 
+
+Phase 8: 0 unrouted; (0)      REAL time: 0 secs 
+
+Phase 9: 0 unrouted; (0)      REAL time: 0 secs 
+
+Total REAL time to Router completion: 0 secs 
+Total CPU time to Router completion: 0 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+Timing Score: 0
+
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 1 secs 
+Total CPU time to PAR completion: 1 secs 
+
+Peak Memory Usage:  179 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 0
+Number of info messages: 1
+
+Writing design to file binarytobcd.ncd
+
+
+
+PAR done!
