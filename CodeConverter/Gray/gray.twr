@@ -1,0 +1,58 @@
+--------------------------------------------------------------------------------
+Release 10.1.03 Trace  (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\10.1\ISE\bin\nt\unwrapped\trce.exe -ise
+C:/Xilinx/CodeConverter/Gray/Gray.ise -intstyle ise -v 3 -s 5 -xml gray
+gray.ncd -o gray.twr gray.pcf -ucf gray.ucf
+
+Design file:              gray.ncd
+Physical constraint file: gray.pcf
+Device,package,speed:     xc2s100,pq208,-5 (PRODUCTION 1.27 2008-01-09)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+binary_in<0>   |gray_out<0>    |   11.136|
+binary_in<1>   |gray_out<0>    |   11.296|
+binary_in<1>   |gray_out<1>    |   10.655|
+binary_in<2>   |gray_out<1>    |   10.568|
+binary_in<2>   |gray_out<2>    |   11.230|
+binary_in<3>   |gray_out<2>    |   11.761|
+binary_in<3>   |gray_out<3>    |    8.848|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Oct 09 17:38:47 2014 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 133 MB
+
+
+

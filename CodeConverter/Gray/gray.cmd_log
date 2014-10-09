@@ -1,0 +1,34 @@
+xst -ise "C:/Xilinx/CodeConverter/Gray/Gray.ise" -intstyle ise -ifn "C:/Xilinx/CodeConverter/Gray/gray.xst" -ofn "C:/Xilinx/CodeConverter/Gray/gray.syr"
+ngdbuild -ise "C:/Xilinx/CodeConverter/Gray/Gray.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s100-pq208-5 "gray.ngc" gray.ngd
+map -ise "C:/Xilinx/CodeConverter/Gray/Gray.ise" -intstyle ise -p xc2s100-pq208-5 -cm area -pr off -k 4 -c 100 -tx off -o gray_map.ncd gray.ngd gray.pcf
+par -ise "C:/Xilinx/CodeConverter/Gray/Gray.ise" -w -intstyle ise -ol std -t 1 gray_map.ncd gray.ncd gray.pcf
+trce -ise "C:/Xilinx/CodeConverter/Gray/Gray.ise" -intstyle ise -v 3 -s 5 -xml gray gray.ncd -o gray.twr gray.pcf -ucf gray.ucf
+bitgen -ise "C:/Xilinx/CodeConverter/Gray/Gray.ise" -intstyle ise -f gray.ut gray.ncd
+xst -ise "C:/Xilinx/CodeConverter/Gray/Gray.ise" -intstyle ise -ifn "C:/Xilinx/CodeConverter/Gray/gray.xst" -ofn "C:/Xilinx/CodeConverter/Gray/gray.syr"
+ngdbuild -ise "C:/Xilinx/CodeConverter/Gray/Gray.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s100-pq208-5 "gray.ngc" gray.ngd
+ngdbuild -ise "C:/Xilinx/CodeConverter/Gray/Gray.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s100-pq208-5 "gray.ngc" gray.ngd
+ngdbuild -ise "C:/Xilinx/CodeConverter/Gray/Gray.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s100-pq208-5 "gray.ngc" gray.ngd
+ngdbuild -ise "C:/Xilinx/CodeConverter/Gray/Gray.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s100-pq208-5 "gray.ngc" gray.ngd
+ngdbuild -ise "C:/Xilinx/CodeConverter/Gray/Gray.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s100-pq208-5 "gray.ngc" gray.ngd
+map -ise "C:/Xilinx/CodeConverter/Gray/Gray.ise" -intstyle ise -p xc2s100-pq208-5 -cm area -pr off -k 4 -c 100 -tx off -o gray_map.ncd gray.ngd gray.pcf
+par -ise "C:/Xilinx/CodeConverter/Gray/Gray.ise" -w -intstyle ise -ol std -t 1 gray_map.ncd gray.ncd gray.pcf
+trce -ise "C:/Xilinx/CodeConverter/Gray/Gray.ise" -intstyle ise -v 3 -s 5 -xml gray gray.ncd -o gray.twr gray.pcf
+bitgen -ise "C:/Xilinx/CodeConverter/Gray/Gray.ise" -intstyle ise -f gray.ut gray.ncd
+xst -ise "C:/Xilinx/CodeConverter/Gray/Gray.ise" -intstyle ise -ifn "C:/Xilinx/CodeConverter/Gray/gray.xst" -ofn "C:/Xilinx/CodeConverter/Gray/gray.syr"
+ngdbuild -ise "C:/Xilinx/CodeConverter/Gray/Gray.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s100-pq208-5 "gray.ngc" gray.ngd
+map -ise "C:/Xilinx/CodeConverter/Gray/Gray.ise" -intstyle ise -p xc2s100-pq208-5 -cm area -pr off -k 4 -c 100 -tx off -o gray_map.ncd gray.ngd gray.pcf
+par -ise "C:/Xilinx/CodeConverter/Gray/Gray.ise" -w -intstyle ise -ol std -t 1 gray_map.ncd gray.ncd gray.pcf
+trce -ise "C:/Xilinx/CodeConverter/Gray/Gray.ise" -intstyle ise -v 3 -s 5 -xml gray gray.ncd -o gray.twr gray.pcf
+bitgen -ise "C:/Xilinx/CodeConverter/Gray/Gray.ise" -intstyle ise -f gray.ut gray.ncd
+ngdbuild -ise "C:/Xilinx/CodeConverter/Gray/Gray.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s100-pq208-5 "gray.ngc" gray.ngd
+ngdbuild -ise "C:/Xilinx/CodeConverter/Gray/Gray.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s100-pq208-5 "gray.ngc" gray.ngd
+ngdbuild -ise "C:/Xilinx/CodeConverter/Gray/Gray.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s100-pq208-5 "gray.ngc" gray.ngd
+ngdbuild -ise "C:/Xilinx/CodeConverter/Gray/Gray.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s100-pq208-5 "gray.ngc" gray.ngd
+map -ise "C:/Xilinx/CodeConverter/Gray/Gray.ise" -intstyle ise -p xc2s100-pq208-5 -cm area -pr off -k 4 -c 100 -tx off -o gray_map.ncd gray.ngd gray.pcf
+par -ise "C:/Xilinx/CodeConverter/Gray/Gray.ise" -w -intstyle ise -ol std -t 1 gray_map.ncd gray.ncd gray.pcf
+trce -ise "C:/Xilinx/CodeConverter/Gray/Gray.ise" -intstyle ise -v 3 -s 5 -xml gray gray.ncd -o gray.twr gray.pcf -ucf gray.ucf
+ngdbuild -ise "C:/Xilinx/CodeConverter/Gray/Gray.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s100-pq208-5 "gray.ngc" gray.ngd
+map -ise "C:/Xilinx/CodeConverter/Gray/Gray.ise" -intstyle ise -p xc2s100-pq208-5 -cm area -pr off -k 4 -c 100 -tx off -o gray_map.ncd gray.ngd gray.pcf
+par -ise "C:/Xilinx/CodeConverter/Gray/Gray.ise" -w -intstyle ise -ol std -t 1 gray_map.ncd gray.ncd gray.pcf
+trce -ise "C:/Xilinx/CodeConverter/Gray/Gray.ise" -intstyle ise -v 3 -s 5 -xml gray gray.ncd -o gray.twr gray.pcf -ucf gray.ucf
+bitgen -ise "C:/Xilinx/CodeConverter/Gray/Gray.ise" -intstyle ise -f gray.ut gray.ncd

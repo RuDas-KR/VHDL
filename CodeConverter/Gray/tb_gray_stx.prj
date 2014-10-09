@@ -1,0 +1,2 @@
+vhdl isim_temp "gray.vhd"
+vhdl isim_temp "tb_gray.vhd"
