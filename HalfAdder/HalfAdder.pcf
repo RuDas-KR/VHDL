@@ -1,0 +1,11 @@
+//! **************************************************************************
+// Written by: Map K.31 on Wed Sep 24 10:10:20 2014
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "A" LOCATE = SITE "P68" LEVEL 1;
+COMP "B" LOCATE = SITE "P69" LEVEL 1;
+COMP "carrier" LOCATE = SITE "P95" LEVEL 1;
+COMP "sum" LOCATE = SITE "P96" LEVEL 1;
+SCHEMATIC END;
+

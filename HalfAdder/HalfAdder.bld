@@ -1,0 +1,35 @@
+Release 10.1 ngdbuild K.31 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\10.1\ISE\bin\nt\unwrapped\ngdbuild.exe -ise
+C:/Xilinx/add/HalfAdder.ise -intstyle ise -dd _ngo -nt timestamp -i -p
+xc2s100-pq208-5 HalfAdder.ngc HalfAdder.ngd
+
+Reading NGO file "C:/Xilinx/add/HalfAdder.ngc" ...
+Reading in constraint information from 'HalfAdder.ucf'...
+Gathering constraint information from source properties...
+Done.
+
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+Checking Partitions ...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 70480 kilobytes
+
+Writing NGD file "HalfAdder.ngd" ...
+
+Writing NGDBUILD log file "HalfAdder.bld"...

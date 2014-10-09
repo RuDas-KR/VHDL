@@ -1,0 +1,17 @@
+xst -ise "C:/Xilinx/HalfAdder/HalfAdder.ise" -intstyle ise -ifn "C:/Xilinx/HalfAdder/HalfAdder.xst" -ofn "C:/Xilinx/HalfAdder/HalfAdder.syr"
+ngdbuild -ise "C:/Xilinx/HalfAdder/HalfAdder.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s100-pq208-5 "HalfAdder.ngc" HalfAdder.ngd
+map -ise "C:/Xilinx/HalfAdder/HalfAdder.ise" -intstyle ise -p xc2s100-pq208-5 -cm area -pr off -k 4 -c 100 -tx off -o HalfAdder_map.ncd HalfAdder.ngd HalfAdder.pcf
+par -ise "C:/Xilinx/HalfAdder/HalfAdder.ise" -w -intstyle ise -ol std -t 1 HalfAdder_map.ncd HalfAdder.ncd HalfAdder.pcf
+trce -ise "C:/Xilinx/HalfAdder/HalfAdder.ise" -intstyle ise -v 3 -s 5 -xml HalfAdder HalfAdder.ncd -o HalfAdder.twr HalfAdder.pcf
+bitgen -ise "C:/Xilinx/HalfAdder/HalfAdder.ise" -intstyle ise -f HalfAdder.ut HalfAdder.ncd
+ngdbuild -ise "C:/Xilinx/HalfAdder/HalfAdder.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s100-pq208-5 "HalfAdder.ngc" HalfAdder.ngd
+map -ise "C:/Xilinx/HalfAdder/HalfAdder.ise" -intstyle ise -p xc2s100-pq208-5 -cm area -pr off -k 4 -c 100 -tx off -o HalfAdder_map.ncd HalfAdder.ngd HalfAdder.pcf
+par -ise "C:/Xilinx/HalfAdder/HalfAdder.ise" -w -intstyle ise -ol std -t 1 HalfAdder_map.ncd HalfAdder.ncd HalfAdder.pcf
+trce -ise "C:/Xilinx/HalfAdder/HalfAdder.ise" -intstyle ise -v 3 -s 5 -xml HalfAdder HalfAdder.ncd -o HalfAdder.twr HalfAdder.pcf -ucf HalfAdder.ucf
+bitgen -ise "C:/Xilinx/HalfAdder/HalfAdder.ise" -intstyle ise -f HalfAdder.ut HalfAdder.ncd
+xst -ise "C:/Xilinx/add/HalfAdder.ise" -intstyle ise -ifn "C:/Xilinx/add/HalfAdder.xst" -ofn "C:/Xilinx/add/HalfAdder.syr"
+ngdbuild -ise "C:/Xilinx/add/HalfAdder.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s100-pq208-5 "HalfAdder.ngc" HalfAdder.ngd
+map -ise "C:/Xilinx/add/HalfAdder.ise" -intstyle ise -p xc2s100-pq208-5 -cm area -pr off -k 4 -c 100 -tx off -o HalfAdder_map.ncd HalfAdder.ngd HalfAdder.pcf
+par -ise "C:/Xilinx/add/HalfAdder.ise" -w -intstyle ise -ol std -t 1 HalfAdder_map.ncd HalfAdder.ncd HalfAdder.pcf
+trce -ise "C:/Xilinx/add/HalfAdder.ise" -intstyle ise -v 3 -s 5 -xml HalfAdder HalfAdder.ncd -o HalfAdder.twr HalfAdder.pcf -ucf HalfAdder.ucf
+bitgen -ise "C:/Xilinx/add/HalfAdder.ise" -intstyle ise -f HalfAdder.ut HalfAdder.ncd

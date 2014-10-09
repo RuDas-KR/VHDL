@@ -1,0 +1,34 @@
+Command line:
+   ./tb_HalfAdder_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  2063
+
+Wed Sep 24 10:22:17 2014
+
+Total Line Count : 4
+
+ Elaboration Time: 0.015625 sec
+
+ Current Memory Usage: 145.117 Meg
+
+ Total Signals          : 8
+ Total Nets             : 4
+ Total Signal Drivers   : 4
+ Total Blocks           : 6
+ Total Primitive Blocks : 1
+ Total Processes        : 3
+ Total Traceable Variables  : 15
+ Total Scalar Nets and Variables : 505
+ntrace select -o on -m / -l this 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+ Total Simulation Time: 0.03125 sec
+
+ Current Memory Usage: 155.668 Meg
+
+Wed Sep 24 10:26:57 2014
+

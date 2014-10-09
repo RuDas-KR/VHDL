@@ -1,0 +1,7 @@
+V3 4
+FL C:/Xilinx/add/HalfAdder.vhd 2014/09/23.16:21:00 K.31
+EN work/HalfAdder 1411521008 FL C:/Xilinx/add/HalfAdder.vhd PB ieee/std_logic_1164 1217055545 \
+      PB ieee/std_logic_arith 1217055546 PB ieee/STD_LOGIC_UNSIGNED 1217055547
+AR work/HalfAdder/Behavioral 1411521009 \
+      FL C:/Xilinx/add/HalfAdder.vhd EN work/HalfAdder 1411521008
+FL C:/Xilinx/HalfAdder/HalfAdder.vhd 2014/09/23.16:21:22 K.31

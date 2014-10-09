@@ -1,0 +1,12 @@
+NUM_USER_FILES
+3
+s
+user_file_1
+HalfAdder.vhd
+s
+user_file_2
+tb_HalfAdder.vhd
+s
+user_file_3
+HalfAdder.ucf
+s
