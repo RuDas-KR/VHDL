@@ -1,0 +1,26 @@
+Running : C:\Xilinx\10.1\ISE\bin\nt\unwrapped\fuse.exe -ise
+C:/Xilinx/CodeConverter/Binary/Binary.ise -intstyle ise -incremental -o
+tb_Binary_isim_beh.exe -prj tb_Binary_beh.prj -top tb_Binary
+Determining compilation order of HDL files
+Analyzing VHDL file tb_Binary.vhd
+Restoring VHDL parse-tree ieee.std_logic_1164 from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_1164.vdb
+Restoring VHDL parse-tree std.standard from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/std/standard.vdb
+Restoring VHDL parse-tree ieee.std_logic_unsigned from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_unsigned.vdb
+Restoring VHDL parse-tree ieee.std_logic_arith from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_arith.vdb
+Restoring VHDL parse-tree ieee.numeric_std from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/numeric_std.vdb
+Saving VHDL parse-tree work.tb_binary into
+c:/xilinx/codeconverter/binary/isim/work/tb_binary.vdb
+Starting static elaboration
+Restoring VHDL parse-tree work.binary from
+c:/xilinx/codeconverter/binary/isim/work/binary.vdb
+ERROR:HDLCompiler:245 - "tb_Binary.vhd" Line 17. Binding entity binary does not
+   have port binary_in
+ERROR:HDLCompiler:245 - "tb_Binary.vhd" Line 18. Binding entity binary does not
+   have port binary_out
+ERROR:Simulator:777 - Static elaboration of top level VHDL design unit tb_binary
+   in library work failed

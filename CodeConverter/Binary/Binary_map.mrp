@@ -1,0 +1,135 @@
+Release 10.1.03 Map K.39 (nt)
+Xilinx Mapping Report File for Design 'Binary'
+
+Design Information
+------------------
+Command Line   : map -ise C:/Xilinx/CodeConverter/Binary/Binary.ise -intstyle
+ise -p xc2s100-pq208-5 -cm area -pr off -k 4 -c 100 -tx off -o Binary_map.ncd
+Binary.ngd Binary.pcf 
+Target Device  : xc2s100
+Target Package : pq208
+Target Speed   : -5
+Mapper Version : spartan2 -- $Revision: 1.46.12.2 $
+Mapped Date    : Thu Oct 09 14:15:18 2014
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    0
+Logic Utilization:
+  Number of 4 input LUTs:             3 out of  2,400    1%
+Logic Distribution:
+    Number of occupied Slices:                           2 out of  1,200    1%
+    Number of Slices containing only related logic:      2 out of      2  100%
+    Number of Slices containing unrelated logic:         0 out of      2    0%
+        *See NOTES below for an explanation of the effects of unrelated logic
+Total Number of 4 input LUTs:         3 out of  2,400    1%
+   Number of bonded IOBs:             8 out of    140    5%
+
+Peak Memory Usage:  197 MB
+Total REAL time to MAP completion:  1 secs 
+Total CPU time to MAP completion:   1 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Modular Design Summary
+Section 11 - Timing Report
+Section 12 - Configuration String Information
+Section 13 - Control Set Information
+Section 14 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+
+Section 3 - Informational
+-------------------------
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+
+Section 5 - Removed Logic
+-------------------------
+
+Section 6 - IOB Properties
+--------------------------
+
++------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type    | Direction | IO Standard | Drive    | Slew | Reg (s)  | Resistor | IOB   |
+|                                    |         |           |             | Strength | Rate |          |          | Delay |
++------------------------------------------------------------------------------------------------------------------------+
+| binary_in<0>                       | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| binary_in<1>                       | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| binary_in<2>                       | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| binary_in<3>                       | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| binary_out<0>                      | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| binary_out<1>                      | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| binary_out<2>                      | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| binary_out<3>                      | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
++------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Modular Design Summary
+-----------------------------------
+Modular Design not used for this design.
+
+Section 11 - Timing Report
+--------------------------
+No timing report for this architecture.
+
+Section 12 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 13 - Control Set Information
+------------------------------------
+No control set information for this architecture.

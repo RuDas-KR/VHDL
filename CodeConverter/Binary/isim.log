@@ -1,0 +1,9 @@
+Command line:
+   ./tb_Binary_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  51294
+
+Tue Sep 30 18:10:21 2014
+
+Total Line Count : 23

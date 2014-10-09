@@ -1,0 +1,15 @@
+xst -ise "C:/Xilinx/CodeConverter/Binary/Binary.ise" -intstyle ise -ifn "C:/Xilinx/CodeConverter/Binary/Binary.xst" -ofn "C:/Xilinx/CodeConverter/Binary/Binary.syr"
+ngdbuild -ise "C:/Xilinx/CodeConverter/Binary/Binary.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s100-pq208-5 "Binary.ngc" Binary.ngd
+map -ise "C:/Xilinx/CodeConverter/Binary/Binary.ise" -intstyle ise -p xc2s100-pq208-5 -cm area -pr off -k 4 -c 100 -tx off -o Binary_map.ncd Binary.ngd Binary.pcf
+par -ise "C:/Xilinx/CodeConverter/Binary/Binary.ise" -w -intstyle ise -ol std -t 1 Binary_map.ncd Binary.ncd Binary.pcf
+trce -ise "C:/Xilinx/CodeConverter/Binary/Binary.ise" -intstyle ise -v 3 -s 5 -xml Binary Binary.ncd -o Binary.twr Binary.pcf -ucf Binary.ucf
+bitgen -ise "C:/Xilinx/CodeConverter/Binary/Binary.ise" -intstyle ise -f Binary.ut Binary.ncd
+xst -ise "C:/Xilinx/CodeConverter/Binary/Binary.ise" -intstyle ise -ifn "C:/Xilinx/CodeConverter/Binary/Binary.xst" -ofn "C:/Xilinx/CodeConverter/Binary/Binary.syr"
+xst -ise "C:/Xilinx/CodeConverter/Binary/Binary.ise" -intstyle ise -ifn "C:/Xilinx/CodeConverter/Binary/Binary.xst" -ofn "C:/Xilinx/CodeConverter/Binary/Binary.syr"
+ngdbuild -ise "C:/Xilinx/CodeConverter/Binary/Binary.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s100-pq208-5 "Binary.ngc" Binary.ngd
+ngdbuild -ise "C:/Xilinx/CodeConverter/Binary/Binary.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s100-pq208-5 "Binary.ngc" Binary.ngd
+ngdbuild -ise "C:/Xilinx/CodeConverter/Binary/Binary.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s100-pq208-5 "Binary.ngc" Binary.ngd
+map -ise "C:/Xilinx/CodeConverter/Binary/Binary.ise" -intstyle ise -p xc2s100-pq208-5 -cm area -pr off -k 4 -c 100 -tx off -o Binary_map.ncd Binary.ngd Binary.pcf
+par -ise "C:/Xilinx/CodeConverter/Binary/Binary.ise" -w -intstyle ise -ol std -t 1 Binary_map.ncd Binary.ncd Binary.pcf
+trce -ise "C:/Xilinx/CodeConverter/Binary/Binary.ise" -intstyle ise -v 3 -s 5 -xml Binary Binary.ncd -o Binary.twr Binary.pcf -ucf Binary.ucf
+bitgen -ise "C:/Xilinx/CodeConverter/Binary/Binary.ise" -intstyle ise -f Binary.ut Binary.ncd

@@ -1,0 +1,5 @@
+# begin LFP file C:\Xilinx\CodeConverter\Binary\Binary.lfp
+designfile Binary.vhd
+parttype xc2s100-5-pq208
+bus_delimiter 8;
+set_busdelim_onsave 1;
