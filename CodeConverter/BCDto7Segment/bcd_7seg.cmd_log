@@ -1,0 +1,13 @@
+xst -ise "C:/Xilinx/CodeConverter/BCDto7Segment/BCDto7Segment.ise" -intstyle ise -ifn "C:/Xilinx/CodeConverter/BCDto7Segment/bcd_7seg.xst" -ofn "C:/Xilinx/CodeConverter/BCDto7Segment/bcd_7seg.syr"
+xst -ise "C:/Xilinx/CodeConverter/BCDto7Segment/BCDto7Segment.ise" -intstyle ise -ifn "C:/Xilinx/CodeConverter/BCDto7Segment/bcd_7seg.xst" -ofn "C:/Xilinx/CodeConverter/BCDto7Segment/bcd_7seg.syr"
+xst -ise "C:/Xilinx/CodeConverter/BCDto7Segment/BCDto7Segment.ise" -intstyle ise -ifn "C:/Xilinx/CodeConverter/BCDto7Segment/bcd_7seg.xst" -ofn "C:/Xilinx/CodeConverter/BCDto7Segment/bcd_7seg.syr"
+xst -ise "C:/Xilinx/CodeConverter/BCDto7Segment/BCDto7Segment.ise" -intstyle ise -ifn "C:/Xilinx/CodeConverter/BCDto7Segment/bcd_7seg.xst" -ofn "C:/Xilinx/CodeConverter/BCDto7Segment/bcd_7seg.syr"
+ngdbuild -ise "C:/Xilinx/CodeConverter/BCDto7Segment/BCDto7Segment.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s100-pq208-5 "bcd_7seg.ngc" bcd_7seg.ngd
+map -ise "C:/Xilinx/CodeConverter/BCDto7Segment/BCDto7Segment.ise" -intstyle ise -p xc2s100-pq208-5 -cm area -pr off -k 4 -c 100 -tx off -o bcd_7seg_map.ncd bcd_7seg.ngd bcd_7seg.pcf
+par -ise "C:/Xilinx/CodeConverter/BCDto7Segment/BCDto7Segment.ise" -w -intstyle ise -ol std -t 1 bcd_7seg_map.ncd bcd_7seg.ncd bcd_7seg.pcf
+trce -ise "C:/Xilinx/CodeConverter/BCDto7Segment/BCDto7Segment.ise" -intstyle ise -v 3 -s 5 -xml bcd_7seg bcd_7seg.ncd -o bcd_7seg.twr bcd_7seg.pcf
+ngdbuild -ise "C:/Xilinx/CodeConverter/BCDto7Segment/BCDto7Segment.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s100-pq208-5 "bcd_7seg.ngc" bcd_7seg.ngd
+map -ise "C:/Xilinx/CodeConverter/BCDto7Segment/BCDto7Segment.ise" -intstyle ise -p xc2s100-pq208-5 -cm area -pr off -k 4 -c 100 -tx off -o bcd_7seg_map.ncd bcd_7seg.ngd bcd_7seg.pcf
+par -ise "C:/Xilinx/CodeConverter/BCDto7Segment/BCDto7Segment.ise" -w -intstyle ise -ol std -t 1 bcd_7seg_map.ncd bcd_7seg.ncd bcd_7seg.pcf
+trce -ise "C:/Xilinx/CodeConverter/BCDto7Segment/BCDto7Segment.ise" -intstyle ise -v 3 -s 5 -xml bcd_7seg bcd_7seg.ncd -o bcd_7seg.twr bcd_7seg.pcf -ucf bcd_7seg.ucf
+bitgen -ise "C:/Xilinx/CodeConverter/BCDto7Segment/BCDto7Segment.ise" -intstyle ise -f bcd_7seg.ut bcd_7seg.ncd

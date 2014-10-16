@@ -1,0 +1,7 @@
+V3 3
+FL C:/Xilinx/CodeConverter/BCDto7Segment/bcd_7seg.vhd 2014/10/16.16:23:53 K.39
+EN work/bcd_7seg 1413444241 FL C:/Xilinx/CodeConverter/BCDto7Segment/bcd_7seg.vhd \
+      PB ieee/std_logic_1164 1217055545 PB ieee/std_logic_arith 1217055546 \
+      PB ieee/STD_LOGIC_UNSIGNED 1217055547
+AR work/bcd_7seg/Behavioral 1413444242 \
+      FL C:/Xilinx/CodeConverter/BCDto7Segment/bcd_7seg.vhd EN work/bcd_7seg 1413444241

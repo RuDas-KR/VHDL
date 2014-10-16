@@ -1,0 +1,107 @@
+--------------------------------------------------------------------------------
+Release 10.1.03 Trace  (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\10.1\ISE\bin\nt\unwrapped\trce.exe -ise
+C:/Xilinx/CodeConverter/BCDto7Segment/BCDto7Segment.ise -intstyle ise -v 3 -s 5
+-xml bcd_7seg bcd_7seg.ncd -o bcd_7seg.twr bcd_7seg.pcf -ucf bcd_7seg.ucf
+
+Design file:              bcd_7seg.ncd
+Physical constraint file: bcd_7seg.pcf
+Device,package,speed:     xc2s100,pq208,-5 (PRODUCTION 1.27 2008-01-09)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+bcd<0>         |s7segment<0>   |   14.924|
+bcd<0>         |s7segment<1>   |   14.235|
+bcd<0>         |s7segment<2>   |   14.195|
+bcd<0>         |s7segment<3>   |   13.341|
+bcd<0>         |s7segment<4>   |   12.669|
+bcd<0>         |s7segment<5>   |   13.708|
+bcd<0>         |s7segment<6>   |   15.232|
+bcd<1>         |s7segment<0>   |   16.040|
+bcd<1>         |s7segment<1>   |   15.070|
+bcd<1>         |s7segment<2>   |   15.099|
+bcd<1>         |s7segment<3>   |   14.005|
+bcd<1>         |s7segment<4>   |   12.428|
+bcd<1>         |s7segment<5>   |   15.045|
+bcd<1>         |s7segment<6>   |   15.720|
+bcd<2>         |s7segment<0>   |   15.337|
+bcd<2>         |s7segment<1>   |   14.315|
+bcd<2>         |s7segment<2>   |   14.299|
+bcd<2>         |s7segment<3>   |   13.720|
+bcd<2>         |s7segment<4>   |   12.579|
+bcd<2>         |s7segment<5>   |   14.342|
+bcd<2>         |s7segment<6>   |   15.315|
+bcd<3>         |s7segment<0>   |   13.809|
+bcd<3>         |s7segment<1>   |   12.592|
+bcd<3>         |s7segment<2>   |   12.671|
+bcd<3>         |s7segment<3>   |   11.998|
+bcd<3>         |s7segment<4>   |   12.714|
+bcd<3>         |s7segment<5>   |   12.850|
+bcd<3>         |s7segment<6>   |   13.176|
+bcd<4>         |s7segment<0>   |   14.770|
+bcd<4>         |s7segment<1>   |   13.896|
+bcd<4>         |s7segment<2>   |   13.871|
+bcd<4>         |s7segment<3>   |   12.873|
+bcd<4>         |s7segment<4>   |   12.229|
+bcd<4>         |s7segment<5>   |   13.775|
+bcd<4>         |s7segment<6>   |   14.626|
+bcd<5>         |s7segment<0>   |   15.197|
+bcd<5>         |s7segment<1>   |   13.789|
+bcd<5>         |s7segment<2>   |   13.774|
+bcd<5>         |s7segment<3>   |   13.643|
+bcd<5>         |s7segment<4>   |   10.930|
+bcd<5>         |s7segment<5>   |   14.262|
+bcd<5>         |s7segment<6>   |   14.389|
+bcd<6>         |s7segment<0>   |   15.326|
+bcd<6>         |s7segment<1>   |   13.918|
+bcd<6>         |s7segment<2>   |   13.903|
+bcd<6>         |s7segment<3>   |   13.772|
+bcd<6>         |s7segment<4>   |   10.760|
+bcd<6>         |s7segment<5>   |   14.391|
+bcd<6>         |s7segment<6>   |   14.518|
+bcd<7>         |s7segment<0>   |   14.972|
+bcd<7>         |s7segment<1>   |   13.564|
+bcd<7>         |s7segment<2>   |   13.549|
+bcd<7>         |s7segment<3>   |   13.418|
+bcd<7>         |s7segment<4>   |   10.503|
+bcd<7>         |s7segment<5>   |   14.037|
+bcd<7>         |s7segment<6>   |   14.164|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Oct 16 16:27:14 2014 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 130 MB
+
+
+

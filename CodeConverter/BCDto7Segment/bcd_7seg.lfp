@@ -1,0 +1,5 @@
+# begin LFP file C:\Xilinx\CodeConverter\BCDto7Segment\bcd_7seg.lfp
+designfile bcd_7seg.vhd
+parttype xc2s100-5-pq208
+bus_delimiter 8;
+set_busdelim_onsave 1;
