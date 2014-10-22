@@ -1,0 +1,14 @@
+EN cnt_10 NULL C:/Xilinx/my_work/cnt_10.vhd sub00/vhpl04 1413965521
+AR led_8 behavioral C:/Xilinx/my_work/LED_8.vhd sub00/vhpl09 1413965526
+EN my_work NULL C:/Xilinx/my_work/my_work.vhd sub00/vhpl12 1413965529
+AR my_work behavioral C:/Xilinx/my_work/my_work.vhd sub00/vhpl13 1413965530
+AR seg_7 behavioral C:/Xilinx/my_work/seg_7.vhd sub00/vhpl11 1413965528
+AR cnt_10 behavioral C:/Xilinx/my_work/cnt_10.vhd sub00/vhpl05 1413965522
+AR seg_scan behavioral C:/Xilinx/my_work/SEG_SCAN.vhd sub00/vhpl07 1413965524
+EN cnt_500 NULL C:/Xilinx/my_work/cnt_500.vhd sub00/vhpl02 1413965519
+AR cnt_50m behavioral C:/Xilinx/my_work/cnt_50m.vhd sub00/vhpl01 1413965518
+EN seg_scan NULL C:/Xilinx/my_work/SEG_SCAN.vhd sub00/vhpl06 1413965523
+AR cnt_500 behavioral C:/Xilinx/my_work/cnt_500.vhd sub00/vhpl03 1413965520
+EN cnt_50m NULL C:/Xilinx/my_work/cnt_50m.vhd sub00/vhpl00 1413965517
+EN led_8 NULL C:/Xilinx/my_work/LED_8.vhd sub00/vhpl08 1413965525
+EN seg_7 NULL C:/Xilinx/my_work/seg_7.vhd sub00/vhpl10 1413965527

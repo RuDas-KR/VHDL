@@ -1,0 +1,514 @@
+Release 10.1.03 - xst K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Xilinx/my_work/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.22 secs
+ 
+--> Parameter xsthdpdir set to C:/Xilinx/my_work/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.22 secs
+ 
+--> Reading design: my_work.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) Partition Resource Summary
+     9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "my_work.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "my_work"
+Output Format                      : NGC
+Target Device                      : xc2s100-5-pq208
+
+---- Source Options
+Top Module Name                    : my_work
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : lut
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100
+Add Generic Clock Buffer(BUFG)     : 4
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Convert Tristates To Logic         : Yes
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : my_work.lso
+Keep Hierarchy                     : NO
+Netlist Hierarchy                  : as_optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLParsers:3607 - Unit work/cnt_10 is now defined in a different file.  It was defined in "C:/Xilinx/my_work/my_work/cnt_10.vhd", and is now defined in "C:/Xilinx/my_work/cnt_10.vhd".
+WARNING:HDLParsers:3607 - Unit work/cnt_10/Behavioral is now defined in a different file.  It was defined in "C:/Xilinx/my_work/my_work/cnt_10.vhd", and is now defined in "C:/Xilinx/my_work/cnt_10.vhd".
+WARNING:HDLParsers:3607 - Unit work/LED_8 is now defined in a different file.  It was defined in "C:/Xilinx/my_work/my_work/LED_8.vhd", and is now defined in "C:/Xilinx/my_work/LED_8.vhd".
+WARNING:HDLParsers:3607 - Unit work/LED_8/Behavioral is now defined in a different file.  It was defined in "C:/Xilinx/my_work/my_work/LED_8.vhd", and is now defined in "C:/Xilinx/my_work/LED_8.vhd".
+WARNING:HDLParsers:3607 - Unit work/SEG_SCAN is now defined in a different file.  It was defined in "C:/Xilinx/my_work/my_work/SEG_SCAN.vhd", and is now defined in "C:/Xilinx/my_work/SEG_SCAN.vhd".
+WARNING:HDLParsers:3607 - Unit work/SEG_SCAN/Behavioral is now defined in a different file.  It was defined in "C:/Xilinx/my_work/my_work/SEG_SCAN.vhd", and is now defined in "C:/Xilinx/my_work/SEG_SCAN.vhd".
+Compiling vhdl file "C:/Xilinx/my_work/cnt_50m.vhd" in Library work.
+Entity <cnt_50m> compiled.
+Entity <cnt_50m> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Xilinx/my_work/cnt_500.vhd" in Library work.
+Entity <cnt_500> compiled.
+Entity <cnt_500> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Xilinx/my_work/cnt_10.vhd" in Library work.
+Entity <cnt_10> compiled.
+Entity <cnt_10> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Xilinx/my_work/SEG_SCAN.vhd" in Library work.
+Entity <seg_scan> compiled.
+Entity <seg_scan> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Xilinx/my_work/LED_8.vhd" in Library work.
+Entity <led_8> compiled.
+Entity <led_8> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Xilinx/my_work/seg_7.vhd" in Library work.
+Entity <seg_7> compiled.
+Entity <seg_7> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Xilinx/my_work/my_work.vhd" in Library work.
+Entity <my_work> compiled.
+Entity <my_work> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <my_work> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <cnt_50m> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <cnt_500> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <cnt_10> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <SEG_SCAN> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <LED_8> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <seg_7> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <my_work> in library <work> (Architecture <behavioral>).
+WARNING:Xst:2211 - "C:/Xilinx/my_work/my_work.vhd" line 73: Instantiating black box module <BUFGP>.
+WARNING:Xst:753 - "C:/Xilinx/my_work/my_work.vhd" line 80: Unconnected output port 'q' of component 'cnt_50m'.
+WARNING:Xst:753 - "C:/Xilinx/my_work/my_work.vhd" line 88: Unconnected output port 'q' of component 'cnt_500'.
+Entity <my_work> analyzed. Unit <my_work> generated.
+
+Analyzing Entity <cnt_50m> in library <work> (Architecture <behavioral>).
+Entity <cnt_50m> analyzed. Unit <cnt_50m> generated.
+
+Analyzing Entity <cnt_500> in library <work> (Architecture <behavioral>).
+Entity <cnt_500> analyzed. Unit <cnt_500> generated.
+
+Analyzing Entity <cnt_10> in library <work> (Architecture <behavioral>).
+Entity <cnt_10> analyzed. Unit <cnt_10> generated.
+
+Analyzing Entity <SEG_SCAN> in library <work> (Architecture <behavioral>).
+Entity <SEG_SCAN> analyzed. Unit <SEG_SCAN> generated.
+
+Analyzing Entity <LED_8> in library <work> (Architecture <behavioral>).
+Entity <LED_8> analyzed. Unit <LED_8> generated.
+
+Analyzing Entity <seg_7> in library <work> (Architecture <behavioral>).
+Entity <seg_7> analyzed. Unit <seg_7> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <cnt_50m>.
+    Related source file is "C:/Xilinx/my_work/cnt_50m.vhd".
+    Found 1-bit register for signal <clk_1khz>.
+    Found 16-bit up counter for signal <q_s>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <cnt_50m> synthesized.
+
+
+Synthesizing Unit <cnt_500>.
+    Related source file is "C:/Xilinx/my_work/cnt_500.vhd".
+    Found 1-bit register for signal <clk_2hz>.
+    Found 9-bit up counter for signal <q_s>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <cnt_500> synthesized.
+
+
+Synthesizing Unit <cnt_10>.
+    Related source file is "C:/Xilinx/my_work/cnt_10.vhd".
+    Found 4-bit up counter for signal <TMP_Q>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <cnt_10> synthesized.
+
+
+Synthesizing Unit <SEG_SCAN>.
+    Related source file is "C:/Xilinx/my_work/SEG_SCAN.vhd".
+    Found 3-bit up counter for signal <tmp>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <SEG_SCAN> synthesized.
+
+
+Synthesizing Unit <LED_8>.
+    Related source file is "C:/Xilinx/my_work/LED_8.vhd".
+    Found 16x8-bit ROM for signal <LED>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <LED_8> synthesized.
+
+
+Synthesizing Unit <seg_7>.
+    Related source file is "C:/Xilinx/my_work/seg_7.vhd".
+    Found 16x8-bit ROM for signal <LED>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <seg_7> synthesized.
+
+
+Synthesizing Unit <my_work>.
+    Related source file is "C:/Xilinx/my_work/my_work.vhd".
+Unit <my_work> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 16x8-bit ROM                                          : 2
+# Counters                                             : 4
+ 16-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
+ 4-bit up counter                                      : 1
+ 9-bit up counter                                      : 1
+# Registers                                            : 2
+ 1-bit register                                        : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Loading device for application Rf_Device from file 'v100.nph' in environment C:\Xilinx\10.1\ISE.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 16x8-bit ROM                                          : 2
+# Counters                                             : 4
+ 16-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
+ 4-bit up counter                                      : 1
+ 9-bit up counter                                      : 1
+# Registers                                            : 2
+ Flip-Flops                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2146 - In block <my_work>, Counter <u3/TMP_Q> <u4/tmp> are equivalent, XST will keep only <u3/TMP_Q>.
+
+Optimizing unit <my_work> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block my_work, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 31
+ Flip-Flops                                            : 31
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : my_work.ngr
+Top Level Output File Name         : my_work
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 24
+
+Cell Usage :
+# BELS                             : 128
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 23
+#      LUT2                        : 26
+#      LUT3                        : 10
+#      LUT4                        : 13
+#      LUT4_L                      : 2
+#      MUXCY                       : 23
+#      VCC                         : 1
+#      XORCY                       : 25
+# FlipFlops/Latches                : 31
+#      FDC                         : 31
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 23
+#      IBUF                        : 1
+#      OBUF                        : 22
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 2s100pq208-5 
+
+ Number of Slices:                       42  out of   1200     3%  
+ Number of Slice Flip Flops:             31  out of   2400     1%  
+ Number of 4 input LUTs:                 78  out of   2400     3%  
+ Number of IOs:                          24
+ Number of bonded IOBs:                  24  out of    140    17%  
+ Number of GCLKs:                         1  out of      4    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+FPGA_CLK                           | BUFGP                  | 17    |
+u1/clk_1khz                        | NONE(u2/clk_2hz)       | 10    |
+u2/clk_2hz                         | NONE(u3/TMP_Q_0)       | 4     |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+FPGA_RST_TMP(FPGA_RST_TMP1_INV_0:O)| NONE(u1/q_s_10)        | 31    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 9.394ns (Maximum Frequency: 106.451MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 11.942ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'FPGA_CLK'
+  Clock period: 9.394ns (frequency: 106.451MHz)
+  Total number of paths / destination ports: 408 / 17
+-------------------------------------------------------------------------
+Delay:               9.394ns (Levels of Logic = 3)
+  Source:            u1/q_s_6 (FF)
+  Destination:       u1/q_s_0 (FF)
+  Source Clock:      FPGA_CLK rising
+  Destination Clock: FPGA_CLK rising
+
+  Data Path: u1/q_s_6 to u1/q_s_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   1.292   1.340  u1/q_s_6 (u1/q_s_6)
+     LUT4:I0->O            1   0.653   1.150  u1/q_s_cmp_eq000016 (u1/q_s_cmp_eq000016)
+     LUT4:I1->O           17   0.653   2.900  u1/q_s_cmp_eq000055 (u1/q_s_cmp_eq0000)
+     LUT2:I0->O            1   0.653   0.000  u1/Mcount_q_s_eqn_01 (u1/Mcount_q_s_eqn_0)
+     FDC:D                     0.753          u1/q_s_0
+    ----------------------------------------
+    Total                      9.394ns (4.004ns logic, 5.390ns route)
+                                       (42.6% logic, 57.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'u1/clk_1khz'
+  Clock period: 8.694ns (frequency: 115.022MHz)
+  Total number of paths / destination ports: 135 / 10
+-------------------------------------------------------------------------
+Delay:               8.694ns (Levels of Logic = 3)
+  Source:            u2/q_s_6 (FF)
+  Destination:       u2/q_s_0 (FF)
+  Source Clock:      u1/clk_1khz rising
+  Destination Clock: u1/clk_1khz rising
+
+  Data Path: u2/q_s_6 to u2/q_s_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   1.292   1.340  u2/q_s_6 (u2/q_s_6)
+     LUT3:I0->O            1   0.653   1.150  u2/q_s_cmp_eq000018_SW0 (N11)
+     LUT4:I3->O           10   0.653   2.200  u2/q_s_cmp_eq000018 (u2/q_s_cmp_eq0000)
+     LUT2:I0->O            1   0.653   0.000  u2/Mcount_q_s_eqn_01 (u2/Mcount_q_s_eqn_0)
+     FDC:D                     0.753          u2/q_s_0
+    ----------------------------------------
+    Total                      8.694ns (4.004ns logic, 4.690ns route)
+                                       (46.1% logic, 53.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'u2/clk_2hz'
+  Clock period: 6.948ns (frequency: 143.926MHz)
+  Total number of paths / destination ports: 10 / 4
+-------------------------------------------------------------------------
+Delay:               6.948ns (Levels of Logic = 1)
+  Source:            u3/TMP_Q_0 (FF)
+  Destination:       u3/TMP_Q_0 (FF)
+  Source Clock:      u2/clk_2hz rising
+  Destination Clock: u2/clk_2hz rising
+
+  Data Path: u3/TMP_Q_0 to u3/TMP_Q_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             19   1.292   3.100  u3/TMP_Q_0 (u3/TMP_Q_0)
+     INV:I->O              1   0.653   1.150  u3/Mcount_TMP_Q_xor<0>11_INV_0 (Result<0>1)
+     FDC:D                     0.753          u3/TMP_Q_0
+    ----------------------------------------
+    Total                      6.948ns (2.698ns logic, 4.250ns route)
+                                       (38.8% logic, 61.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'u2/clk_2hz'
+  Total number of paths / destination ports: 70 / 21
+-------------------------------------------------------------------------
+Offset:              11.942ns (Levels of Logic = 2)
+  Source:            u3/TMP_Q_0 (FF)
+  Destination:       DIGIT<5> (PAD)
+  Source Clock:      u2/clk_2hz rising
+
+  Data Path: u3/TMP_Q_0 to DIGIT<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             19   1.292   3.100  u3/TMP_Q_0 (u3/TMP_Q_0)
+     LUT3:I0->O            2   0.653   1.340  DIGIT<5>1 (DIGIT_5_OBUF)
+     OBUF:I->O                 5.557          DIGIT_5_OBUF (DIGIT<5>)
+    ----------------------------------------
+    Total                     11.942ns (7.502ns logic, 4.440ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.30 secs
+ 
+--> 
+
+Total memory usage is 220632 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    9 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

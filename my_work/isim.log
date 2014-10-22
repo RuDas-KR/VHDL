@@ -1,0 +1,35 @@
+Command line:
+   ./seg_7_seg_7_tb_vhd_tb_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  1618
+
+Wed Oct 22 14:29:53 2014
+
+Total Line Count : 19
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 247.923 Meg
+
+ Total Signals          : 5
+ Total Nets             : 20
+ Total Signal Drivers   : 3
+ Total Blocks           : 4
+ Total Primitive Blocks : 1
+ Total Processes        : 3
+ Total Traceable Variables  : 13
+ Total Scalar Nets and Variables : 503
+ntrace select -o on -n /seg_7_seg_7_tb_vhd_tb/q 
+ntrace select -o on -n /seg_7_seg_7_tb_vhd_tb/seg 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+ Total Simulation Time: 0.125 sec
+
+ Current Memory Usage: 258.474 Meg
+
+Wed Oct 22 14:30:02 2014
+

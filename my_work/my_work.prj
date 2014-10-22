@@ -1,0 +1,7 @@
+vhdl work "SEG_SCAN.vhd"
+vhdl work "seg_7.vhd"
+vhdl work "LED_8.vhd"
+vhdl work "cnt_50m.vhd"
+vhdl work "cnt_500.vhd"
+vhdl work "cnt_10.vhd"
+vhdl work "my_work.vhd"

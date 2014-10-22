@@ -1,0 +1,29 @@
+Running : C:\Xilinx\10.1\ISE\bin\nt\unwrapped\fuse.exe -ise
+C:/Xilinx/my_work/my_work.ise -intstyle ise -incremental -o
+seg_7_seg_7_tb_vhd_tb_isim_beh.exe -prj seg_7_seg_7_tb_vhd_tb_beh.prj -top
+seg_7_seg_7_tb_vhd_tb
+Determining compilation order of HDL files
+Analyzing VHDL file seg_7.vhd
+Restoring VHDL parse-tree ieee.std_logic_1164 from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_1164.vdb
+Restoring VHDL parse-tree std.standard from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/std/standard.vdb
+Analyzing VHDL file seg_7_tb.vhd
+Restoring VHDL parse-tree ieee.numeric_std from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/numeric_std.vdb
+Saving VHDL parse-tree work.seg_7 into c:/xilinx/my_work/isim/work/seg_7.vdb
+Saving VHDL parse-tree work.seg_7_seg_7_tb_vhd_tb into
+c:/xilinx/my_work/isim/work/seg_7_seg_7_tb_vhd_tb.vdb
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 56964 Kb
+Fuse CPU Usage: 249 ms
+Using precompiled package standard from library std
+Using precompiled package std_logic_1164 from library ieee
+Using precompiled package numeric_std from library ieee
+Compiling architecture behavioral of entity seg_7 [seg_7_default]
+Compiling architecture behavior of entity seg_7_seg_7_tb_vhd_tb
+Compiled 6 VHDL Units
+Built simulation executable seg_7_seg_7_tb_vhd_tb_isim_beh.exe
+Fuse Memory Usage: 58248 Kb
+Fuse CPU Usage: 296 ms
