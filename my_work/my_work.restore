@@ -841,6 +841,7 @@ proc restore { { project_dir "" } } {
       "cnt_10.vhd" 
       "cnt_500.vhd" 
       "cnt_50m.vhd" 
+      "my_work.ucf" 
       "my_work.vhd" 
       "seg_7.vhd" 
       "seg_7_tb.vhd"}

@@ -4,13 +4,13 @@ Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.22 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Parameter xsthdpdir set to C:/Xilinx/my_work/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.22 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Reading design: my_work.prj
 
@@ -106,33 +106,21 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-WARNING:HDLParsers:3607 - Unit work/cnt_10 is now defined in a different file.  It was defined in "C:/Xilinx/my_work/my_work/cnt_10.vhd", and is now defined in "C:/Xilinx/my_work/cnt_10.vhd".
-WARNING:HDLParsers:3607 - Unit work/cnt_10/Behavioral is now defined in a different file.  It was defined in "C:/Xilinx/my_work/my_work/cnt_10.vhd", and is now defined in "C:/Xilinx/my_work/cnt_10.vhd".
-WARNING:HDLParsers:3607 - Unit work/LED_8 is now defined in a different file.  It was defined in "C:/Xilinx/my_work/my_work/LED_8.vhd", and is now defined in "C:/Xilinx/my_work/LED_8.vhd".
-WARNING:HDLParsers:3607 - Unit work/LED_8/Behavioral is now defined in a different file.  It was defined in "C:/Xilinx/my_work/my_work/LED_8.vhd", and is now defined in "C:/Xilinx/my_work/LED_8.vhd".
-WARNING:HDLParsers:3607 - Unit work/SEG_SCAN is now defined in a different file.  It was defined in "C:/Xilinx/my_work/my_work/SEG_SCAN.vhd", and is now defined in "C:/Xilinx/my_work/SEG_SCAN.vhd".
-WARNING:HDLParsers:3607 - Unit work/SEG_SCAN/Behavioral is now defined in a different file.  It was defined in "C:/Xilinx/my_work/my_work/SEG_SCAN.vhd", and is now defined in "C:/Xilinx/my_work/SEG_SCAN.vhd".
 Compiling vhdl file "C:/Xilinx/my_work/cnt_50m.vhd" in Library work.
-Entity <cnt_50m> compiled.
-Entity <cnt_50m> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity cnt_50m is up to date.
 Compiling vhdl file "C:/Xilinx/my_work/cnt_500.vhd" in Library work.
-Entity <cnt_500> compiled.
-Entity <cnt_500> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity cnt_500 is up to date.
 Compiling vhdl file "C:/Xilinx/my_work/cnt_10.vhd" in Library work.
-Entity <cnt_10> compiled.
-Entity <cnt_10> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity cnt_10 is up to date.
 Compiling vhdl file "C:/Xilinx/my_work/SEG_SCAN.vhd" in Library work.
 Entity <seg_scan> compiled.
 Entity <seg_scan> (Architecture <behavioral>) compiled.
 Compiling vhdl file "C:/Xilinx/my_work/LED_8.vhd" in Library work.
-Entity <led_8> compiled.
-Entity <led_8> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity led_8 is up to date.
 Compiling vhdl file "C:/Xilinx/my_work/seg_7.vhd" in Library work.
-Entity <seg_7> compiled.
-Entity <seg_7> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity seg_7 is up to date.
 Compiling vhdl file "C:/Xilinx/my_work/my_work.vhd" in Library work.
-Entity <my_work> compiled.
-Entity <my_work> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity my_work is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -216,8 +204,10 @@ Unit <cnt_10> synthesized.
 
 Synthesizing Unit <SEG_SCAN>.
     Related source file is "C:/Xilinx/my_work/SEG_SCAN.vhd".
+    Found 8x6-bit ROM for signal <DIGIT>.
     Found 3-bit up counter for signal <tmp>.
     Summary:
+	inferred   1 ROM(s).
 	inferred   1 Counter(s).
 Unit <SEG_SCAN> synthesized.
 
@@ -247,8 +237,9 @@ Unit <my_work> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# ROMs                                                 : 2
+# ROMs                                                 : 3
  16x8-bit ROM                                          : 2
+ 8x6-bit ROM                                           : 1
 # Counters                                             : 4
  16-bit up counter                                     : 1
  3-bit up counter                                      : 1
@@ -269,8 +260,9 @@ Loading device for application Rf_Device from file 'v100.nph' in environment C:\
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# ROMs                                                 : 2
+# ROMs                                                 : 3
  16x8-bit ROM                                          : 2
+ 8x6-bit ROM                                           : 1
 # Counters                                             : 4
  16-bit up counter                                     : 1
  3-bit up counter                                      : 1
@@ -284,13 +276,12 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-INFO:Xst:2146 - In block <my_work>, Counter <u3/TMP_Q> <u4/tmp> are equivalent, XST will keep only <u3/TMP_Q>.
 
 Optimizing unit <my_work> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block my_work, actual ratio is 3.
+Found area constraint ratio of 100 (+ 5) on block my_work, actual ratio is 4.
 
 Final Macro Processing ...
 
@@ -298,8 +289,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 31
- Flip-Flops                                            : 31
+# Registers                                            : 34
+ Flip-Flops                                            : 34
 
 =========================================================================
 
@@ -328,19 +319,19 @@ Design Statistics
 # IOs                              : 24
 
 Cell Usage :
-# BELS                             : 128
+# BELS                             : 136
 #      GND                         : 1
-#      INV                         : 4
+#      INV                         : 6
 #      LUT1                        : 23
-#      LUT2                        : 26
-#      LUT3                        : 10
-#      LUT4                        : 13
+#      LUT2                        : 27
+#      LUT3                        : 7
+#      LUT4                        : 21
 #      LUT4_L                      : 2
 #      MUXCY                       : 23
 #      VCC                         : 1
 #      XORCY                       : 25
-# FlipFlops/Latches                : 31
-#      FDC                         : 31
+# FlipFlops/Latches                : 34
+#      FDC                         : 34
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 23
@@ -353,9 +344,9 @@ Device utilization summary:
 
 Selected Device : 2s100pq208-5 
 
- Number of Slices:                       42  out of   1200     3%  
- Number of Slice Flip Flops:             31  out of   2400     1%  
- Number of 4 input LUTs:                 78  out of   2400     3%  
+ Number of Slices:                       45  out of   1200     3%  
+ Number of Slice Flip Flops:             34  out of   2400     1%  
+ Number of 4 input LUTs:                 86  out of   2400     3%  
  Number of IOs:                          24
  Number of bonded IOBs:                  24  out of    140    17%  
  Number of GCLKs:                         1  out of      4    25%  
@@ -383,7 +374,7 @@ Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
 FPGA_CLK                           | BUFGP                  | 17    |
 u1/clk_1khz                        | NONE(u2/clk_2hz)       | 10    |
-u2/clk_2hz                         | NONE(u3/TMP_Q_0)       | 4     |
+u2/clk_2hz                         | NONE(u3/TMP_Q_0)       | 7     |
 -----------------------------------+------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
@@ -392,7 +383,7 @@ Asynchronous Control Signals Information:
 -----------------------------------+------------------------+-------+
 Control Signal                     | Buffer(FF name)        | Load  |
 -----------------------------------+------------------------+-------+
-FPGA_RST_TMP(FPGA_RST_TMP1_INV_0:O)| NONE(u1/q_s_10)        | 31    |
+FPGA_RST_TMP(FPGA_RST_TMP1_INV_0:O)| NONE(u1/q_s_4)         | 34    |
 -----------------------------------+------------------------+-------+
 
 Timing Summary:
@@ -401,7 +392,7 @@ Speed Grade: -5
 
    Minimum period: 9.394ns (Maximum Frequency: 106.451MHz)
    Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: 11.942ns
+   Maximum output required time after clock: 11.752ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -438,18 +429,18 @@ Timing constraint: Default period analysis for Clock 'u1/clk_1khz'
   Total number of paths / destination ports: 135 / 10
 -------------------------------------------------------------------------
 Delay:               8.694ns (Levels of Logic = 3)
-  Source:            u2/q_s_6 (FF)
+  Source:            u2/q_s_2 (FF)
   Destination:       u2/q_s_0 (FF)
   Source Clock:      u1/clk_1khz rising
   Destination Clock: u1/clk_1khz rising
 
-  Data Path: u2/q_s_6 to u2/q_s_0
+  Data Path: u2/q_s_2 to u2/q_s_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              2   1.292   1.340  u2/q_s_6 (u2/q_s_6)
-     LUT3:I0->O            1   0.653   1.150  u2/q_s_cmp_eq000018_SW0 (N11)
-     LUT4:I3->O           10   0.653   2.200  u2/q_s_cmp_eq000018 (u2/q_s_cmp_eq0000)
+     FDC:C->Q              2   1.292   1.340  u2/q_s_2 (u2/q_s_2)
+     LUT3:I0->O            1   0.653   1.150  u2/q_s_cmp_eq000012 (u2/q_s_cmp_eq000012)
+     LUT4:I0->O           10   0.653   2.200  u2/q_s_cmp_eq000020 (u2/q_s_cmp_eq0000)
      LUT2:I0->O            1   0.653   0.000  u2/Mcount_q_s_eqn_01 (u2/Mcount_q_s_eqn_0)
      FDC:D                     0.753          u2/q_s_0
     ----------------------------------------
@@ -459,7 +450,7 @@ Delay:               8.694ns (Levels of Logic = 3)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'u2/clk_2hz'
   Clock period: 6.948ns (frequency: 143.926MHz)
-  Total number of paths / destination ports: 10 / 4
+  Total number of paths / destination ports: 16 / 7
 -------------------------------------------------------------------------
 Delay:               6.948ns (Levels of Logic = 1)
   Source:            u3/TMP_Q_0 (FF)
@@ -480,35 +471,35 @@ Delay:               6.948ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'u2/clk_2hz'
-  Total number of paths / destination ports: 70 / 21
+  Total number of paths / destination ports: 72 / 19
 -------------------------------------------------------------------------
-Offset:              11.942ns (Levels of Logic = 2)
+Offset:              11.752ns (Levels of Logic = 2)
   Source:            u3/TMP_Q_0 (FF)
-  Destination:       DIGIT<5> (PAD)
+  Destination:       SEG<6> (PAD)
   Source Clock:      u2/clk_2hz rising
 
-  Data Path: u3/TMP_Q_0 to DIGIT<5>
+  Data Path: u3/TMP_Q_0 to SEG<6>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDC:C->Q             19   1.292   3.100  u3/TMP_Q_0 (u3/TMP_Q_0)
-     LUT3:I0->O            2   0.653   1.340  DIGIT<5>1 (DIGIT_5_OBUF)
-     OBUF:I->O                 5.557          DIGIT_5_OBUF (DIGIT<5>)
+     LUT4:I1->O            1   0.653   1.150  u6/SEG<4>1 (SEG_4_OBUF)
+     OBUF:I->O                 5.557          SEG_4_OBUF (SEG<4>)
     ----------------------------------------
-    Total                     11.942ns (7.502ns logic, 4.440ns route)
-                                       (62.8% logic, 37.2% route)
+    Total                     11.752ns (7.502ns logic, 4.250ns route)
+                                       (63.8% logic, 36.2% route)
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 3.00 secs
-Total CPU time to Xst completion: 3.30 secs
+Total CPU time to Xst completion: 2.84 secs
  
 --> 
 
-Total memory usage is 220632 kilobytes
+Total memory usage is 144396 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    9 (   0 filtered)
-Number of infos    :    2 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
 

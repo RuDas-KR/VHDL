@@ -1,8 +1,11 @@
 NUM_USER_FILES
-8
+9
 s
 user_file_1
 my_work.vhd
+s
+user_file_10
+dps_test.vhd
 s
 user_file_2
 cnt_10.vhd
@@ -24,4 +27,7 @@ seg_7.vhd
 s
 user_file_8
 seg_7_tb.vhd
+s
+user_file_9
+my_work.ucf
 s
