@@ -1,0 +1,64 @@
+Running : C:\Xilinx\10.1\ISE\bin\nt\unwrapped\fuse.exe -ise
+D:/Stop_Watch/Stopw/atch/wefwef/wefwef.ise -intstyle ise -incremental -o
+stop_tb_isim_beh.exe -prj stop_tb_beh.prj -top stop_tb
+Determining compilation order of HDL files
+Analyzing VHDL file INT2SEG1.VHD
+Restoring VHDL parse-tree ieee.std_logic_1164 from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_1164.vdb
+Restoring VHDL parse-tree std.standard from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/std/standard.vdb
+Analyzing VHDL file TIMEBASE2.VHD
+Restoring VHDL parse-tree ieee.std_logic_unsigned from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_unsigned.vdb
+Restoring VHDL parse-tree ieee.std_logic_arith from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_arith.vdb
+Analyzing VHDL file INT2SEG2.VHD
+Analyzing VHDL file DEBOUNCE.VHD
+Analyzing VHDL file COUNTER.VHD
+Analyzing VHDL file CNT_1TO6.VHD
+Analyzing VHDL file STPWATCH.VHD
+Analyzing VHDL file stop_tb.vhd
+Restoring VHDL parse-tree ieee.numeric_std from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/numeric_std.vdb
+Saving VHDL parse-tree work.int2seg1 into
+d:/stop_watch/stopw/atch/wefwef/isim/work/int2seg1.vdb
+Saving VHDL parse-tree work.timebase_gen2 into
+d:/stop_watch/stopw/atch/wefwef/isim/work/timebase_gen2.vdb
+Saving VHDL parse-tree work.int2seg2 into
+d:/stop_watch/stopw/atch/wefwef/isim/work/int2seg2.vdb
+Saving VHDL parse-tree work.debounce into
+d:/stop_watch/stopw/atch/wefwef/isim/work/debounce.vdb
+Saving VHDL parse-tree work.counter into
+d:/stop_watch/stopw/atch/wefwef/isim/work/counter.vdb
+Saving VHDL parse-tree work.cnt_onetosix into
+d:/stop_watch/stopw/atch/wefwef/isim/work/cnt_onetosix.vdb
+Saving VHDL parse-tree work.stopwatch_02 into
+d:/stop_watch/stopw/atch/wefwef/isim/work/stopwatch_02.vdb
+Saving VHDL parse-tree work.stop_tb into
+d:/stop_watch/stopw/atch/wefwef/isim/work/stop_tb.vdb
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 56964 Kb
+Fuse CPU Usage: 421 ms
+Using precompiled package standard from library std
+Using precompiled package std_logic_1164 from library ieee
+Using precompiled package std_logic_arith from library ieee
+Using precompiled package std_logic_unsigned from library ieee
+Using precompiled package numeric_std from library ieee
+Compiling architecture beh_timebase of entity timebase_gen2
+[\TimeBase_Gen2(100000000,1000)\]
+Compiling architecture beh_timebase of entity timebase_gen2
+[\TimeBase_Gen2(100000000,100)\]
+Compiling architecture design of entity debounce [debounce_default]
+Compiling architecture design of entity counter [\counter(100)\]
+Compiling architecture behavior of entity int2seg1 [int2seg1_default]
+Compiling architecture design of entity int2seg2 [\int2seg2(100)\]
+Compiling architecture design of entity counter [\counter(60)\]
+Compiling architecture design of entity int2seg2 [\int2seg2(60)\]
+Compiling architecture beh of entity cnt_onetosix [cnt_onetosix_default]
+Compiling architecture structural of entity stopwatch_02 [stopwatch_02_default]
+Compiling architecture behavior of entity stop_tb
+Compiled 26 VHDL Units
+Built simulation executable stop_tb_isim_beh.exe
+Fuse Memory Usage: 58248 Kb
+Fuse CPU Usage: 514 ms

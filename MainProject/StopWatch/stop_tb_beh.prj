@@ -1,0 +1,8 @@
+vhdl work "INT2SEG1.VHD"
+vhdl work "TIMEBASE2.VHD"
+vhdl work "INT2SEG2.VHD"
+vhdl work "DEBOUNCE.VHD"
+vhdl work "COUNTER.VHD"
+vhdl work "CNT_1TO6.VHD"
+vhdl work "STPWATCH.VHD"
+vhdl work "stop_tb.vhd"

@@ -1,0 +1,14 @@
+EN stopwatch_02 NULL D:/Stop_Watch/Stopw/atch/wefwef/STPWATCH.VHD sub00/vhpl12 1416398669
+AR debounce design D:/Stop_Watch/Stopw/atch/wefwef/DEBOUNCE.VHD sub00/vhpl05 1416398662
+AR counter design D:/Stop_Watch/Stopw/atch/wefwef/COUNTER.VHD sub00/vhpl07 1416398664
+AR int2seg2 design D:/Stop_Watch/Stopw/atch/wefwef/INT2SEG2.VHD sub00/vhpl09 1416398666
+EN timebase_gen2 NULL D:/Stop_Watch/Stopw/atch/wefwef/TIMEBASE2.VHD sub00/vhpl02 1416398659
+EN int2seg1 NULL D:/Stop_Watch/Stopw/atch/wefwef/INT2SEG1.VHD sub00/vhpl00 1416398657
+EN int2seg2 NULL D:/Stop_Watch/Stopw/atch/wefwef/INT2SEG2.VHD sub00/vhpl08 1416398665
+EN debounce NULL D:/Stop_Watch/Stopw/atch/wefwef/DEBOUNCE.VHD sub00/vhpl04 1416398661
+AR timebase_gen2 beh_timebase D:/Stop_Watch/Stopw/atch/wefwef/TIMEBASE2.VHD sub00/vhpl03 1416398660
+EN counter NULL D:/Stop_Watch/Stopw/atch/wefwef/COUNTER.VHD sub00/vhpl06 1416398663
+AR cnt_onetosix beh D:/Stop_Watch/Stopw/atch/wefwef/CNT_1TO6.VHD sub00/vhpl11 1416398668
+AR int2seg1 behavior D:/Stop_Watch/Stopw/atch/wefwef/INT2SEG1.VHD sub00/vhpl01 1416398658
+AR stopwatch_02 structural D:/Stop_Watch/Stopw/atch/wefwef/STPWATCH.VHD sub00/vhpl13 1416398670
+EN cnt_onetosix NULL D:/Stop_Watch/Stopw/atch/wefwef/CNT_1TO6.VHD sub00/vhpl10 1416398667

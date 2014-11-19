@@ -1,0 +1,6 @@
+xst -ise "C:/Xilinx/Test/Test.ise" -intstyle ise -ifn "C:/Xilinx/Test/Action_Count.xst" -ofn "C:/Xilinx/Test/Action_Count.syr"
+ngdbuild -ise "C:/Xilinx/Test/Test.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s100-pq208-5 "Action_Count.ngc" Action_Count.ngd
+map -ise "C:/Xilinx/Test/Test.ise" -intstyle ise -p xc2s100-pq208-5 -cm area -pr off -k 4 -c 100 -tx off -o Action_Count_map.ncd Action_Count.ngd Action_Count.pcf
+par -ise "C:/Xilinx/Test/Test.ise" -w -intstyle ise -ol std -t 1 Action_Count_map.ncd Action_Count.ncd Action_Count.pcf
+trce -ise "C:/Xilinx/Test/Test.ise" -intstyle ise -v 3 -s 5 -xml Action_Count Action_Count.ncd -o Action_Count.twr Action_Count.pcf -ucf Action_Count.ucf
+bitgen -ise "C:/Xilinx/Test/Test.ise" -intstyle ise -f Action_Count.ut Action_Count.ncd

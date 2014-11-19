@@ -1,0 +1,5 @@
+# begin LFP file C:\Xilinx\Test\Limit_Count.lfp
+designfile Limit_count.vhd
+parttype xc2s100-5-pq208
+bus_delimiter 0;
+set_busdelim_onsave 1;

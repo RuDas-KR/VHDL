@@ -1,0 +1,6 @@
+xst -ise "C:/Xilinx/Test/Test.ise" -intstyle ise -ifn "C:/Xilinx/Test/Limit_Count.xst" -ofn "C:/Xilinx/Test/Limit_Count.syr"
+ngdbuild -ise "C:/Xilinx/Test/Test.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s100-pq208-5 "Limit_Count.ngc" Limit_Count.ngd
+map -ise "C:/Xilinx/Test/Test.ise" -intstyle ise -p xc2s100-pq208-5 -cm area -pr off -k 4 -c 100 -tx off -o Limit_Count_map.ncd Limit_Count.ngd Limit_Count.pcf
+par -ise "C:/Xilinx/Test/Test.ise" -w -intstyle ise -ol std -t 1 Limit_Count_map.ncd Limit_Count.ncd Limit_Count.pcf
+trce -ise "C:/Xilinx/Test/Test.ise" -intstyle ise -v 3 -s 5 -xml Limit_Count Limit_Count.ncd -o Limit_Count.twr Limit_Count.pcf -ucf Limit_Count.ucf
+bitgen -ise "C:/Xilinx/Test/Test.ise" -intstyle ise -f Limit_Count.ut Limit_Count.ncd
