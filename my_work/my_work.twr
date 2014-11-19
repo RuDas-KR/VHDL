@@ -4,7 +4,6 @@ Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
 
 C:\Xilinx\10.1\ISE\bin\nt\unwrapped\trce.exe -ise C:/Xilinx/my_work/my_work.ise
 -intstyle ise -v 3 -s 5 -xml my_work my_work.ncd -o my_work.twr my_work.pcf
--ucf my_work.ucf
 
 Design file:              my_work.ncd
 Physical constraint file: my_work.pcf
@@ -36,18 +35,18 @@ Clock to Setup on destination clock FPGA_CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-FPGA_CLK       |    8.164|         |         |         |
+FPGA_CLK       |    7.872|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Fri Oct 24 15:06:57 2014 
+Analysis completed Wed Oct 22 14:29:18 2014 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 64 MB
+Peak Memory Usage: 65 MB
 
 
 

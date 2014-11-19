@@ -5,17 +5,5 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="2211" delta="unknown" >&quot;<arg fmt="%s" index="1">C:/Xilinx/my_work/my_work.vhd</arg>&quot; line <arg fmt="%d" index="2">73</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">BUFGP</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="753" delta="unknown" >&quot;<arg fmt="%s" index="1">C:/Xilinx/my_work/my_work.vhd</arg>&quot; line <arg fmt="%d" index="2">80</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">q</arg>&apos; of component &apos;<arg fmt="%s" index="4">cnt_50m</arg>&apos;.
-</msg>
-
-<msg type="warning" file="Xst" num="753" delta="unknown" >&quot;<arg fmt="%s" index="1">C:/Xilinx/my_work/my_work.vhd</arg>&quot; line <arg fmt="%d" index="2">88</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">q</arg>&apos; of component &apos;<arg fmt="%s" index="4">cnt_500</arg>&apos;.
-</msg>
-
-<msg type="info" file="Xst" num="2169" delta="unknown" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
-</msg>
-
 </messages>
 

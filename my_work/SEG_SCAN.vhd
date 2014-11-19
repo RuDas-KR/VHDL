@@ -19,8 +19,10 @@ signal tmp : std_logic_vector(2 downto 0);
 begin
 process(RST, CLK)
 begin
-if RST = '1' then	tmp <= (others => '0');
-elsif falling_edge(CLK) then	tmp <= tmp + 1;
+if RST = '1' then
+	tmp <= (others => '0');
+elsif rising_edge(CLK) then
+	tmp <= tmp + 1;
 end if;
 end process;
 
@@ -28,21 +30,19 @@ process(tmp)
 begin
 case tmp is
       when "000" => 
-         DIGIT <= "000000";
+         DIGIT <= "000001";
       when "001" => 
          DIGIT <= "000010";
       when "010" => 
-         DIGIT <= "000000";
+         DIGIT <= "000100";
       when "011" => 
          DIGIT <= "001000";
       when "100" => 
-         DIGIT <= "000000";
-      when "101" => 
-         DIGIT <= "000100";
-		when "110" =>
-			DIGIT <= "000000"; -- 6, 1 digit
-      when others =>
          DIGIT <= "010000";
+      when "101" => 
+         DIGIT <= "100000";
+      when others =>
+         DIGIT <= "000000";
    end case;
 end process;
 

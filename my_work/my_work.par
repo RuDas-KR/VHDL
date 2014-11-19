@@ -1,7 +1,7 @@
 Release 10.1.03 par K.39 (nt)
 Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
 
-COM147-114::  Fri Oct 24 15:06:54 2014
+COM147-114::  Wed Oct 22 14:29:12 2014
 
 par -w -intstyle ise -ol std -t 1 my_work_map.ncd my_work.ncd my_work.pcf 
 
@@ -26,12 +26,12 @@ Device Utilization Summary:
 
    Number of GCLKs                           1 out of 4      25%
    Number of External GCLKIOBs               1 out of 4      25%
-      Number of LOCed GCLKIOBs               1 out of 1     100%
+      Number of LOCed GCLKIOBs               0 out of 1       0%
 
    Number of External IOBs                  23 out of 140    16%
-      Number of LOCed IOBs                  23 out of 23    100%
+      Number of LOCed IOBs                   0 out of 23      0%
 
-   Number of SLICEs                         44 out of 1200    3%
+   Number of SLICEs                         41 out of 1200    3%
 
 
 Overall effort level (-ol):   Standard 
@@ -43,67 +43,68 @@ Router effort level (-rl):    Standard
 Starting Placer
 
 Phase 1.1
-Phase 1.1 (Checksum:fb1f) REAL time: 0 secs 
+Phase 1.1 (Checksum:866) REAL time: 1 secs 
 
 Phase 2.7
-Phase 2.7 (Checksum:fb1f) REAL time: 0 secs 
+Phase 2.7 (Checksum:866) REAL time: 1 secs 
 
 Phase 3.31
-Phase 3.31 (Checksum:fb1f) REAL time: 0 secs 
+Phase 3.31 (Checksum:866) REAL time: 1 secs 
 
 Phase 4.23
-Phase 4.23 (Checksum:100d0) REAL time: 0 secs 
+Phase 4.23 (Checksum:13be) REAL time: 1 secs 
 
 Phase 5.3
-Phase 5.3 (Checksum:100d0) REAL time: 0 secs 
+.....
+Phase 5.3 (Checksum:72c6) REAL time: 1 secs 
 
 Phase 6.5
-Phase 6.5 (Checksum:100d0) REAL time: 0 secs 
+Phase 6.5 (Checksum:72c6) REAL time: 1 secs 
 
 Phase 7.8
 .
 .
-Phase 7.8 (Checksum:24f33) REAL time: 0 secs 
+Phase 7.8 (Checksum:14023) REAL time: 1 secs 
 
 Phase 8.5
-Phase 8.5 (Checksum:24f33) REAL time: 0 secs 
+Phase 8.5 (Checksum:14023) REAL time: 1 secs 
 
 Phase 9.18
-Phase 9.18 (Checksum:2530e) REAL time: 0 secs 
+Phase 9.18 (Checksum:13e23) REAL time: 1 secs 
 
 Phase 10.5
-Phase 10.5 (Checksum:2530e) REAL time: 0 secs 
+Phase 10.5 (Checksum:13e23) REAL time: 1 secs 
 
-REAL time consumed by placer: 0 secs 
-CPU  time consumed by placer: 0 secs 
+REAL time consumed by placer: 1 secs 
+CPU  time consumed by placer: 1 secs 
 Writing design to file my_work.ncd
 
 
-Total REAL time to Placer completion: 0 secs 
-Total CPU time to Placer completion: 0 secs 
+Total REAL time to Placer completion: 1 secs 
+Total CPU time to Placer completion: 1 secs 
 
 Starting Router
 
-Phase 1: 267 unrouted;       REAL time: 0 secs 
+Phase 1: 239 unrouted;       REAL time: 2 secs 
 
-Phase 2: 258 unrouted;       REAL time: 1 secs 
+Phase 2: 230 unrouted;       REAL time: 2 secs 
 
-Phase 3: 41 unrouted;       REAL time: 1 secs 
+Phase 3: 38 unrouted;       REAL time: 2 secs 
 
-Phase 4: 41 unrouted; (5664)      REAL time: 1 secs 
+Phase 4: 38 unrouted; (3241)      REAL time: 2 secs 
 
-Phase 5: 50 unrouted; (0)      REAL time: 1 secs 
+Phase 5: 40 unrouted; (0)      REAL time: 2 secs 
 
-Phase 6: 0 unrouted; (0)      REAL time: 1 secs 
+Phase 6: 0 unrouted; (0)      REAL time: 3 secs 
 
-Phase 7: 0 unrouted; (0)      REAL time: 1 secs 
+Phase 7: 0 unrouted; (0)      REAL time: 3 secs 
 
-Phase 8: 0 unrouted; (0)      REAL time: 1 secs 
+Phase 8: 0 unrouted; (0)      REAL time: 3 secs 
 
-Phase 9: 0 unrouted; (0)      REAL time: 1 secs 
+Phase 9: 0 unrouted; (0)      REAL time: 3 secs 
 
-Total REAL time to Router completion: 1 secs 
-Total CPU time to Router completion: 1 secs 
+Total REAL time to Router completion: 3 secs 
+Total CPU time to Router completion: 3 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -121,11 +122,11 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|        FPGA_CLK_TMP |      GCLKBUF0| No   |    9 |  0.099     |  0.675      |
+|        FPGA_CLK_TMP |      GCLKBUF1| No   |    9 |  0.101     |  0.673      |
 +---------------------+--------------+------+------+------------+-------------+
-|          u2/clk_2hz |         Local|      |    4 |  0.000     |  3.163      |
+|         u1/clk_1khz |         Local|      |    6 |  1.072     |  3.397      |
 +---------------------+--------------+------+------+------------+-------------+
-|         u1/clk_1khz |         Local|      |    6 |  1.072     |  3.511      |
+|          u2/clk_2hz |         Local|      |    2 |  0.041     |  3.398      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -144,14 +145,14 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |  Check  | Worst Case |  Best Case | Timing |   Timing   
                                             |         |    Slack   | Achievable | Errors |    Score   
 ------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net u2/ | SETUP   |         N/A|     4.674ns|     N/A|           0
-  clk_2hz                                   | HOLD    |     2.551ns|            |       0|           0
+  Autotimespec constraint for clock net FPG | SETUP   |         N/A|     7.872ns|     N/A|           0
+  A_CLK_TMP                                 | HOLD    |     3.940ns|            |       0|           0
 ------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net FPG | SETUP   |         N/A|     8.164ns|     N/A|           0
-  A_CLK_TMP                                 | HOLD    |     3.900ns|            |       0|           0
+  Autotimespec constraint for clock net u1/ | SETUP   |         N/A|     8.059ns|     N/A|           0
+  clk_1khz                                  | HOLD    |     2.287ns|            |       0|           0
 ------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net u1/ | SETUP   |         N/A|     7.277ns|     N/A|           0
-  clk_1khz                                  | HOLD    |     2.363ns|            |       0|           0
+  Autotimespec constraint for clock net u2/ | SETUP   |         N/A|     4.051ns|     N/A|           0
+  clk_2hz                                   | HOLD    |     2.662ns|            |       0|           0
 ------------------------------------------------------------------------------------------------------
 
 
@@ -164,8 +165,8 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 1 secs 
-Total CPU time to PAR completion: 1 secs 
+Total REAL time to PAR completion: 4 secs 
+Total CPU time to PAR completion: 3 secs 
 
 Peak Memory Usage:  102 MB
 
