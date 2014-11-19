@@ -5,7 +5,7 @@ C:\Xilinx\10.1\ISE.
    "my_work" is an NCD, version 3.2, device xc2s100, package pq208, speed -5
 Opened constraints file my_work.pcf.
 
-Wed Oct 22 14:29:20 2014
+Fri Oct 24 15:06:58 2014
 
 C:\Xilinx\10.1\ISE\bin\nt\unwrapped\bitgen.exe -intstyle ise -w -g DebugBitstream:No -g Binary:no -g Gclkdel0:11111 -g Gclkdel1:11111 -g Gclkdel2:11111 -g Gclkdel3:11111 -g ConfigRate:4 -g CclkPin:PullUp -g M0Pin:PullUp -g M1Pin:PullUp -g M2Pin:PullUp -g ProgPin:PullUp -g DonePin:PullUp -g TckPin:PullUp -g TdiPin:PullUp -g TdoPin:PullUp -g TmsPin:PullUp -g UnusedPin:PullDown -g UserID:0xFFFFFFFF -g StartUpClk:CClk -g DONE_cycle:4 -g GTS_cycle:5 -g GSR_cycle:6 -g GWE_cycle:6 -g LCK_cycle:NoWait -g Security:None -g DonePipe:No -g DriveDone:No my_work.ncd 
 

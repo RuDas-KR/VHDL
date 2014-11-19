@@ -6,6 +6,7 @@ C:/Xilinx/my_work/my_work.ise -intstyle ise -dd _ngo -nt timestamp -i -p
 xc2s100-pq208-5 my_work.ngc my_work.ngd
 
 Reading NGO file "C:/Xilinx/my_work/my_work.ngc" ...
+Reading in constraint information from 'my_work.ucf'...
 Gathering constraint information from source properties...
 Done.
 
@@ -27,7 +28,7 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 70660 kilobytes
+Total memory usage is 70724 kilobytes
 
 Writing NGD file "my_work.ngd" ...
 

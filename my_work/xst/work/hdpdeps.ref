@@ -1,47 +1,54 @@
-V3 40
+V3 45
 FL "C:/Documents and Settings/Administrator/πŸ≈¡ »≠∏È/≤Ê/my_work/my_work/cnt_500.vhd" 2014/10/22.14:02:24 K.39
 FL "C:/Documents and Settings/Administrator/πŸ≈¡ »≠∏È/≤Ê/my_work/my_work/cnt_50m.vhd" 2014/10/22.14:02:24 K.39
 FL "C:/Documents and Settings/Administrator/πŸ≈¡ »≠∏È/≤Ê/my_work/my_work/my_work.vhd" 2014/10/22.14:02:24 K.39
 FL "C:/Documents and Settings/Administrator/πŸ≈¡ »≠∏È/≤Ê/my_work/my_work/seg_7.vhd" 2014/10/22.14:02:24 K.39
 FL C:/Xilinx/my_work/cnt_10.vhd 2014/10/22.14:31:12 K.39
-EN work/cnt_10 1413965521 FL C:/Xilinx/my_work/cnt_10.vhd PB ieee/std_logic_1164 1200023565 \
+EN work/cnt_10 1414130808 FL C:/Xilinx/my_work/cnt_10.vhd PB ieee/std_logic_1164 1200023565 \
       PB ieee/std_logic_arith 1200023566 PB ieee/STD_LOGIC_UNSIGNED 1200023567
-AR work/cnt_10/Behavioral 1413965522 \
-      FL C:/Xilinx/my_work/cnt_10.vhd EN work/cnt_10 1413965521
+AR work/cnt_10/Behavioral 1414130809 \
+      FL C:/Xilinx/my_work/cnt_10.vhd EN work/cnt_10 1414130808
 FL C:/Xilinx/my_work/cnt_500.vhd 2014/10/22.14:30:56 K.39
-EN work/cnt_500 1413965519 FL C:/Xilinx/my_work/cnt_500.vhd PB ieee/std_logic_1164 1200023565 \
+EN work/cnt_500 1414130806 FL C:/Xilinx/my_work/cnt_500.vhd PB ieee/std_logic_1164 1200023565 \
       PB ieee/std_logic_arith 1200023566 PB ieee/STD_LOGIC_UNSIGNED 1200023567
-AR work/cnt_500/Behavioral 1413965520 \
-      FL C:/Xilinx/my_work/cnt_500.vhd EN work/cnt_500 1413965519
+AR work/cnt_500/Behavioral 1414130807 \
+      FL C:/Xilinx/my_work/cnt_500.vhd EN work/cnt_500 1414130806
 FL C:/Xilinx/my_work/cnt_50m.vhd 2014/10/22.14:30:50 K.39
-EN work/cnt_50m 1413965517 FL C:/Xilinx/my_work/cnt_50m.vhd PB ieee/std_logic_1164 1200023565 \
+EN work/cnt_50m 1414130804 FL C:/Xilinx/my_work/cnt_50m.vhd PB ieee/std_logic_1164 1200023565 \
       PB ieee/std_logic_arith 1200023566 PB ieee/STD_LOGIC_UNSIGNED 1200023567
-AR work/cnt_50m/Behavioral 1413965518 \
-      FL C:/Xilinx/my_work/cnt_50m.vhd EN work/cnt_50m 1413965517
-FL C:/Xilinx/my_work/LED_8.vhd 2014/10/22.14:31:40 K.39
-EN work/LED_8 1413965525 FL C:/Xilinx/my_work/LED_8.vhd PB ieee/std_logic_1164 1200023565 \
-      PB ieee/std_logic_arith 1200023566 PB ieee/STD_LOGIC_UNSIGNED 1200023567
-AR work/LED_8/Behavioral 1413965526 \
-      FL C:/Xilinx/my_work/LED_8.vhd EN work/LED_8 1413965525
-FL C:/Xilinx/my_work/my_work.vhd 2014/10/22.14:30:34 K.39
-EN work/my_work 1413965529 FL C:/Xilinx/my_work/my_work.vhd PB ieee/std_logic_1164 1200023565 \
+AR work/cnt_50m/Behavioral 1414130805 \
+      FL C:/Xilinx/my_work/cnt_50m.vhd EN work/cnt_50m 1414130804
+FL C:/Xilinx/my_work/dps_test.vhd 2014/10/24.13:32:23 K.39
+EN work/dps_test 0 FL C:/Xilinx/my_work/dps_test.vhd PB ieee/std_logic_1164 1200023565 \
+      PB ieee/std_logic_arith 1200023566 PB ieee/STD_LOGIC_UNSIGNED 1200023567 \
       LB UNISIM PH unisim/VCOMPONENTS 1200023571
-AR work/my_work/Behavioral 1413965530 \
-      FL C:/Xilinx/my_work/my_work.vhd EN work/my_work 1413965529 CP BUFGP \
+AR work/dps_test/Behavioral 0 \
+      FL C:/Xilinx/my_work/dps_test.vhd EN work/dps_test 0 CP IBUF CP BUFG CP seg_7 \
+      CP seg_scan
+FL C:/Xilinx/my_work/LED_8.vhd 2014/10/24.14:07:57 K.39
+EN work/LED_8 1414130812 FL C:/Xilinx/my_work/LED_8.vhd PB ieee/std_logic_1164 1200023565 \
+      PB ieee/std_logic_arith 1200023566 PB ieee/STD_LOGIC_UNSIGNED 1200023567
+AR work/LED_8/Behavioral 1414130813 \
+      FL C:/Xilinx/my_work/LED_8.vhd EN work/LED_8 1414130812
+FL C:/Xilinx/my_work/my_work.vhd 2014/10/22.14:30:34 K.39
+EN work/my_work 1414130816 FL C:/Xilinx/my_work/my_work.vhd PB ieee/std_logic_1164 1200023565 \
+      LB UNISIM PH unisim/VCOMPONENTS 1200023571
+AR work/my_work/Behavioral 1414130817 \
+      FL C:/Xilinx/my_work/my_work.vhd EN work/my_work 1414130816 CP BUFGP \
       CP cnt_50m CP cnt_500 CP cnt_10 CP seg_scan CP LED_8 CP seg_7
 FL C:/Xilinx/my_work/my_work/cnt_10.vhd 2014/10/22.05:23:38 K.39
 FL C:/Xilinx/my_work/my_work/LED_8.vhd 2014/10/22.05:23:38 K.39
 FL C:/Xilinx/my_work/my_work/SEG_SCAN.vhd 2014/10/22.05:23:36 K.39
-FL C:/Xilinx/my_work/seg_7.vhd 2014/10/22.14:32:26 K.39
-EN work/seg_7 1413965527 FL C:/Xilinx/my_work/seg_7.vhd PB ieee/std_logic_1164 1200023565
-AR work/seg_7/Behavioral 1413965528 \
-      FL C:/Xilinx/my_work/seg_7.vhd EN work/seg_7 1413965527
-FL C:/Xilinx/my_work/SEG_SCAN.vhd 2014/10/22.14:31:30 K.39
-EN work/SEG_SCAN 1413965523 FL C:/Xilinx/my_work/SEG_SCAN.vhd \
+FL C:/Xilinx/my_work/seg_7.vhd 2014/10/24.14:20:31 K.39
+EN work/seg_7 1414130814 FL C:/Xilinx/my_work/seg_7.vhd PB ieee/std_logic_1164 1200023565
+AR work/seg_7/Behavioral 1414130815 \
+      FL C:/Xilinx/my_work/seg_7.vhd EN work/seg_7 1414130814
+FL C:/Xilinx/my_work/SEG_SCAN.vhd 2014/10/24.15:06:41 K.39
+EN work/SEG_SCAN 1414130810 FL C:/Xilinx/my_work/SEG_SCAN.vhd \
       PB ieee/std_logic_1164 1200023565 PB ieee/std_logic_arith 1200023566 \
       PB ieee/STD_LOGIC_UNSIGNED 1200023567
-AR work/SEG_SCAN/Behavioral 1413965524 \
-      FL C:/Xilinx/my_work/SEG_SCAN.vhd EN work/SEG_SCAN 1413965523
+AR work/SEG_SCAN/Behavioral 1414130811 \
+      FL C:/Xilinx/my_work/SEG_SCAN.vhd EN work/SEG_SCAN 1414130810
 FL D:/21133971_ckh/bcd_to_7segment/My_work/my_work/my_work/cnt_500.vhd 2014/10/22.14:02:24 K.39
 FL D:/21133971_ckh/bcd_to_7segment/My_work/my_work/my_work/cnt_50m.vhd 2014/10/22.14:02:24 K.39
 FL D:/21133971_ckh/bcd_to_7segment/My_work/my_work/my_work/my_work.vhd 2014/10/22.14:02:24 K.39
