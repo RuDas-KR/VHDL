@@ -1,0 +1,16 @@
+NET clk100m	LOC = T9;
+NET push_sw 	LOC = G3;
+
+NET dip_sw<0>	LOC = R16; #dip_sw1
+NET dip_sw<1>	LOC = C16; #dip_sw2
+NET dip_sw<2>	LOC = B16; #dip_sw3
+NET dip_sw<3>	LOC = G14; #dip_sw4
+NET dip_sw<4>	LOC = G15; #dip_sw5
+NET dip_sw<5>	LOC = L13; #dip_sw6
+NET dip_sw<6>	LOC = M1;  #dip_sw7
+NET dip_sw<7>	LOC = G1;  #dip_sw8
+
+NET LED<0>		LOC = A12;
+NET LED<1>		LOC = A14;
+NET LED<2>		LOC = B14;
+NET LED<3>		LOC = B13;

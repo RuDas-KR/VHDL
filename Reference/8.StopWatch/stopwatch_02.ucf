@@ -1,0 +1,39 @@
+NET push1  LOC = G3;
+NET push2  LOC = G4;
+NET clk    LOC = T9;
+NET reset  LOC = H1;
+
+NET led<0> LOC = A12;
+NET led<1> LOC = A14;
+NET led<2> LOC = B14;
+NET led<3> LOC = B13;
+NET led<4> LOC = C12;
+NET led<5> LOC = C9;
+NET led<6> LOC = D9;
+NET led<7> LOC = P16;
+
+NET digit<1> LOC = F4;                                     
+NET digit<2> LOC = E4;                                            
+NET digit<3> LOC = F2;                                            
+NET digit<4> LOC = F3;                                            
+NET digit<5> LOC = G5;                                            
+NET digit<6> LOC = F5;                                            
+                                       
+NET seg<0> LOC = T12;                  
+NET seg<1> LOC = T14;                  
+NET seg<2> LOC = N12;                  
+NET seg<3> LOC = P13;                  
+NET seg<4> LOC = T10;                  
+NET seg<5> LOC = R13;                  
+NET seg<6> LOC = T13;                  
+#net 	seg<7>		loc="P12;              
+
+
+
+
+
+
+
+
+
+

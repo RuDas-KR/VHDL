@@ -1,0 +1,14 @@
+NET "push<0>"		LOC = "G3";
+NET "push<1>"		LOC = "G4";
+NET "push<2>"		LOC = "H3";
+NET "push<3>"		LOC = "H4";
+
+NET "dip_sw<0>"	LOC = "R16";
+NET "dip_sw<1>" 	LOC = "C16";
+NET "dip_sw<2>" 	LOC = "B16";
+NET "dip_sw<3>" 	LOC = "G14";
+
+NET "led<0>" 		LOC = "A12";
+NET "led<1>" 		LOC = "A14";
+NET "led<2>" 		LOC = "B14";
+NET "led<3>" 		LOC = "B13";

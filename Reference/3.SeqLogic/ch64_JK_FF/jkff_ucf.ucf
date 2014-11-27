@@ -1,0 +1,39 @@
+ NET RST 	 LOC = H1;
+ NET J 		 LOC = G3;
+ NET K 		 LOC = G4;
+ NET CLK 	 LOC = r16;
+ NET q 		 LOC = A12;
+ 
+ NET "CLK" CLOCK_DEDICATED_ROUTE = FALSE;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

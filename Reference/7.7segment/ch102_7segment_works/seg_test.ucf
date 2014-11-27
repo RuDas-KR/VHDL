@@ -1,0 +1,16 @@
+NET SEG<0>   		LOC = T12  ;
+NET SEG<1>   		LOC = T14  ;
+NET SEG<2>   		LOC = N12  ;
+NET SEG<3>			LOC = P13  ;
+NET SEG<4>			LOC = T10  ;
+NET SEG<5>			LOC = R13  ;
+NET SEG<6>			LOC = T13  ;
+NET SEG<7>			LOC = P12  ;
+
+NET digit<0>		LOC = F4  ;
+NET digit<1>		LOC = E4  ;
+NET digit<2>		LOC = F2  ;
+NET digit<3>		LOC = F3  ;
+NET digit<4>		LOC = G5  ;
+NET digit<5>		LOC = F5  ;
+

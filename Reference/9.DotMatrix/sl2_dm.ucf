@@ -1,0 +1,16 @@
+
+NET "CLK"  			LOC = "T9"; #"AB12";
+NET "RSTB"  		LOC = "H1"; #"U14" ;
+NET "R_data"  		LOC = "D7"; #"Y21"  ;
+NET "G_data"  		LOC = "C7"; #"Y20"  ;
+NET "addr_out<0>" LOC = "B7"; #"Y19"  ;
+NET "addr_out<1>" LOC = "D8"; #"W22"  ;
+NET "addr_out<2>" LOC = "C8"; #"Y22"  ;
+NET "addr_out<3>" LOC = "B8"; #"V19"  ;
+NET "enable" 		LOC = "A8"; #"W19"  ;
+NET "latch"  		LOC = "G2"; #"W21"  ;
+NET "clk_out" 		LOC = "C1"; #"W20"  ;
+NET "red_en" 		LOC = "G3"; #"H5"; 
+NET "green_en"		LOC = "G4"; #"G5";
+
+

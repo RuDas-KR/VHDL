@@ -1,0 +1,14 @@
+NET CLK           	LOC = T9 ;
+NET RST           	LOC = H1 ;
+NET ps_start      	LOC = G3 ;
+NET ps_end 	      	LOC = G4 ;
+NET ps_num<0> 	  	LOC = R16;
+NET ps_num<1> 	  	LOC = C16;
+NET ps_num<2> 	  	LOC = B16;
+NET ps_num<3> 	  	LOC = G14;
+NET door_Open     	LOC = P16;
+NET state_out<0>  	LOC = A12;
+NET state_out<1>  	LOC = A14;
+NET state_out<2>  	LOC = B14;
+NET state_out<3>  	LOC = B13;
+NET state_out<4>  	LOC = C12;

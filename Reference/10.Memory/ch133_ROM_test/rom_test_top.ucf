@@ -1,0 +1,16 @@
+#
+NET CLK_100M      LOC = T9   ;
+
+NET DIP_SW<0>  	 LOC = R16  ;#DIP_SW1
+NET DIP_SW<1>  	 LOC = C16  ;#DIP_SW2
+NET DIP_SW<2>  	 LOC = B16  ;#DIP_SW3
+NET DIP_SW<3>  	 LOC = G14  ;#DIP_SW4
+
+NET LED<0>   	 LOC = A12  ;
+NET LED<1>   	 LOC = A14  ;
+NET LED<2>   	 LOC = B14  ;
+NET LED<3>   	 LOC = B13  ;
+NET LED<4>   	 LOC = C12  ;
+NET LED<5>   	 LOC = C9   ;
+NET LED<6>   	 LOC = D9   ;
+NET LED<7>   	 LOC = P16  ;

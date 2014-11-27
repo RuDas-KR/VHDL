@@ -1,0 +1,34 @@
+NET FPGA_RSTB  LOC = H1;
+NET FPGA_GCLK1 LOC = T9;
+
+# PS/2 
+NET KEY_CLK    LOC = P9;
+NET KEY_DATA   LOC = R9;
+NET "KEY_CLK" CLOCK_DEDICATED_ROUTE = FALSE;
+
+# 7-Segment
+NET DIGIT<1>   LOC = F4;
+NET DIGIT<2>   LOC = E4;
+NET DIGIT<3>   LOC = F2;
+NET DIGIT<4>   LOC = F3;
+NET DIGIT<5>   LOC = G5;
+NET DIGIT<6>   LOC = F5;
+
+NET SEG_A      LOC = T12;
+NET SEG_B      LOC = T14;
+NET SEG_C      LOC = N12;
+NET SEG_D      LOC = P13;
+NET SEG_E      LOC = T10;
+NET SEG_F      LOC = R13;
+NET SEG_G      LOC = T13;
+NET SEG_DP     LOC = P12;
+
+# Discrete LED
+NET LED<0>     LOC = A12;
+NET LED<1>     LOC = A14;
+NET LED<2>     LOC = B14;
+NET LED<3>     LOC = B13;
+NET LED<4>     LOC = C12;
+NET LED<5>     LOC = C9 ;
+NET LED<6>     LOC = D9 ;
+NET LED<7>     LOC = P16;
