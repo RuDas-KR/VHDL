@@ -1,0 +1,546 @@
+Release 10.1.03 - xst K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Xilinx/RD/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to C:/Xilinx/RD/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: Random.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) Partition Resource Summary
+     9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Random.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Random"
+Output Format                      : NGC
+Target Device                      : xc2s100-5-pq208
+
+---- Source Options
+Top Module Name                    : Random
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : lut
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100
+Add Generic Clock Buffer(BUFG)     : 4
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Convert Tristates To Logic         : Yes
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : Random.lso
+Keep Hierarchy                     : NO
+Netlist Hierarchy                  : as_optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Xilinx/RD/rdgenerator.vhd" in Library work.
+Entity <random> compiled.
+Entity <random> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Random> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Random> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/Xilinx/RD/rdgenerator.vhd" line 74: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <count>
+WARNING:Xst:819 - "C:/Xilinx/RD/rdgenerator.vhd" line 72: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <reset>
+WARNING:Xst:819 - "C:/Xilinx/RD/rdgenerator.vhd" line 97: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <LED2>
+Entity <Random> analyzed. Unit <Random> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Random>.
+    Related source file is "C:/Xilinx/RD/rdgenerator.vhd".
+    Found 16x8-bit ROM for signal <LED2$mux0000>.
+WARNING:Xst:737 - Found 8-bit latch for signal <SEG7>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 20-bit up counter for signal <X>.
+    Found 1-bit register for signal <count>.
+    Found 4-bit register for signal <Y>.
+    Found 8-bit register for signal <LED2>.
+    Found 15-bit up counter for signal <cnt>.
+    Found 2-bit adder for signal <count1$addsub0001> created at line 106.
+    Found 3-bit adder for signal <count1$addsub0003> created at line 106.
+    Found 3-bit adder for signal <count1$addsub0004> created at line 106.
+    Found 3-bit adder for signal <count1$addsub0005> created at line 106.
+    Found 1-bit adder carry out for signal <count1$addsub0007> created at line 106.
+    Found 2-bit adder carry out for signal <count1$addsub0008> created at line 106.
+    Found 3-bit adder carry out for signal <count1$addsub0009> created at line 106.
+    Found 2-bit adder for signal <count2$addsub0001> created at line 109.
+    Found 3-bit adder for signal <count2$addsub0003> created at line 109.
+    Found 3-bit adder for signal <count2$addsub0004> created at line 109.
+    Found 3-bit adder for signal <count2$addsub0005> created at line 109.
+    Found 1-bit adder carry out for signal <count2$addsub0007> created at line 109.
+    Found 2-bit adder carry out for signal <count2$addsub0008> created at line 109.
+    Found 3-bit adder carry out for signal <count2$addsub0009> created at line 109.
+    Found 23-bit up counter for signal <countin>.
+    Found 4-bit adder carry out for signal <SEG7$addsub0001> created at line 112.
+    Found 1-bit xor5 for signal <Y_0$xor0000> created at line 65.
+    Found 1-bit xor5 for signal <Y_1$xor0000> created at line 66.
+    Found 1-bit xor5 for signal <Y_2$xor0000> created at line 67.
+    Found 1-bit xor5 for signal <Y_3$xor0000> created at line 68.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   3 Counter(s).
+	inferred  13 D-type flip-flop(s).
+	inferred  15 Adder/Subtractor(s).
+	inferred   4 Xor(s).
+Unit <Random> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x8-bit ROM                                          : 1
+# Adders/Subtractors                                   : 15
+ 1-bit adder carry out                                 : 2
+ 2-bit adder                                           : 2
+ 2-bit adder carry out                                 : 2
+ 3-bit adder                                           : 6
+ 3-bit adder carry out                                 : 2
+ 4-bit adder carry out                                 : 1
+# Counters                                             : 2
+ 20-bit up counter                                     : 1
+ 23-bit up counter                                     : 1
+# Registers                                            : 6
+ 1-bit register                                        : 5
+ 8-bit register                                        : 1
+# Latches                                              : 1
+ 8-bit latch                                           : 1
+# Xors                                                 : 4
+ 1-bit xor5                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Loading device for application Rf_Device from file 'v100.nph' in environment C:\Xilinx\10.1\ISE.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <7>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x8-bit ROM                                          : 1
+# Adders/Subtractors                                   : 15
+ 1-bit adder carry out                                 : 2
+ 2-bit adder                                           : 2
+ 2-bit adder carry out                                 : 2
+ 3-bit adder                                           : 6
+ 3-bit adder carry out                                 : 2
+ 4-bit adder carry out                                 : 1
+# Counters                                             : 2
+ 20-bit up counter                                     : 1
+ 23-bit up counter                                     : 1
+# Registers                                            : 13
+ Flip-Flops                                            : 13
+# Latches                                              : 1
+ 8-bit latch                                           : 1
+# Xors                                                 : 4
+ 1-bit xor5                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <SEG7_7> (without init value) has a constant value of 0 in block <Random>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <Random> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Random, actual ratio is 7.
+FlipFlop LED2_7 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop LED2_6 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop LED2_5 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop LED2_4 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop LED2_3 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop LED2_2 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop LED2_1 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop LED2_0 has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 64
+ Flip-Flops                                            : 64
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Random.ngr
+Top Level Output File Name         : Random
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 53
+
+Cell Usage :
+# BELS                             : 254
+#      GND                         : 1
+#      INV                         : 5
+#      LUT1                        : 41
+#      LUT2                        : 36
+#      LUT3                        : 10
+#      LUT4                        : 65
+#      MUXCY                       : 47
+#      MUXF5                       : 5
+#      VCC                         : 1
+#      XORCY                       : 43
+# FlipFlops/Latches                : 71
+#      FDC                         : 33
+#      FDCE                        : 17
+#      FDE                         : 4
+#      FDP                         : 10
+#      LD                          : 7
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 52
+#      IBUF                        : 10
+#      OBUF                        : 42
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 2s100pq208-5 
+
+ Number of Slices:                       84  out of   1200     7%  
+ Number of Slice Flip Flops:             56  out of   2400     2%  
+ Number of 4 input LUTs:                157  out of   2400     6%  
+ Number of IOs:                          53
+ Number of bonded IOBs:                  53  out of    140    37%  
+    IOB Flip Flops:                      15
+ Number of GCLKs:                         1  out of      4    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 48    |
+count_OBUF                         | NONE(LED2_0)           | 16    |
+SEG7_not0001(SEG7_not00011:O)      | NONE(*)(SEG7_0)        | 7     |
+-----------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset_inv(reset_inv1_INV_0:O)      | NONE(X_18)             | 60    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 9.125ns (Maximum Frequency: 109.589MHz)
+   Minimum input arrival time before clock: 26.020ns
+   Maximum output required time after clock: 9.849ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 9.125ns (frequency: 109.589MHz)
+  Total number of paths / destination ports: 1075 / 49
+-------------------------------------------------------------------------
+Delay:               9.125ns (Levels of Logic = 8)
+  Source:            countin_8 (FF)
+  Destination:       countin_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: countin_8 to countin_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   1.292   1.340  countin_8 (countin_8)
+     LUT3:I0->O            1   0.653   0.000  count_cmp_eq0000_wg_lut<0> (count_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.784   0.000  count_cmp_eq0000_wg_cy<0> (count_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.050   0.000  count_cmp_eq0000_wg_cy<1> (count_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.050   0.000  count_cmp_eq0000_wg_cy<2> (count_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.050   0.000  count_cmp_eq0000_wg_cy<3> (count_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.050   0.000  count_cmp_eq0000_wg_cy<4> (count_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O          24   0.050   3.400  count_cmp_eq0000_wg_cy<5> (count_cmp_eq0000)
+     LUT2:I0->O            1   0.653   0.000  Mcount_countin_eqn_91 (Mcount_countin_eqn_9)
+     FDC:D                     0.753          countin_9
+    ----------------------------------------
+    Total                      9.125ns (4.385ns logic, 4.740ns route)
+                                       (48.1% logic, 51.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.550ns (Levels of Logic = 1)
+  Source:            reset (PAD)
+  Destination:       Y_1 (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset to Y_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   0.924   1.740  reset_IBUF (reset_IBUF)
+     FDE:CE                    0.886          Y_1
+    ----------------------------------------
+    Total                      3.550ns (1.810ns logic, 1.740ns route)
+                                       (51.0% logic, 49.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'count_OBUF'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              6.413ns (Levels of Logic = 2)
+  Source:            push (PAD)
+  Destination:       LED2_0 (FF)
+  Destination Clock: count_OBUF rising
+
+  Data Path: push to LED2_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.924   1.150  push_IBUF (push_IBUF)
+     INV:I->O             16   0.653   2.800  push_inv1_INV_0 (push_inv)
+     FDCE:CE                   0.886          LED2_0
+    ----------------------------------------
+    Total                      6.413ns (2.463ns logic, 3.950ns route)
+                                       (38.4% logic, 61.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'SEG7_not0001'
+  Total number of paths / destination ports: 6088 / 7
+-------------------------------------------------------------------------
+Offset:              26.020ns (Levels of Logic = 12)
+  Source:            DIP<1> (PAD)
+  Destination:       SEG7_3 (LATCH)
+  Destination Clock: SEG7_not0001 falling
+
+  Data Path: DIP<1> to SEG7_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.924   1.340  DIP_1_IBUF (DIP_1_IBUF)
+     LUT2:I0->O            2   0.653   1.340  count1_and00011 (count1_and0001)
+     LUT4:I2->O            3   0.653   1.480  count1_mux0003<0>1 (Madd_count1_addsub0008_cy<0>)
+     LUT4:I3->O            5   0.653   1.740  count1_mux0005<0>1 (Madd_count1_addsub0004_cy<0>)
+     LUT4:I3->O            4   0.653   1.600  count1_mux0008<1>11 (N4)
+     LUT4:I3->O            4   0.653   1.600  Madd_SEG7_addsub0001_cy<0>11 (Madd_SEG7_addsub0001_cy<0>)
+     LUT3:I1->O            4   0.653   1.600  Madd_SEG7_addsub0001_cy<1>11 (Madd_SEG7_addsub0001_cy<1>)
+     LUT3:I1->O            6   0.653   1.850  Madd_SEG7_addsub0001_cy<2>11 (Madd_SEG7_addsub0001_cy<2>)
+     LUT3:I2->O            9   0.653   2.120  Madd_SEG7_addsub0001_xor<3>11 (SEG7_addsub0001<3>)
+     LUT3:I0->O            2   0.653   1.340  SEG7_mux0008<3>11 (N01)
+     LUT4:I3->O            1   0.653   1.150  SEG7_mux0008<3>_SW1 (N65)
+     LUT4:I2->O            1   0.653   0.000  SEG7_mux0008<3> (SEG7_mux0008<3>)
+     LD:D                      0.753          SEG7_3
+    ----------------------------------------
+    Total                     26.020ns (8.860ns logic, 17.160ns route)
+                                       (34.1% logic, 65.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 25 / 25
+-------------------------------------------------------------------------
+Offset:              9.849ns (Levels of Logic = 1)
+  Source:            count (FF)
+  Destination:       count (PAD)
+  Source Clock:      clk rising
+
+  Data Path: count to count
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            18   1.292   3.000  count (count_OBUF)
+     OBUF:I->O                 5.557          count_OBUF (count)
+    ----------------------------------------
+    Total                      9.849ns (6.849ns logic, 3.000ns route)
+                                       (69.5% logic, 30.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'count_OBUF'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              7.999ns (Levels of Logic = 1)
+  Source:            LED2_7_1 (FF)
+  Destination:       LED2<7> (PAD)
+  Source Clock:      count_OBUF rising
+
+  Data Path: LED2_7_1 to LED2<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             1   1.292   1.150  LED2_7_1 (LED2_7_1)
+     OBUF:I->O                 5.557          LED2_7_OBUF (LED2<7>)
+    ----------------------------------------
+    Total                      7.999ns (6.849ns logic, 1.150ns route)
+                                       (85.6% logic, 14.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'SEG7_not0001'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              8.128ns (Levels of Logic = 1)
+  Source:            SEG7_6 (LATCH)
+  Destination:       SEG7<6> (PAD)
+  Source Clock:      SEG7_not0001 falling
+
+  Data Path: SEG7_6 to SEG7<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   1.421   1.150  SEG7_6 (SEG7_6)
+     OBUF:I->O                 5.557          SEG7_6_OBUF (SEG7<6>)
+    ----------------------------------------
+    Total                      8.128ns (6.978ns logic, 1.150ns route)
+                                       (85.9% logic, 14.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.63 secs
+ 
+--> 
+
+Total memory usage is 142348 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

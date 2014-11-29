@@ -1,0 +1,324 @@
+--------------------------------------------------------------------------------
+Release 10.1.03 Trace  (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\10.1\ISE\bin\nt\unwrapped\trce.exe -ise C:/Xilinx/RD/RD.ise -intstyle
+ise -v 3 -s 5 -xml Random Random.ncd -o Random.twr Random.pcf -ucf Random.ucf
+
+Design file:              Random.ncd
+Physical constraint file: Random.pcf
+Device,package,speed:     xc2s100,pq208,-5 (PRODUCTION 1.27 2008-01-09)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+------------+------------+------------+------------------+--------+
+            |  Setup to  |  Hold to   |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+reset       |    4.249(R)|   -3.152(R)|clk_BUFGP         |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock DIP<0> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+SEG7<0>     |   25.275(F)|SEG7_not0001      |   0.000|
+SEG7<1>     |   25.392(F)|SEG7_not0001      |   0.000|
+SEG7<2>     |   25.392(F)|SEG7_not0001      |   0.000|
+SEG7<3>     |   25.392(F)|SEG7_not0001      |   0.000|
+SEG7<4>     |   25.275(F)|SEG7_not0001      |   0.000|
+SEG7<5>     |   25.334(F)|SEG7_not0001      |   0.000|
+SEG7<6>     |   25.334(F)|SEG7_not0001      |   0.000|
+------------+------------+------------------+--------+
+
+Clock DIP<1> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+SEG7<0>     |   26.661(F)|SEG7_not0001      |   0.000|
+SEG7<1>     |   26.778(F)|SEG7_not0001      |   0.000|
+SEG7<2>     |   26.778(F)|SEG7_not0001      |   0.000|
+SEG7<3>     |   26.778(F)|SEG7_not0001      |   0.000|
+SEG7<4>     |   26.661(F)|SEG7_not0001      |   0.000|
+SEG7<5>     |   26.720(F)|SEG7_not0001      |   0.000|
+SEG7<6>     |   26.720(F)|SEG7_not0001      |   0.000|
+------------+------------+------------------+--------+
+
+Clock DIP<2> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+SEG7<0>     |   26.598(F)|SEG7_not0001      |   0.000|
+SEG7<1>     |   26.715(F)|SEG7_not0001      |   0.000|
+SEG7<2>     |   26.715(F)|SEG7_not0001      |   0.000|
+SEG7<3>     |   26.715(F)|SEG7_not0001      |   0.000|
+SEG7<4>     |   26.598(F)|SEG7_not0001      |   0.000|
+SEG7<5>     |   26.657(F)|SEG7_not0001      |   0.000|
+SEG7<6>     |   26.657(F)|SEG7_not0001      |   0.000|
+------------+------------+------------------+--------+
+
+Clock DIP<3> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+SEG7<0>     |   24.945(F)|SEG7_not0001      |   0.000|
+SEG7<1>     |   25.062(F)|SEG7_not0001      |   0.000|
+SEG7<2>     |   25.062(F)|SEG7_not0001      |   0.000|
+SEG7<3>     |   25.062(F)|SEG7_not0001      |   0.000|
+SEG7<4>     |   24.945(F)|SEG7_not0001      |   0.000|
+SEG7<5>     |   25.004(F)|SEG7_not0001      |   0.000|
+SEG7<6>     |   25.004(F)|SEG7_not0001      |   0.000|
+------------+------------+------------------+--------+
+
+Clock DIP<4> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+SEG7<0>     |   26.689(F)|SEG7_not0001      |   0.000|
+SEG7<1>     |   26.806(F)|SEG7_not0001      |   0.000|
+SEG7<2>     |   26.806(F)|SEG7_not0001      |   0.000|
+SEG7<3>     |   26.806(F)|SEG7_not0001      |   0.000|
+SEG7<4>     |   26.689(F)|SEG7_not0001      |   0.000|
+SEG7<5>     |   26.748(F)|SEG7_not0001      |   0.000|
+SEG7<6>     |   26.748(F)|SEG7_not0001      |   0.000|
+------------+------------+------------------+--------+
+
+Clock DIP<5> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+SEG7<0>     |   23.458(F)|SEG7_not0001      |   0.000|
+SEG7<1>     |   23.575(F)|SEG7_not0001      |   0.000|
+SEG7<2>     |   23.575(F)|SEG7_not0001      |   0.000|
+SEG7<3>     |   23.575(F)|SEG7_not0001      |   0.000|
+SEG7<4>     |   23.458(F)|SEG7_not0001      |   0.000|
+SEG7<5>     |   23.517(F)|SEG7_not0001      |   0.000|
+SEG7<6>     |   23.517(F)|SEG7_not0001      |   0.000|
+------------+------------+------------------+--------+
+
+Clock DIP<6> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+SEG7<0>     |   24.458(F)|SEG7_not0001      |   0.000|
+SEG7<1>     |   24.575(F)|SEG7_not0001      |   0.000|
+SEG7<2>     |   24.575(F)|SEG7_not0001      |   0.000|
+SEG7<3>     |   24.575(F)|SEG7_not0001      |   0.000|
+SEG7<4>     |   24.458(F)|SEG7_not0001      |   0.000|
+SEG7<5>     |   24.517(F)|SEG7_not0001      |   0.000|
+SEG7<6>     |   24.517(F)|SEG7_not0001      |   0.000|
+------------+------------+------------------+--------+
+
+Clock DIP<7> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+SEG7<0>     |   20.936(F)|SEG7_not0001      |   0.000|
+SEG7<1>     |   21.053(F)|SEG7_not0001      |   0.000|
+SEG7<2>     |   21.053(F)|SEG7_not0001      |   0.000|
+SEG7<3>     |   21.053(F)|SEG7_not0001      |   0.000|
+SEG7<4>     |   20.936(F)|SEG7_not0001      |   0.000|
+SEG7<5>     |   20.995(F)|SEG7_not0001      |   0.000|
+SEG7<6>     |   20.995(F)|SEG7_not0001      |   0.000|
+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+X<1>        |   11.685(R)|clk_BUFGP         |   0.000|
+X<2>        |   11.058(R)|clk_BUFGP         |   0.000|
+X<3>        |   11.539(R)|clk_BUFGP         |   0.000|
+X<4>        |   11.075(R)|clk_BUFGP         |   0.000|
+X<5>        |   11.605(R)|clk_BUFGP         |   0.000|
+X<6>        |   11.258(R)|clk_BUFGP         |   0.000|
+X<7>        |   11.045(R)|clk_BUFGP         |   0.000|
+X<8>        |   11.111(R)|clk_BUFGP         |   0.000|
+X<9>        |   11.062(R)|clk_BUFGP         |   0.000|
+X<10>       |   10.867(R)|clk_BUFGP         |   0.000|
+X<11>       |   11.593(R)|clk_BUFGP         |   0.000|
+X<12>       |   10.807(R)|clk_BUFGP         |   0.000|
+X<13>       |   10.757(R)|clk_BUFGP         |   0.000|
+X<14>       |   10.633(R)|clk_BUFGP         |   0.000|
+X<15>       |   11.216(R)|clk_BUFGP         |   0.000|
+X<16>       |   11.363(R)|clk_BUFGP         |   0.000|
+X<17>       |   12.007(R)|clk_BUFGP         |   0.000|
+X<18>       |   12.081(R)|clk_BUFGP         |   0.000|
+X<19>       |   11.879(R)|clk_BUFGP         |   0.000|
+X<20>       |   11.508(R)|clk_BUFGP         |   0.000|
+Y<0>        |   11.110(R)|clk_BUFGP         |   0.000|
+Y<1>        |   11.633(R)|clk_BUFGP         |   0.000|
+Y<2>        |   11.162(R)|clk_BUFGP         |   0.000|
+Y<3>        |   12.181(R)|clk_BUFGP         |   0.000|
+count       |   12.236(R)|clk_BUFGP         |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock DIP<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+DIP<0>         |         |         |    7.906|    7.906|
+DIP<1>         |         |         |    9.292|    9.292|
+DIP<2>         |         |         |    9.229|    9.229|
+DIP<3>         |         |         |    7.576|    7.576|
+DIP<4>         |         |         |    9.320|    9.320|
+DIP<5>         |         |         |    6.089|    6.089|
+DIP<6>         |         |         |    7.089|    7.089|
+DIP<7>         |         |         |    3.567|    3.567|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock DIP<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+DIP<0>         |         |         |    6.394|    6.394|
+DIP<1>         |         |         |    7.780|    7.780|
+DIP<2>         |         |         |    7.717|    7.717|
+DIP<3>         |         |         |    6.064|    6.064|
+DIP<4>         |         |         |    7.808|    7.808|
+DIP<5>         |         |         |    4.577|    4.577|
+DIP<6>         |         |         |    5.577|    5.577|
+DIP<7>         |         |         |    2.055|    2.055|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock DIP<2>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+DIP<0>         |         |         |    7.496|    7.496|
+DIP<1>         |         |         |    8.882|    8.882|
+DIP<2>         |         |         |    8.819|    8.819|
+DIP<3>         |         |         |    7.166|    7.166|
+DIP<4>         |         |         |    8.910|    8.910|
+DIP<5>         |         |         |    5.679|    5.679|
+DIP<6>         |         |         |    6.679|    6.679|
+DIP<7>         |         |         |    3.157|    3.157|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock DIP<3>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+DIP<0>         |         |         |    7.692|    7.692|
+DIP<1>         |         |         |    9.078|    9.078|
+DIP<2>         |         |         |    9.015|    9.015|
+DIP<3>         |         |         |    7.362|    7.362|
+DIP<4>         |         |         |    9.106|    9.106|
+DIP<5>         |         |         |    5.875|    5.875|
+DIP<6>         |         |         |    6.875|    6.875|
+DIP<7>         |         |         |    3.353|    3.353|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock DIP<4>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+DIP<0>         |         |         |    8.536|    8.536|
+DIP<1>         |         |         |    9.922|    9.922|
+DIP<2>         |         |         |    9.859|    9.859|
+DIP<3>         |         |         |    8.206|    8.206|
+DIP<4>         |         |         |    9.950|    9.950|
+DIP<5>         |         |         |    6.719|    6.719|
+DIP<6>         |         |         |    7.719|    7.719|
+DIP<7>         |         |         |    4.197|    4.197|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock DIP<5>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+DIP<0>         |         |         |    9.591|    9.591|
+DIP<1>         |         |         |   10.977|   10.977|
+DIP<2>         |         |         |   10.914|   10.914|
+DIP<3>         |         |         |    9.261|    9.261|
+DIP<4>         |         |         |   11.005|   11.005|
+DIP<5>         |         |         |    7.774|    7.774|
+DIP<6>         |         |         |    8.774|    8.774|
+DIP<7>         |         |         |    5.252|    5.252|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock DIP<6>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+DIP<0>         |         |         |    9.921|    9.921|
+DIP<1>         |         |         |   11.307|   11.307|
+DIP<2>         |         |         |   11.244|   11.244|
+DIP<3>         |         |         |    9.591|    9.591|
+DIP<4>         |         |         |   11.335|   11.335|
+DIP<5>         |         |         |    8.104|    8.104|
+DIP<6>         |         |         |    9.104|    9.104|
+DIP<7>         |         |         |    5.582|    5.582|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock DIP<7>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+DIP<0>         |         |         |   10.836|   10.836|
+DIP<1>         |         |         |   12.222|   12.222|
+DIP<2>         |         |         |   12.159|   12.159|
+DIP<3>         |         |         |   10.506|   10.506|
+DIP<4>         |         |         |   12.250|   12.250|
+DIP<5>         |         |         |    9.019|    9.019|
+DIP<6>         |         |         |   10.019|   10.019|
+DIP<7>         |         |         |    6.497|    6.497|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    8.227|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Fri Nov 28 15:40:22 2014 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 66 MB
+
+
+

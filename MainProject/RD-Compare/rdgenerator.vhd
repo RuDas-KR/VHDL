@@ -33,8 +33,11 @@ entity Random is
            X : inout  STD_LOGIC_VECTOR (1 to 20);
            reset : in  STD_LOGIC; -- Reset Button
            count : inout  STD_LOGIC; -- 6 * 10^7 Hz  1Clk
-           Y : inout  STD_LOGIC_VECTOR (0 to 2);
-           LED2 : out  STD_LOGIC_VECTOR (7 downto 0)
+           Y : inout  STD_LOGIC_VECTOR (0 to 3);
+           LED2 : inout  STD_LOGIC_VECTOR (7 downto 0);
+			  DIP  : in  STD_LOGIC_VECTOR (7 downto 0);
+			  Digit : out STD_LOGIC;
+			  SEG7  : out STD_LOGIC_VECTOR (7 downto 0)
 			  );
 end Random;
 
@@ -62,6 +65,7 @@ begin
 			Y(0) <= X(2) xor X(7) xor X(14) xor X(15) xor X(19);
 			Y(1) <= X(6) xor X(8) xor X(11) xor X(13) xor X(18);
 			Y(2) <= X(1) xor X(3) xor X(5) xor X(20) xor X(17);
+			Y(3) <= X(4) xor X(9) xor X(10) xor X(16) xor X(12);
 		end if;
 	end process;
 	
@@ -70,16 +74,50 @@ begin
 		if (reset = '0') then LED2 <= "00000000";
 		
 		elsif (count'event and count = '1' and (push = '0')) then
-			if (Y = "000") then LED2 <= "00000001";
-			elsif (Y = "001") then LED2 <= "00000001";
-			elsif (Y = "010") then LED2 <= "00000011";
-			elsif (Y = "011") then LED2 <= "00000111";
-			elsif (Y = "100") then LED2 <= "00001111";
-			elsif (Y = "101") then LED2 <= "00011111";
-			elsif (Y = "110") then LED2 <= "00111111";
-			elsif (Y = "111") then LED2 <= "01111111";
+			if (Y = "0000") then LED2 <= "00001001";
+			elsif (Y = "0001") then LED2 <= "00110000";
+			elsif (Y = "0010") then LED2 <= "01101010";
+			elsif (Y = "0011") then LED2 <= "00111001";
+			elsif (Y = "0100") then LED2 <= "11100110";
+			elsif (Y = "0101") then LED2 <= "11000011";
+			elsif (Y = "0110") then LED2 <= "10101100";
+			elsif (Y = "0111") then LED2 <= "01011010";
+			elsif (Y = "1000") then LED2 <= "10100110";
+			elsif (Y = "1001") then LED2 <= "01000111";
+			elsif (Y = "1010") then LED2 <= "11110011";
+			elsif (Y = "1011") then LED2 <= "11010101";
+			elsif (Y = "1100") then LED2 <= "00100110";
+			elsif (Y = "1101") then LED2 <= "10010101";
+			elsif (Y = "1110") then LED2 <= "10101101";
+			elsif (Y = "1111") then LED2 <= "01111010";
 			end if;
 		end if;
 	end process;
+	
+	process(DIP) 
+		variable count_sum: integer;
+		variable count1: integer;
+		variable count2: integer;
+		begin 
+		Digit <= '1';
+		count1 := 0;
+		count2 := 0;
+				FOR j IN 0 TO 7 LOOP   
+					IF(DIP(j)='1' and LED2(j)='1') THEN   count1 :=count1+1;
+					END IF;
+					
+					IF(DIP(j)='0' and LED2(j)='0') THEN   count2 :=count2+1;
+					end if;
+				END LOOP;
+				if(count1+count2=0)then SEG7<="00000000"; 
+				elsif(count1+count2=1)then SEG7<="00000110"; 
+				elsif(count1+count2=2)then SEG7<="01011011"; 
+				elsif(count1+count2=3)then SEG7<="01001111"; 
+				elsif(count1+count2=4)then SEG7<="01100110";
+				elsif(count1+count2=5)then SEG7<="01101101"; 
+				elsif(count1+count2=6)then SEG7<="01111100"; 
+				elsif(count1+count2=7)then SEG7<="00100111";
+				elsif(count1+count2=8)then SEG7<="01111111";
+				END IF;
+		end process;
 end Behavioral;
-
