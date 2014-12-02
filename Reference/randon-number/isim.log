@@ -1,0 +1,38 @@
+Command line:
+   ./tb_random_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  1596
+
+Fri Nov 14 12:11:24 2014
+
+Total Line Count : 38
+
+ Elaboration Time: 0.015625 sec
+
+ Current Memory Usage: 142.352 Meg
+
+ Total Signals          : 8
+ Total Nets             : 7
+ Total Signal Drivers   : 4
+ Total Blocks           : 6
+ Total Primitive Blocks : 1
+ Total Processes        : 3
+ Total Traceable Variables  : 16
+ Total Scalar Nets and Variables : 509
+ntrace select -o on -n /tb_random/x 
+ntrace select -o on -n /tb_random/rst 
+ntrace select -o on -n /tb_random/clk 
+ntrace select -o on -n /tb_random/bcd 
+ntrace select -o on -n /tb_random/clk_period 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+ Total Simulation Time: 0.0625 sec
+
+ Current Memory Usage: 152.904 Meg
+
+Fri Nov 14 12:49:00 2014
+

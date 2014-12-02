@@ -1,0 +1,8 @@
+V3 4
+FL C:/Xilinx/randon-number/random0_9.vhd 2014/12/02.21:45:16 K.39
+EN work/random0_9 1417524366 FL C:/Xilinx/randon-number/random0_9.vhd \
+      PB ieee/std_logic_1164 1200023565 PB ieee/std_logic_arith 1200023566 \
+      PB ieee/STD_LOGIC_UNSIGNED 1200023567
+AR work/random0_9/Behavioral 1417524367 \
+      FL C:/Xilinx/randon-number/random0_9.vhd EN work/random0_9 1417524366
+FL D:/hg/random_number/random0_9.vhd 2014/11/14.12:01:03 K.39

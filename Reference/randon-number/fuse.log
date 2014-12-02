@@ -1,0 +1,36 @@
+Determining compilation order of HDL files
+Analyzing VHDL file random0_9.vhd
+Restoring VHDL parse-tree ieee.std_logic_1164 from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_1164.vdb
+Restoring VHDL parse-tree std.standard from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/std/standard.vdb
+Restoring VHDL parse-tree ieee.std_logic_arith from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_arith.vdb
+Restoring VHDL parse-tree ieee.std_logic_unsigned from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_unsigned.vdb
+Analyzing VHDL file tb_random.vhd
+Restoring VHDL parse-tree ieee.numeric_std from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/numeric_std.vdb
+Saving VHDL parse-tree work.random0_9 into
+d:/hg/random_number/isim/work/random0_9.vdb
+Saving VHDL parse-tree work.tb_random into
+d:/hg/random_number/isim/work/tb_random.vdb
+Starting static elaboration
+WARNING:HDLCompiler:746 - "N:/K.31/rtf/vhdl/src/ieee/numeric_std.vhd" Line 867.
+   Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/K.31/rtf/vhdl/src/ieee/numeric_std.vhd" Line 868.
+   Range is empty (null range)
+Completed static elaboration
+Fuse Memory Usage: 56936 Kb
+Fuse CPU Usage: 327 ms
+Using precompiled package standard from library std
+Using precompiled package std_logic_1164 from library ieee
+Using precompiled package std_logic_arith from library ieee
+Using precompiled package std_logic_unsigned from library ieee
+Using precompiled package numeric_std from library ieee
+Compiling architecture behavioral of entity random0_9 [random0_9_default]
+Compiling architecture behavior of entity tb_random
+Compiled 8 VHDL Units
+Built simulation executable tb_random_isim_beh.exe
+Fuse Memory Usage: 58220 Kb
+Fuse CPU Usage: 358 ms

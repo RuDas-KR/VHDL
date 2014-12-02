@@ -1,0 +1,12 @@
+xst -ise "D:/hg/random_number/random_number.ise" -intstyle ise -ifn "D:/hg/random_number/random0_9.xst" -ofn "D:/hg/random_number/random0_9.syr"
+ngdbuild -ise "D:/hg/random_number/random_number.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s100-pq208-5 "random0_9.ngc" random0_9.ngd
+map -ise "D:/hg/random_number/random_number.ise" -intstyle ise -p xc2s100-pq208-5 -cm area -pr off -k 4 -c 100 -tx off -o random0_9_map.ncd random0_9.ngd random0_9.pcf
+par -ise "D:/hg/random_number/random_number.ise" -w -intstyle ise -ol std -t 1 random0_9_map.ncd random0_9.ncd random0_9.pcf
+trce -ise "D:/hg/random_number/random_number.ise" -intstyle ise -e 3 -s 5 -xml random0_9 random0_9.ncd -o random0_9.twr random0_9.pcf
+xst -ise "C:/Xilinx/randon-number/random_number.ise" -intstyle ise -ifn "C:/Xilinx/randon-number/random0_9.xst" -ofn "C:/Xilinx/randon-number/random0_9.syr"
+xst -ise "C:/Xilinx/randon-number/random_number.ise" -intstyle ise -ifn "C:/Xilinx/randon-number/random0_9.xst" -ofn "C:/Xilinx/randon-number/random0_9.syr"
+ngdbuild -ise "C:/Xilinx/randon-number/random_number.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s100-pq208-5 "random0_9.ngc" random0_9.ngd
+map -ise "C:/Xilinx/randon-number/random_number.ise" -intstyle ise -p xc2s100-pq208-5 -cm area -pr off -k 4 -c 100 -tx off -o random0_9_map.ncd random0_9.ngd random0_9.pcf
+par -ise "C:/Xilinx/randon-number/random_number.ise" -w -intstyle ise -ol std -t 1 random0_9_map.ncd random0_9.ncd random0_9.pcf
+trce -ise "C:/Xilinx/randon-number/random_number.ise" -intstyle ise -v 3 -s 5 -xml random0_9 random0_9.ncd -o random0_9.twr random0_9.pcf -ucf random0_9.ucf
+bitgen -ise "C:/Xilinx/randon-number/random_number.ise" -intstyle ise -f random0_9.ut random0_9.ncd

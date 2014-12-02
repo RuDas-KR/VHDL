@@ -1,0 +1,6 @@
+CommandLine
+C:\Xilinx\10.1\ISE\bin\nt\unwrapped\xst.exe -ise C:/Xilinx/randon-number/random_number.ise -intstyle ise -ifn C:/Xilinx/randon-number/random0_9.xst -ofn C:/Xilinx/randon-number/random0_9.syr -finalclean 1
+s
+FormatString
+xst [-ifn <InputFile>] [-ofn <OutputFile>] [-ise <iseProjectFile>] [--quiet] [-intstyle <Style>] [--deb <DebugLevel>] [--finalclean <Clean>] [--PcubeFlow] [--globOptFlow] [--XstNtrc]
+s
