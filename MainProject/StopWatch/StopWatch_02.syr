@@ -1,16 +1,16 @@
 Release 10.1.03 - xst K.39 (nt)
 Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to D:/Stop_Watch/Stopw/atch/wefwef/xst/projnav.tmp
+--> Parameter TMPDIR set to C:/Xilinx/wefoijweoifj/xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.13 secs
  
---> Parameter xsthdpdir set to D:/Stop_Watch/Stopw/atch/wefwef/xst
+--> Parameter xsthdpdir set to C:/Xilinx/wefoijweoifj/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Reading design: StopWatch_02.prj
 
@@ -106,20 +106,26 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "D:/Stop_Watch/Stopw/atch/wefwef/INT2SEG1.VHD" in Library work.
+Compiling vhdl file "C:/Xilinx/wefoijweoifj/INT2SEG1.VHD" in Library work.
 Architecture behavior of Entity int2seg1 is up to date.
-Compiling vhdl file "D:/Stop_Watch/Stopw/atch/wefwef/TIMEBASE2.VHD" in Library work.
+Compiling vhdl file "C:/Xilinx/wefoijweoifj/TIMEBASE2.VHD" in Library work.
 Architecture beh_timebase of Entity timebase_gen2 is up to date.
-Compiling vhdl file "D:/Stop_Watch/Stopw/atch/wefwef/DEBOUNCE.VHD" in Library work.
+Compiling vhdl file "C:/Xilinx/wefoijweoifj/DEBOUNCE.VHD" in Library work.
 Architecture design of Entity debounce is up to date.
-Compiling vhdl file "D:/Stop_Watch/Stopw/atch/wefwef/COUNTER.VHD" in Library work.
+Compiling vhdl file "C:/Xilinx/wefoijweoifj/COUNTER.VHD" in Library work.
 Architecture design of Entity counter is up to date.
-Compiling vhdl file "D:/Stop_Watch/Stopw/atch/wefwef/INT2SEG2.VHD" in Library work.
-Entity <int2seg2> compiled.
-Entity <int2seg2> (Architecture <design>) compiled.
-Compiling vhdl file "D:/Stop_Watch/Stopw/atch/wefwef/CNT_1TO6.VHD" in Library work.
+Compiling vhdl file "C:/Xilinx/wefoijweoifj/INT2SEG2.VHD" in Library work.
+Architecture design of Entity int2seg2 is up to date.
+Compiling vhdl file "C:/Xilinx/wefoijweoifj/CNT_1TO6.VHD" in Library work.
 Architecture beh of Entity cnt_onetosix is up to date.
-Compiling vhdl file "D:/Stop_Watch/Stopw/atch/wefwef/STPWATCH.VHD" in Library work.
+Compiling vhdl file "C:/Xilinx/wefoijweoifj/test.vhd" in Library work.
+Entity <updown> compiled.
+Entity <updown> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Xilinx/wefoijweoifj/dip_button.vhd" in Library work.
+Architecture behavioral of Entity random is up to date.
+Compiling vhdl file "C:/Xilinx/wefoijweoifj/random_fail.vhd" in Library work.
+Architecture behavioral of Entity random_fail is up to date.
+Compiling vhdl file "C:/Xilinx/wefoijweoifj/STPWATCH.VHD" in Library work.
 Architecture structural of Entity stopwatch_02 is up to date.
 
 =========================================================================
@@ -143,13 +149,13 @@ Analyzing hierarchy for entity <counter> in library <work> (architecture <design
 Analyzing hierarchy for entity <int2seg2> in library <work> (architecture <design>) with generics.
 	int_max_limit = 100
 
-Analyzing hierarchy for entity <counter> in library <work> (architecture <design>) with generics.
-	cnt_value = 60
-
-Analyzing hierarchy for entity <int2seg2> in library <work> (architecture <design>) with generics.
-	int_max_limit = 60
-
 Analyzing hierarchy for entity <Cnt_OneToSix> in library <work> (architecture <beh>).
+
+Analyzing hierarchy for entity <updown> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Random> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <random_fail> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <int2seg1> in library <work> (architecture <behavior>).
 
@@ -158,7 +164,9 @@ Analyzing hierarchy for entity <int2seg1> in library <work> (architecture <behav
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <StopWatch_02> in library <work> (Architecture <structural>).
-WARNING:Xst:753 - "D:/Stop_Watch/Stopw/atch/wefwef/STPWATCH.VHD" line 142: Unconnected output port 'clk_out' of component 'counter'.
+WARNING:Xst:2211 - "C:/Xilinx/wefoijweoifj/STPWATCH.VHD" line 135: Instantiating black box module <BUFGP>.
+WARNING:Xst:819 - "C:/Xilinx/wefoijweoifj/STPWATCH.VHD" line 239: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <seg_temp2>, <seg_temp>, <tq_counter_temp>
 Entity <StopWatch_02> analyzed. Unit <StopWatch_02> generated.
 
 Analyzing generic Entity <TimeBase_Gen2.1> in library <work> (Architecture <beh_timebase>).
@@ -174,27 +182,36 @@ Entity <TimeBase_Gen2.2> analyzed. Unit <TimeBase_Gen2.2> generated.
 Analyzing Entity <debounce> in library <work> (Architecture <design>).
 Entity <debounce> analyzed. Unit <debounce> generated.
 
-Analyzing generic Entity <counter.1> in library <work> (Architecture <design>).
+Analyzing generic Entity <counter> in library <work> (Architecture <design>).
 	cnt_value = 100
-Entity <counter.1> analyzed. Unit <counter.1> generated.
+Entity <counter> analyzed. Unit <counter> generated.
 
-Analyzing generic Entity <int2seg2.1> in library <work> (Architecture <design>).
+Analyzing generic Entity <int2seg2> in library <work> (Architecture <design>).
 	int_max_limit = 100
-Entity <int2seg2.1> analyzed. Unit <int2seg2.1> generated.
+Entity <int2seg2> analyzed. Unit <int2seg2> generated.
 
 Analyzing Entity <int2seg1> in library <work> (Architecture <behavior>).
 Entity <int2seg1> analyzed. Unit <int2seg1> generated.
 
-Analyzing generic Entity <counter.2> in library <work> (Architecture <design>).
-	cnt_value = 60
-Entity <counter.2> analyzed. Unit <counter.2> generated.
-
-Analyzing generic Entity <int2seg2.2> in library <work> (Architecture <design>).
-	int_max_limit = 60
-Entity <int2seg2.2> analyzed. Unit <int2seg2.2> generated.
-
 Analyzing Entity <Cnt_OneToSix> in library <work> (Architecture <beh>).
 Entity <Cnt_OneToSix> analyzed. Unit <Cnt_OneToSix> generated.
+
+Analyzing Entity <updown> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/Xilinx/wefoijweoifj/test.vhd" line 23: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <test_test>, <Q1>
+Entity <updown> analyzed. Unit <updown> generated.
+
+Analyzing Entity <Random> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/Xilinx/wefoijweoifj/dip_button.vhd" line 96: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <count>
+WARNING:Xst:819 - "C:/Xilinx/wefoijweoifj/dip_button.vhd" line 87: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <reset2>, <push>, <DIP>, <LED_TEMP>
+Entity <Random> analyzed. Unit <Random> generated.
+
+Analyzing Entity <random_fail> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/Xilinx/wefoijweoifj/random_fail.vhd" line 54: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <count>
+Entity <random_fail> analyzed. Unit <random_fail> generated.
 
 
 =========================================================================
@@ -204,7 +221,7 @@ Entity <Cnt_OneToSix> analyzed. Unit <Cnt_OneToSix> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <TimeBase_Gen2_1>.
-    Related source file is "D:/Stop_Watch/Stopw/atch/wefwef/TIMEBASE2.VHD".
+    Related source file is "C:/Xilinx/wefoijweoifj/TIMEBASE2.VHD".
     Found 16-bit up counter for signal <clk_cnt>.
     Found 1-bit register for signal <tmp_clk>.
     Summary:
@@ -214,7 +231,7 @@ Unit <TimeBase_Gen2_1> synthesized.
 
 
 Synthesizing Unit <TimeBase_Gen2_2>.
-    Related source file is "D:/Stop_Watch/Stopw/atch/wefwef/TIMEBASE2.VHD".
+    Related source file is "C:/Xilinx/wefoijweoifj/TIMEBASE2.VHD".
     Found 19-bit up counter for signal <clk_cnt>.
     Found 1-bit register for signal <tmp_clk>.
     Summary:
@@ -224,7 +241,7 @@ Unit <TimeBase_Gen2_2> synthesized.
 
 
 Synthesizing Unit <debounce>.
-    Related source file is "D:/Stop_Watch/Stopw/atch/wefwef/DEBOUNCE.VHD".
+    Related source file is "C:/Xilinx/wefoijweoifj/DEBOUNCE.VHD".
     Found 1-bit register for signal <sw1_out>.
     Found 1-bit register for signal <tmp_sw1>.
     Summary:
@@ -232,83 +249,170 @@ Synthesizing Unit <debounce>.
 Unit <debounce> synthesized.
 
 
-Synthesizing Unit <counter_1>.
-    Related source file is "D:/Stop_Watch/Stopw/atch/wefwef/COUNTER.VHD".
+Synthesizing Unit <counter>.
+    Related source file is "C:/Xilinx/wefoijweoifj/COUNTER.VHD".
+WARNING:Xst:737 - Found 1-bit latch for signal <Q_temp2_0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 32-bit register for signal <tq_counter>.
+    Found 7-bit up counter for signal <clk_cnt>.
     Found 1-bit register for signal <tclk>.
     Found 7-bit down counter for signal <tq>.
     Summary:
-	inferred   1 Counter(s).
+	inferred   2 Counter(s).
 	inferred   1 D-type flip-flop(s).
-Unit <counter_1> synthesized.
-
-
-Synthesizing Unit <counter_2>.
-    Related source file is "D:/Stop_Watch/Stopw/atch/wefwef/COUNTER.VHD".
-    Found 1-bit register for signal <tclk>.
-    Found 6-bit down counter for signal <tq>.
-    Summary:
-	inferred   1 Counter(s).
-	inferred   1 D-type flip-flop(s).
-Unit <counter_2> synthesized.
+Unit <counter> synthesized.
 
 
 Synthesizing Unit <Cnt_OneToSix>.
-    Related source file is "D:/Stop_Watch/Stopw/atch/wefwef/CNT_1TO6.VHD".
+    Related source file is "C:/Xilinx/wefoijweoifj/CNT_1TO6.VHD".
     Found 3-bit up counter for signal <tmp_value>.
     Summary:
 	inferred   1 Counter(s).
 Unit <Cnt_OneToSix> synthesized.
 
 
+Synthesizing Unit <updown>.
+    Related source file is "C:/Xilinx/wefoijweoifj/test.vhd".
+WARNING:Xst:1780 - Signal <seg_temp> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <delay_enable> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 7x7-bit ROM for signal <seg1$mux0008>.
+WARNING:Xst:737 - Found 7-bit latch for signal <seg1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 7-bit up counter for signal <clk_cnt>.
+    Found 3-bit down counter for signal <test_test>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   2 Counter(s).
+Unit <updown> synthesized.
+
+
+Synthesizing Unit <Random>.
+    Related source file is "C:/Xilinx/wefoijweoifj/dip_button.vhd".
+WARNING:Xst:2563 - Inout <LED<0>> is never assigned. Tied to value Z.
+WARNING:Xst:647 - Input <Q> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2563 - Inout <LED<1>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <LED<2>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <LED<3>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <LED<4>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <LED<5>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <LED<6>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <LED<7>> is never assigned. Tied to value Z.
+WARNING:Xst:647 - Input <seg2> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1305 - Output <seg_result8> is never assigned. Tied to value 00000000000000000000000000000000.
+WARNING:Xst:1780 - Signal <test> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <seg1_temp> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <Q_temp3> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <Q_temp2> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:737 - Found 7-bit latch for signal <seg1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 16x8-bit ROM for signal <LED_TEMP$mux0000>.
+    Found 1-bit tristate buffer for signal <LED<7>>.
+    Found 1-bit tristate buffer for signal <LED<6>>.
+    Found 1-bit tristate buffer for signal <LED<5>>.
+    Found 1-bit tristate buffer for signal <LED<4>>.
+    Found 1-bit tristate buffer for signal <LED<3>>.
+    Found 1-bit tristate buffer for signal <LED<2>>.
+    Found 1-bit tristate buffer for signal <LED<1>>.
+    Found 1-bit tristate buffer for signal <LED<0>>.
+    Found 15-bit up counter for signal <cnt>.
+    Found 1-bit register for signal <count>.
+    Found 2-bit adder for signal <count1$addsub0001> created at line 123.
+    Found 3-bit adder for signal <count1$addsub0003> created at line 123.
+    Found 3-bit adder for signal <count1$addsub0004> created at line 123.
+    Found 3-bit adder for signal <count1$addsub0005> created at line 123.
+    Found 1-bit adder carry out for signal <count1$addsub0007> created at line 123.
+    Found 2-bit adder carry out for signal <count1$addsub0008> created at line 123.
+    Found 3-bit adder carry out for signal <count1$addsub0009> created at line 123.
+    Found 2-bit adder for signal <count2$addsub0001> created at line 126.
+    Found 3-bit adder for signal <count2$addsub0003> created at line 126.
+    Found 3-bit adder for signal <count2$addsub0004> created at line 126.
+    Found 3-bit adder for signal <count2$addsub0005> created at line 126.
+    Found 1-bit adder carry out for signal <count2$addsub0007> created at line 126.
+    Found 2-bit adder carry out for signal <count2$addsub0008> created at line 126.
+    Found 3-bit adder carry out for signal <count2$addsub0009> created at line 126.
+    Found 23-bit up counter for signal <countin>.
+    Found 8-bit register for signal <LED_TEMP>.
+    Found 4-bit adder carry out for signal <mux0000$addsub0001> created at line 130.
+    Found 20-bit up counter for signal <X>.
+    Found 4-bit register for signal <Y>.
+    Found 1-bit xor5 for signal <Y_0$xor0000> created at line 78.
+    Found 1-bit xor5 for signal <Y_1$xor0000> created at line 79.
+    Found 1-bit xor5 for signal <Y_2$xor0000> created at line 80.
+    Found 1-bit xor5 for signal <Y_3$xor0000> created at line 81.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   3 Counter(s).
+	inferred  13 D-type flip-flop(s).
+	inferred  15 Adder/Subtractor(s).
+	inferred   4 Xor(s).
+	inferred   8 Tristate(s).
+Unit <Random> synthesized.
+
+
+Synthesizing Unit <random_fail>.
+    Related source file is "C:/Xilinx/wefoijweoifj/random_fail.vhd".
+    Found 16x8-bit ROM for signal <LED$mux0000>.
+    Found 8-bit register for signal <LED>.
+    Found 15-bit up counter for signal <cnt>.
+    Found 1-bit register for signal <count>.
+    Found 23-bit up counter for signal <countin>.
+    Found 20-bit up counter for signal <X>.
+    Found 4-bit register for signal <Y>.
+    Found 1-bit xor5 for signal <Y_0$xor0000> created at line 44.
+    Found 1-bit xor5 for signal <Y_1$xor0000> created at line 45.
+    Found 1-bit xor5 for signal <Y_2$xor0000> created at line 46.
+    Found 1-bit xor5 for signal <Y_3$xor0000> created at line 47.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   3 Counter(s).
+	inferred  13 D-type flip-flop(s).
+	inferred   4 Xor(s).
+Unit <random_fail> synthesized.
+
+
 Synthesizing Unit <int2seg1>.
-    Related source file is "D:/Stop_Watch/Stopw/atch/wefwef/INT2SEG1.VHD".
+    Related source file is "C:/Xilinx/wefoijweoifj/INT2SEG1.VHD".
     Found 16x7-bit ROM for signal <seg>.
     Summary:
 	inferred   1 ROM(s).
 Unit <int2seg1> synthesized.
 
 
-Synthesizing Unit <int2seg2_1>.
-    Related source file is "D:/Stop_Watch/Stopw/atch/wefwef/INT2SEG2.VHD".
+Synthesizing Unit <int2seg2>.
+    Related source file is "C:/Xilinx/wefoijweoifj/INT2SEG2.VHD".
     Found 7-bit comparator greatequal for signal <dec_01$cmp_ge0000> created at line 34.
-    Found 7-bit comparator greatequal for signal <dec_01$cmp_ge0001> created at line 44.
-    Found 7-bit comparator greatequal for signal <dec_01$cmp_ge0002> created at line 46.
-    Found 7-bit comparator greatequal for signal <dec_01$cmp_ge0003> created at line 48.
-    Found 7-bit comparator greatequal for signal <dec_01$cmp_ge0004> created at line 50.
+    Found 7-bit comparator greatequal for signal <dec_01$cmp_ge0001> created at line 43.
+    Found 7-bit comparator greatequal for signal <dec_01$cmp_ge0002> created at line 45.
     Found 4-bit subtractor for signal <dec_01$share0000> created at line 34.
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred   5 Comparator(s).
-Unit <int2seg2_1> synthesized.
-
-
-Synthesizing Unit <int2seg2_2>.
-    Related source file is "D:/Stop_Watch/Stopw/atch/wefwef/INT2SEG2.VHD".
-    Found 6-bit comparator greatequal for signal <dec_01$cmp_ge0000> created at line 34.
-    Found 6-bit comparator greatequal for signal <dec_01$cmp_ge0001> created at line 44.
-    Found 6-bit comparator greatequal for signal <dec_01$cmp_ge0002> created at line 46.
-    Found 6-bit comparator greatequal for signal <dec_01$cmp_ge0003> created at line 48.
-    Found 6-bit comparator greatequal for signal <dec_01$cmp_ge0004> created at line 50.
-    Found 4-bit subtractor for signal <dec_01$share0000> created at line 34.
-    Summary:
-	inferred   1 Adder/Subtractor(s).
-	inferred   5 Comparator(s).
-Unit <int2seg2_2> synthesized.
+	inferred   3 Comparator(s).
+Unit <int2seg2> synthesized.
 
 
 Synthesizing Unit <StopWatch_02>.
-    Related source file is "D:/Stop_Watch/Stopw/atch/wefwef/STPWATCH.VHD".
-WARNING:Xst:646 - Signal <seg4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <seg3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <seg2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <seg1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Related source file is "C:/Xilinx/wefoijweoifj/STPWATCH.VHD".
+WARNING:Xst:647 - Input <push4> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1306 - Output <count> is never assigned.
+WARNING:Xst:647 - Input <push2> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <tmp_int_second> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <tmp_int_minute> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <tmp_clk_1sec> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <tmp_clk_1min> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <tmp_clk_100Hz_in2> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <seg_result8_temp> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <seg_1_temp> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <seg4> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <seg3> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <seg2> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <seg1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <FPGA_RST_TMP> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <FPGA_CLK_TMP> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <CLK_2HZ> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <CLK_1KHZ> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:737 - Found 1-bit latch for signal <start_enable>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 7-bit latch for signal <seg>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
 WARNING:Xst:737 - Found 6-bit latch for signal <digit>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
-    Found 1-bit register for signal <start_enable>.
-    Summary:
-	inferred   1 D-type flip-flop(s).
 Unit <StopWatch_02> synthesized.
 
 INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
@@ -317,24 +421,41 @@ INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmet
 HDL Synthesis Report
 
 Macro Statistics
-# ROMs                                                 : 6
- 16x7-bit ROM                                          : 6
-# Adders/Subtractors                                   : 3
- 4-bit subtractor                                      : 3
-# Counters                                             : 6
+# ROMs                                                 : 5
+ 16x7-bit ROM                                          : 2
+ 16x8-bit ROM                                          : 2
+ 7x7-bit ROM                                           : 1
+# Adders/Subtractors                                   : 16
+ 1-bit adder carry out                                 : 2
+ 2-bit adder                                           : 2
+ 2-bit adder carry out                                 : 2
+ 3-bit adder                                           : 6
+ 3-bit adder carry out                                 : 2
+ 4-bit adder carry out                                 : 1
+ 4-bit subtractor                                      : 1
+# Counters                                             : 11
  16-bit up counter                                     : 1
  19-bit up counter                                     : 1
+ 20-bit up counter                                     : 2
+ 23-bit up counter                                     : 2
+ 3-bit down counter                                    : 1
  3-bit up counter                                      : 1
- 6-bit down counter                                    : 2
  7-bit down counter                                    : 1
-# Registers                                            : 10
- 1-bit register                                        : 10
-# Latches                                              : 2
+ 7-bit up counter                                      : 2
+# Registers                                            : 20
+ 1-bit register                                        : 17
+ 32-bit register                                       : 1
+ 8-bit register                                        : 2
+# Latches                                              : 6
+ 1-bit latch                                           : 2
  6-bit latch                                           : 1
- 7-bit latch                                           : 1
-# Comparators                                          : 15
- 6-bit comparator greatequal                           : 10
- 7-bit comparator greatequal                           : 5
+ 7-bit latch                                           : 3
+# Comparators                                          : 3
+ 7-bit comparator greatequal                           : 3
+# Tristates                                            : 8
+ 1-bit tristate buffer                                 : 8
+# Xors                                                 : 8
+ 1-bit xor5                                            : 8
 
 =========================================================================
 
@@ -343,67 +464,101 @@ Macro Statistics
 =========================================================================
 
 Loading device for application Rf_Device from file 'v100.nph' in environment C:\Xilinx\10.1\ISE.
-WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2677 - Node <tclk> of sequential type is unconnected in block <minute>.
+
+Synthesizing (advanced) Unit <Random>.
+INFO:Xst - In order to maximize performance and save block RAM resources, the small ROM <Mrom_LED_TEMP_mux0000> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+Unit <Random> synthesized (advanced).
+WARNING:Xst:1426 - The value init of the FF/Latch 0 hinder the constant cleaning in the block Q_temp2_0.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1710 - FF/Latch <31> (without init value) has a constant value of 0 in block <tq_counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <30> (without init value) has a constant value of 0 in block <tq_counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <29> (without init value) has a constant value of 0 in block <tq_counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <28> (without init value) has a constant value of 0 in block <tq_counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <27> (without init value) has a constant value of 0 in block <tq_counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <26> (without init value) has a constant value of 0 in block <tq_counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <25> (without init value) has a constant value of 0 in block <tq_counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <24> (without init value) has a constant value of 0 in block <tq_counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <23> (without init value) has a constant value of 0 in block <tq_counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <22> (without init value) has a constant value of 0 in block <tq_counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <21> (without init value) has a constant value of 0 in block <tq_counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <20> (without init value) has a constant value of 0 in block <tq_counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <19> (without init value) has a constant value of 0 in block <tq_counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <18> (without init value) has a constant value of 0 in block <tq_counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <17> (without init value) has a constant value of 0 in block <tq_counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <16> (without init value) has a constant value of 0 in block <tq_counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <15> (without init value) has a constant value of 0 in block <tq_counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <14> (without init value) has a constant value of 0 in block <tq_counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <13> (without init value) has a constant value of 0 in block <tq_counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <12> (without init value) has a constant value of 0 in block <tq_counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <11> (without init value) has a constant value of 0 in block <tq_counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <10> (without init value) has a constant value of 0 in block <tq_counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <9> (without init value) has a constant value of 0 in block <tq_counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <8> (without init value) has a constant value of 0 in block <tq_counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <7> (without init value) has a constant value of 0 in block <tq_counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <6> (without init value) has a constant value of 0 in block <tq_counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <5> (without init value) has a constant value of 0 in block <tq_counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <4> (without init value) has a constant value of 0 in block <tq_counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <3> (without init value) has a constant value of 0 in block <tq_counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <2> (without init value) has a constant value of 0 in block <tq_counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <1> (without init value) has a constant value of 0 in block <tq_counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <tclk> of sequential type is unconnected in block <cent_sec>.
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# ROMs                                                 : 6
- 16x7-bit ROM                                          : 6
-# Adders/Subtractors                                   : 3
- 4-bit subtractor                                      : 3
-# Counters                                             : 6
+# ROMs                                                 : 5
+ 16x7-bit ROM                                          : 2
+ 16x8-bit ROM                                          : 2
+ 7x7-bit ROM                                           : 1
+# Adders/Subtractors                                   : 16
+ 1-bit adder carry out                                 : 2
+ 2-bit adder                                           : 2
+ 2-bit adder carry out                                 : 2
+ 3-bit adder                                           : 6
+ 3-bit adder carry out                                 : 2
+ 4-bit adder carry out                                 : 1
+ 4-bit subtractor                                      : 1
+# Counters                                             : 11
  16-bit up counter                                     : 1
  19-bit up counter                                     : 1
+ 20-bit up counter                                     : 2
+ 23-bit up counter                                     : 2
+ 3-bit down counter                                    : 1
  3-bit up counter                                      : 1
- 6-bit down counter                                    : 2
  7-bit down counter                                    : 1
-# Registers                                            : 10
- Flip-Flops                                            : 10
-# Latches                                              : 2
+ 7-bit up counter                                      : 2
+# Registers                                            : 65
+ Flip-Flops                                            : 65
+# Latches                                              : 6
+ 1-bit latch                                           : 2
  6-bit latch                                           : 1
- 7-bit latch                                           : 1
-# Comparators                                          : 15
- 6-bit comparator greatequal                           : 10
- 7-bit comparator greatequal                           : 5
+ 7-bit latch                                           : 3
+# Comparators                                          : 3
+ 7-bit comparator greatequal                           : 3
+# Xors                                                 : 8
+ 1-bit xor5                                            : 8
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-INFO:Xst:2261 - The FF/Latch <digit_0> in Unit <StopWatch_02> is equivalent to the following 3 FFs/Latches, which will be removed : <digit_1> <digit_4> <digit_5> 
-WARNING:Xst:1710 - FF/Latch <digit_0> (without init value) has a constant value of 0 in block <StopWatch_02>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2677 - Node <minute/tclk> of sequential type is unconnected in block <StopWatch_02>.
+INFO:Xst:2261 - The FF/Latch <1> in Unit <LPM_DFF_3> is equivalent to the following 30 FFs/Latches, which will be removed : <2> <3> <4> <5> <6> <7> <8> <9> <10> <11> <12> <13> <14> <15> <16> <17> <18> <19> <20> <21> <22> <23> <24> <25> <26> <27> <28> <29> <30> <31> 
+WARNING:Xst:1710 - FF/Latch <1> (without init value) has a constant value of 0 in block <LPM_DFF_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch cent_sec/Q_temp2_0 hinder the constant cleaning in the block StopWatch_02.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:2677 - Node <cent_sec/tclk> of sequential type is unconnected in block <StopWatch_02>.
+INFO:Xst:2261 - The FF/Latch <u6/seg1_3> in Unit <StopWatch_02> is equivalent to the following FF/Latch, which will be removed : <u6/seg1_0> 
 
 Optimizing unit <StopWatch_02> ...
 
-Optimizing unit <int2seg2_1> ...
-
-Optimizing unit <int2seg2_2> ...
-WARNING:Xst:2677 - Node <cent_sec/tclk> of sequential type is unconnected in block <StopWatch_02>.
-WARNING:Xst:2677 - Node <second/tclk> of sequential type is unconnected in block <StopWatch_02>.
-WARNING:Xst:2677 - Node <minute/tq_0> of sequential type is unconnected in block <StopWatch_02>.
-WARNING:Xst:2677 - Node <minute/tq_1> of sequential type is unconnected in block <StopWatch_02>.
-WARNING:Xst:2677 - Node <minute/tq_2> of sequential type is unconnected in block <StopWatch_02>.
-WARNING:Xst:2677 - Node <minute/tq_3> of sequential type is unconnected in block <StopWatch_02>.
-WARNING:Xst:2677 - Node <minute/tq_4> of sequential type is unconnected in block <StopWatch_02>.
-WARNING:Xst:2677 - Node <second/tq_1> of sequential type is unconnected in block <StopWatch_02>.
-WARNING:Xst:2677 - Node <minute/tq_5> of sequential type is unconnected in block <StopWatch_02>.
-WARNING:Xst:2677 - Node <second/tq_0> of sequential type is unconnected in block <StopWatch_02>.
-WARNING:Xst:2677 - Node <second/tq_2> of sequential type is unconnected in block <StopWatch_02>.
-WARNING:Xst:2677 - Node <second/tq_3> of sequential type is unconnected in block <StopWatch_02>.
-WARNING:Xst:2677 - Node <second/tq_4> of sequential type is unconnected in block <StopWatch_02>.
-WARNING:Xst:2677 - Node <second/tq_5> of sequential type is unconnected in block <StopWatch_02>.
+Optimizing unit <random_fail> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block StopWatch_02, actual ratio is 7.
+Found area constraint ratio of 100 (+ 5) on block StopWatch_02, actual ratio is 22.
+FlipFlop u4/sw1_out has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -411,8 +566,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 52
- Flip-Flops                                            : 52
+# Registers                                            : 182
+ Flip-Flops                                            : 182
 
 =========================================================================
 
@@ -438,32 +593,39 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : NO
 
 Design Statistics
-# IOs                              : 25
+# IOs                              : 45
 
 Cell Usage :
-# BELS                             : 248
+# BELS                             : 775
 #      GND                         : 1
-#      INV                         : 8
-#      LUT1                        : 33
-#      LUT2                        : 39
-#      LUT3                        : 12
-#      LUT4                        : 60
-#      LUT4_D                      : 1
-#      LUT4_L                      : 1
-#      MUXCY                       : 44
-#      MUXF5                       : 6
+#      INV                         : 16
+#      LUT1                        : 124
+#      LUT2                        : 94
+#      LUT3                        : 40
+#      LUT4                        : 180
+#      LUT4_D                      : 2
+#      LUT4_L                      : 2
+#      MUXCY                       : 150
+#      MUXF5                       : 23
 #      VCC                         : 1
-#      XORCY                       : 42
-# FlipFlops/Latches                : 61
-#      FDC                         : 41
-#      FDCE                        : 2
-#      FDP                         : 5
-#      FDP_1                       : 4
-#      LD                          : 9
-# Clock Buffers                    : 1
-#      BUFGP                       : 1
-# IO Buffers                       : 24
-#      IBUF                        : 3
+#      XORCY                       : 142
+# FlipFlops/Latches                : 210
+#      FD                          : 24
+#      FDC                         : 70
+#      FDCE                        : 15
+#      FDE                         : 27
+#      FDP                         : 11
+#      FDP_1                       : 5
+#      FDPE                        : 7
+#      FDR                         : 23
+#      LD                          : 13
+#      LD_1                        : 7
+#      LDC_1                       : 1
+#      LDCP_1                      : 7
+# Clock Buffers                    : 2
+#      BUFGP                       : 2
+# IO Buffers                       : 32
+#      IBUF                        : 11
 #      OBUF                        : 21
 =========================================================================
 
@@ -472,13 +634,13 @@ Device utilization summary:
 
 Selected Device : 2s100pq208-5 
 
- Number of Slices:                       84  out of   1200     7%  
- Number of Slice Flip Flops:             52  out of   2400     2%  
- Number of 4 input LUTs:                154  out of   2400     6%  
- Number of IOs:                          25
- Number of bonded IOBs:                  25  out of    140    17%  
-    IOB Flip Flops:                       9
- Number of GCLKs:                         1  out of      4    25%  
+ Number of Slices:                      250  out of   1200    20%  
+ Number of Slice Flip Flops:            189  out of   2400     7%  
+ Number of 4 input LUTs:                458  out of   2400    19%  
+ Number of IOs:                          45
+ Number of bonded IOBs:                  34  out of    140    24%  
+    IOB Flip Flops:                      21
+ Number of GCLKs:                         2  out of      4    50%  
 
 ---------------------------
 Partition Resource Summary:
@@ -498,35 +660,54 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
--------------------------------------+------------------------+-------+
-Clock Signal                         | Clock buffer(FF name)  | Load  |
--------------------------------------+------------------------+-------+
-u3/sw1_out                           | NONE(start_enable)     | 1     |
-seg_not0001(seg_not00011:O)          | NONE(*)(digit_2)       | 9     |
-clk                                  | BUFGP                  | 37    |
-u1_1kHz/tmp_clk                      | NONE(u3/sw1_out)       | 7     |
-tmp_clk_100Hz_in(tmp_clk_100Hz_in1:O)| NONE(*)(cent_sec/tq_0) | 7     |
--------------------------------------+------------------------+-------+
-(*) These 2 clock signal(s) are generated by combinatorial logic,
+-----------------------------------------+----------------------------+-------+
+Clock Signal                             | Clock buffer(FF name)      | Load  |
+-----------------------------------------+----------------------------+-------+
+u4/sw1_out                               | NONE(start_enable)         | 1     |
+seg_not0001(seg_not0001:O)               | NONE(*)(digit_0)           | 13    |
+clk                                      | BUFGP                      | 133   |
+u1_1kHz/tmp_clk                          | NONE(u4/sw1_out)           | 18    |
+u2/sw1_out                               | NONE(cent_sec/Q_temp2_0)   | 8     |
+u6/seg1_cmp_eq0000(u6/seg1_cmp_eq00001:O)| NONE(*)(u6/seg1_6)         | 6     |
+tmp_clk_100Hz_in(tmp_clk_100Hz_in1:O)    | NONE(*)(cent_sec/clk_cnt_0)| 15    |
+u7/count                                 | NONE(u7/LED_TEMP_7)        | 8     |
+u8/count                                 | NONE(u8/LED_7)             | 8     |
+-----------------------------------------+----------------------------+-------+
+(*) These 3 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
 ----------------------------------------
------------------------------------------+-------------------------+-------+
-Control Signal                           | Buffer(FF name)         | Load  |
------------------------------------------+-------------------------+-------+
-reset_inv(reset_inv1_INV_0:O)            | NONE(u1_1kHz/clk_cnt_15)| 44    |
-cent_sec/reset_inv(cent_sec/reset_inv1:O)| NONE(start_enable)      | 8     |
------------------------------------------+-------------------------+-------+
+------------------------------------------+------------------------+-------+
+Control Signal                            | Buffer(FF name)        | Load  |
+------------------------------------------+------------------------+-------+
+reset_inv(reset_inv1_INV_0:O)             | NONE(u1_1kHz/clk_cnt_8)| 45    |
+u2/sw1_out(u2/sw1_out:Q)                  | NONE(u7/X_1)           | 44    |
+cent_sec/reset_inv(u8/reset3_inv1_INV_0:O)| NONE(start_enable)     | 20    |
+u7/seg1_0__and0000(u7/seg1_0__and00001:O) | NONE(u7/seg1_0)        | 1     |
+u7/seg1_0__and0001(u7/seg1_0__and00011:O) | NONE(u7/seg1_0)        | 1     |
+u7/seg1_1__and0000(u7/seg1_1__and00001:O) | NONE(u7/seg1_1)        | 1     |
+u7/seg1_1__and0001(u7/seg1_1__and00011:O) | NONE(u7/seg1_1)        | 1     |
+u7/seg1_2__and0000(u7/seg1_2__and00001:O) | NONE(u7/seg1_2)        | 1     |
+u7/seg1_2__and0001(u7/seg1_2__and00011:O) | NONE(u7/seg1_2)        | 1     |
+u7/seg1_3__and0000(u7/seg1_3__and00001:O) | NONE(u7/seg1_3)        | 1     |
+u7/seg1_3__and0001(u7/seg1_3__and00011:O) | NONE(u7/seg1_3)        | 1     |
+u7/seg1_4__and0000(u7/seg1_4__and00001:O) | NONE(u7/seg1_4)        | 1     |
+u7/seg1_4__and0001(u7/seg1_4__and00011:O) | NONE(u7/seg1_4)        | 1     |
+u7/seg1_5__and0000(u7/seg1_5__and00001:O) | NONE(u7/seg1_5)        | 1     |
+u7/seg1_5__and0001(u7/seg1_5__and00011:O) | NONE(u7/seg1_5)        | 1     |
+u7/seg1_6__and0000(u7/seg1_6__and00001:O) | NONE(u7/seg1_6)        | 1     |
+u7/seg1_6__and0001(u7/seg1_6__and00011:O) | NONE(u7/seg1_6)        | 1     |
+------------------------------------------+------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -5
 
-   Minimum period: 9.394ns (Maximum Frequency: 106.451MHz)
-   Minimum input arrival time before clock: 9.911ns
+   Minimum period: 15.022ns (Maximum Frequency: 66.569MHz)
+   Minimum input arrival time before clock: 24.770ns
    Maximum output required time after clock: 8.128ns
    Maximum combinational path delay: No path found
 
@@ -535,31 +716,9 @@ Timing Detail:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'u3/sw1_out'
-  Clock period: 5.188ns (frequency: 192.753MHz)
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Delay:               5.188ns (Levels of Logic = 1)
-  Source:            start_enable (FF)
-  Destination:       start_enable (FF)
-  Source Clock:      u3/sw1_out rising
-  Destination Clock: u3/sw1_out rising
-
-  Data Path: start_enable to start_enable
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDC:C->Q              2   1.292   1.340  start_enable (start_enable)
-     INV:I->O              1   0.653   1.150  start_enable_not00011_INV_0 (start_enable_not0001)
-     FDC:D                     0.753          start_enable
-    ----------------------------------------
-    Total                      5.188ns (2.698ns logic, 2.490ns route)
-                                       (52.0% logic, 48.0% route)
-
-=========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 9.394ns (frequency: 106.451MHz)
-  Total number of paths / destination ports: 980 / 39
+  Total number of paths / destination ports: 3130 / 160
 -------------------------------------------------------------------------
 Delay:               9.394ns (Levels of Logic = 3)
   Source:            u1_1kHz/clk_cnt_7 (FF)
@@ -582,113 +741,180 @@ Delay:               9.394ns (Levels of Logic = 3)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'u1_1kHz/tmp_clk'
-  Clock period: 5.798ns (frequency: 172.473MHz)
-  Total number of paths / destination ports: 9 / 5
+  Clock period: 15.022ns (frequency: 66.569MHz)
+  Total number of paths / destination ports: 230 / 26
 -------------------------------------------------------------------------
-Delay:               5.798ns (Levels of Logic = 1)
-  Source:            u5/tmp_value_0 (FF)
-  Destination:       u5/tmp_value_0 (FF)
-  Source Clock:      u1_1kHz/tmp_clk rising
+Delay:               7.511ns (Levels of Logic = 1)
+  Source:            u4/sw1_out (FF)
+  Destination:       u6/test_test_0 (FF)
+  Source Clock:      u1_1kHz/tmp_clk falling
   Destination Clock: u1_1kHz/tmp_clk rising
 
-  Data Path: u5/tmp_value_0 to u5/tmp_value_0
+  Data Path: u4/sw1_out to u6/test_test_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDP:C->Q              7   1.292   1.950  u5/tmp_value_0 (u5/tmp_value_0)
-     INV:I->O              1   0.653   1.150  u5/Mcount_tmp_value_xor<0>11_INV_0 (u5/Mcount_tmp_value)
-     FDP:D                     0.753          u5/tmp_value_0
+     FDP_1:C->Q           20   1.292   3.200  u4/sw1_out (u4/sw1_out)
+     LUT4:I2->O            3   0.653   1.480  u6/test_test_and0000 (u6/test_test_and0000)
+     FDCE:CE                   0.886          u6/test_test_0
     ----------------------------------------
-    Total                      5.798ns (2.698ns logic, 3.100ns route)
-                                       (46.5% logic, 53.5% route)
+    Total                      7.511ns (2.831ns logic, 4.680ns route)
+                                       (37.7% logic, 62.3% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'tmp_clk_100Hz_in'
-  Clock period: 9.385ns (frequency: 106.553MHz)
-  Total number of paths / destination ports: 233 / 7
+  Clock period: 9.837ns (frequency: 101.657MHz)
+  Total number of paths / destination ports: 364 / 29
 -------------------------------------------------------------------------
-Delay:               9.385ns (Levels of Logic = 9)
-  Source:            cent_sec/tq_1 (FF)
-  Destination:       cent_sec/tq_6 (FF)
+Delay:               9.837ns (Levels of Logic = 3)
+  Source:            cent_sec/tq_2 (FF)
+  Destination:       cent_sec/tq_0 (FF)
   Source Clock:      tmp_clk_100Hz_in rising
   Destination Clock: tmp_clk_100Hz_in rising
 
-  Data Path: cent_sec/tq_1 to cent_sec/tq_6
+  Data Path: cent_sec/tq_2 to cent_sec/tq_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             23   1.292   3.350  cent_sec/tq_1 (cent_sec/tq_1)
-     LUT4:I1->O            1   0.653   1.150  cent_sec/Mcount_tq_lut<0>_SW0 (N16)
-     LUT4:I0->O            1   0.653   0.000  cent_sec/Mcount_tq_lut<0> (cent_sec/Mcount_tq_lut<0>)
-     MUXCY:S->O            1   0.784   0.000  cent_sec/Mcount_tq_cy<0> (cent_sec/Mcount_tq_cy<0>)
-     MUXCY:CI->O           1   0.050   0.000  cent_sec/Mcount_tq_cy<1> (cent_sec/Mcount_tq_cy<1>)
-     MUXCY:CI->O           1   0.050   0.000  cent_sec/Mcount_tq_cy<2> (cent_sec/Mcount_tq_cy<2>)
-     MUXCY:CI->O           1   0.050   0.000  cent_sec/Mcount_tq_cy<3> (cent_sec/Mcount_tq_cy<3>)
-     MUXCY:CI->O           1   0.050   0.000  cent_sec/Mcount_tq_cy<4> (cent_sec/Mcount_tq_cy<4>)
-     MUXCY:CI->O           0   0.050   0.000  cent_sec/Mcount_tq_cy<5> (cent_sec/Mcount_tq_cy<5>)
-     XORCY:CI->O           1   0.500   0.000  cent_sec/Mcount_tq_xor<6> (cent_sec/Mcount_tq6)
-     FDC:D                     0.753          cent_sec/tq_6
+     FDPE:C->Q             8   1.292   2.050  cent_sec/tq_2 (cent_sec/tq_2)
+     LUT4_D:I0->LO         1   0.653   0.100  cent_sec/tq_counter_not000111 (N260)
+     LUT4:I3->O            4   0.653   1.600  cent_sec/tq_cmp_eq00001 (cent_sec/tq_cmp_eq0000)
+     LUT4:I3->O            7   0.653   1.950  cent_sec/tclk_not000140 (cent_sec/tclk_not0001)
+     FDCE:CE                   0.886          cent_sec/tq_0
     ----------------------------------------
-    Total                      9.385ns (4.885ns logic, 4.500ns route)
-                                       (52.1% logic, 47.9% route)
+    Total                      9.837ns (4.137ns logic, 5.700ns route)
+                                       (42.1% logic, 57.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'u2/sw1_out'
+  Clock period: 4.307ns (frequency: 232.169MHz)
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Delay:               4.307ns (Levels of Logic = 1)
+  Source:            u7/seg1_6 (LATCH)
+  Destination:       u7/seg1_6 (LATCH)
+  Source Clock:      u2/sw1_out rising
+  Destination Clock: u2/sw1_out rising
+
+  Data Path: u7/seg1_6 to u7/seg1_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCP_1:G->Q           3   1.421   1.480  u7/seg1_6 (u7/seg1_6)
+     LUT4:I1->O            3   0.653   0.000  u7/seg1_mux0011<0> (u7/seg1_mux0011<0>)
+     LDCP_1:D                  0.753          u7/seg1_6
+    ----------------------------------------
+    Total                      4.307ns (2.827ns logic, 1.480ns route)
+                                       (65.6% logic, 34.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'seg_not0001'
-  Total number of paths / destination ports: 43 / 7
+  Total number of paths / destination ports: 38 / 7
 -------------------------------------------------------------------------
-Offset:              9.911ns (Levels of Logic = 5)
+Offset:              13.395ns (Levels of Logic = 7)
   Source:            reset (PAD)
-  Destination:       seg_0 (LATCH)
+  Destination:       seg_5 (LATCH)
   Destination Clock: seg_not0001 falling
 
-  Data Path: reset to seg_0
+  Data Path: reset to seg_5
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            16   0.924   2.800  reset_IBUF (reset_IBUF)
-     LUT4:I1->O            1   0.653   0.000  cent_sec_output/dec_01<3>160_F (N51)
-     MUXF5:I0->O           7   0.375   1.950  cent_sec_output/dec_01<3>160 (cent_sec_output/dec_01<3>)
-     LUT4:I3->O            1   0.653   1.150  seg_mux0001<6>26 (seg_mux0001<6>26)
-     LUT4:I1->O            1   0.653   0.000  seg_mux0001<6>59 (seg_mux0001<6>)
-     LD:D                      0.753          seg_6
+     IBUF:I->O            13   0.924   2.500  reset_IBUF (reset_IBUF)
+     LUT3:I0->O            7   0.653   1.950  cent_sec_output/dec_01<2> (cent_sec_output/dec_01<2>)
+     LUT4:I0->O            2   0.653   1.340  cent_sec_output/seg_01_one/Mrom_seg521 (N81)
+     LUT4:I3->O            1   0.653   0.000  seg_mux0015<5>1041 (seg_mux0015<5>1041)
+     MUXF5:I1->O           1   0.363   1.150  seg_mux0015<5>104_f5 (seg_mux0015<5>104)
+     LUT4:I3->O            1   0.653   1.150  seg_mux0015<5>113_SW0 (N231)
+     LUT4:I3->O            1   0.653   0.000  seg_mux0015<5>113 (seg_mux0015<5>)
+     LD:D                      0.753          seg_5
     ----------------------------------------
-    Total                      9.911ns (4.011ns logic, 5.900ns route)
-                                       (40.5% logic, 59.5% route)
+    Total                     13.395ns (5.305ns logic, 8.090ns route)
+                                       (39.6% logic, 60.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'u1_1kHz/tmp_clk'
   Total number of paths / destination ports: 2 / 2
 -------------------------------------------------------------------------
 Offset:              2.827ns (Levels of Logic = 1)
-  Source:            push2 (PAD)
-  Destination:       u3/tmp_sw1 (FF)
+  Source:            push3 (PAD)
+  Destination:       u4/tmp_sw1 (FF)
   Destination Clock: u1_1kHz/tmp_clk falling
 
-  Data Path: push2 to u3/tmp_sw1
+  Data Path: push3 to u4/tmp_sw1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   0.924   1.150  push2_IBUF (push2_IBUF)
-     FDP_1:D                   0.753          u3/tmp_sw1
+     IBUF:I->O             1   0.924   1.150  push3_IBUF (push3_IBUF)
+     FDP_1:D                   0.753          u4/tmp_sw1
     ----------------------------------------
     Total                      2.827ns (1.677ns logic, 1.150ns route)
                                        (59.3% logic, 40.7% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'seg_not0001'
-  Total number of paths / destination ports: 9 / 9
+Timing constraint: Default OFFSET IN BEFORE for Clock 'u2/sw1_out'
+  Total number of paths / destination ports: 9189 / 7
 -------------------------------------------------------------------------
-Offset:              8.128ns (Levels of Logic = 1)
-  Source:            digit_3 (LATCH)
-  Destination:       digit<3> (PAD)
-  Source Clock:      seg_not0001 falling
+Offset:              24.770ns (Levels of Logic = 12)
+  Source:            DIP<1> (PAD)
+  Destination:       u7/seg1_6 (LATCH)
+  Destination Clock: u2/sw1_out rising
 
-  Data Path: digit_3 to digit<3>
+  Data Path: DIP<1> to u7/seg1_6
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LD:G->Q               1   1.421   1.150  digit_3 (digit_3)
-     OBUF:I->O                 5.557          digit_3_OBUF (digit<3>)
+     IBUF:I->O             2   0.924   1.340  DIP_1_IBUF (DIP_1_IBUF)
+     LUT2:I0->O            2   0.653   1.340  u7/count2_and00011 (u7/count2_and0001)
+     LUT4:I2->O            3   0.653   1.480  u7/count2_mux0003<0>1 (u7/Madd_count2_addsub0008_cy<0>)
+     LUT3:I0->O            4   0.653   1.600  u7/count2_mux0004<0>1 (u7/Madd_count2_addsub0003_cy<0>)
+     LUT3:I0->O            1   0.653   1.150  u7/count2_mux0006<1>11 (N4)
+     LUT4:I3->O            4   0.653   1.600  u7/count2_mux0008<1>11 (N3)
+     LUT4:I3->O            2   0.653   1.340  u7/Madd_mux0000_addsub0001_cy<0>11 (u7/Madd_mux0000_addsub0001_cy<0>)
+     LUT3:I1->O            3   0.653   1.480  u7/Madd_mux0000_addsub0001_cy<1>11 (u7/Madd_mux0000_addsub0001_cy<1>)
+     LUT3:I1->O            3   0.653   1.480  u7/Madd_mux0000_addsub0001_cy<2>11 (u7/Madd_mux0000_addsub0001_cy<2>)
+     LUT4:I0->O            1   0.653   1.150  u7/seg1_mux0011<2>1_SW1 (N192)
+     LUT4:I3->O            7   0.653   1.950  u7/seg1_mux0011<2>1 (N17)
+     LUT4:I0->O            3   0.653   0.000  u7/seg1_mux0011<1> (u7/seg1_mux0011<1>)
+     LDCP_1:D                  0.753          u7/seg1_5
+    ----------------------------------------
+    Total                     24.770ns (8.860ns logic, 15.910ns route)
+                                       (35.8% logic, 64.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'u8/count'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              7.999ns (Levels of Logic = 1)
+  Source:            u8/LED_7 (FF)
+  Destination:       LED2<7> (PAD)
+  Source Clock:      u8/count rising
+
+  Data Path: u8/LED_7 to LED2<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             1   1.292   1.150  u8/LED_7 (u8/LED_7)
+     OBUF:I->O                 5.557          LED2_7_OBUF (LED2<7>)
+    ----------------------------------------
+    Total                      7.999ns (6.849ns logic, 1.150ns route)
+                                       (85.6% logic, 14.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'seg_not0001'
+  Total number of paths / destination ports: 13 / 13
+-------------------------------------------------------------------------
+Offset:              8.128ns (Levels of Logic = 1)
+  Source:            digit_5 (LATCH)
+  Destination:       digit<1> (PAD)
+  Source Clock:      seg_not0001 falling
+
+  Data Path: digit_5 to digit<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   1.421   1.150  digit_5 (digit_5)
+     OBUF:I->O                 5.557          digit_1_OBUF (digit<1>)
     ----------------------------------------
     Total                      8.128ns (6.978ns logic, 1.150ns route)
                                        (85.9% logic, 14.1% route)
@@ -696,14 +922,14 @@ Offset:              8.128ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 4.55 secs
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 9.45 secs
  
 --> 
 
-Total memory usage is 143372 kilobytes
+Total memory usage is 151564 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   28 (   0 filtered)
-Number of infos    :    5 (   0 filtered)
+Number of warnings :   83 (   0 filtered)
+Number of infos    :    8 (   0 filtered)
 

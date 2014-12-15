@@ -1,0 +1,4 @@
+set -tmpdir "./xst/projnav.tmp"
+elaborate
+-ifn Cnt_OneToSix.prj
+-ifmt mixed

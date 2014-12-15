@@ -1,5 +1,5 @@
-set -tmpdir "D:/Stop_Watch/Stopw/atch/wefwef/xst/projnav.tmp"
-set -xsthdpdir "D:/Stop_Watch/Stopw/atch/wefwef/xst"
+set -tmpdir "C:/Xilinx/wefoijweoifj/xst/projnav.tmp"
+set -xsthdpdir "C:/Xilinx/wefoijweoifj/xst"
 run
 -ifn StopWatch_02.prj
 -ifmt mixed

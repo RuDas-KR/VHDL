@@ -4,5 +4,12 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net seg_not0001 is sourced by a
 WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_clk_100Hz_in is sourced
    by a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-DRC detected 0 errors and 2 warnings.  Please see the previously displayed
+WARNING:PhysDesignRules:372 - Gated clock. Clock net u6/seg1_cmp_eq0000 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal <push2_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <push4_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+DRC detected 0 errors and 5 warnings.  Please see the previously displayed
 individual error or warning messages for more details.

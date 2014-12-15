@@ -5,27 +5,21 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |  Check  | Worst Case |  Best Case | Timing |   Timing   
                                             |         |    Slack   | Achievable | Errors |    Score   
 ------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net tmp | SETUP   |         N/A|     8.072ns|     N/A|           0
-  _clk_100Hz_in                             | HOLD    |     3.012ns|            |       0|           0
+  Autotimespec constraint for clock net u2/ | SETUP   |         N/A|     3.736ns|     N/A|           0
+  sw1_out                                   | HOLD    |     2.942ns|            |       0|           0
 ------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net u1_ | SETUP   |         N/A|     5.428ns|     N/A|           0
-  1kHz/tmp_clk                              | HOLD    |     2.425ns|            |       0|           0
+  Autotimespec constraint for clock net clk | SETUP   |         N/A|     8.359ns|     N/A|           0
+  _BUFGP                                    | HOLD    |     2.438ns|            |       0|           0
 ------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net u3/ | SETUP   |         N/A|     3.015ns|     N/A|           0
-  sw1_out                                   | HOLD    |     2.430ns|            |       0|           0
+  Autotimespec constraint for clock net tmp | SETUP   |         N/A|     9.249ns|     N/A|           0
+  _clk_100Hz_in                             | HOLD    |     2.084ns|            |       0|           0
 ------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP   |         N/A|     7.747ns|     N/A|           0
-  _BUFGP                                    | HOLD    |     2.461ns|            |       0|           0
-------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net cen | SETUP   |         N/A|     8.598ns|     N/A|        1231
-  t_sec/tclk                                | HOLD    |     0.404ns|            |       0|           0
-------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net sec | SETUP   |         N/A|     8.576ns|     N/A|           0
-  ond/tclk                                  | HOLD    |     3.196ns|            |       0|           0
+  Autotimespec constraint for clock net u1_ | SETUP   |         N/A|    11.445ns|     N/A|           0
+  1kHz/tmp_clk                              | HOLD    |     1.353ns|            |       0|           0
 ------------------------------------------------------------------------------------------------------
 
 
-1 constraint not met.
+All constraints were met.
 INFO:Timing:2761 - N/A entries in the Constraints list may indicate that the 
    constraint does not cover any paths or that it has no requested value.
 

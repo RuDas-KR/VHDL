@@ -1,39 +1,154 @@
-V3 27
-FL D:/Stop_Watch/Stopw/atch/wefwef/CNT_1TO6.VHD 2014/11/19.20:59:55 K.39
-EN work/Cnt_OneToSix 1416398667 FL D:/Stop_Watch/Stopw/atch/wefwef/CNT_1TO6.VHD \
+V3 136
+FL C:/Xilinx/123/CNT_1TO6.VHD 2014/11/27.16:58:14 K.39
+FL C:/Xilinx/123/COUNTER.VHD 2014/12/13.15:37:48 K.39
+FL C:/Xilinx/123/DEBOUNCE.VHD 2005/01/15.21:53:14 K.39
+FL C:/Xilinx/123/dip_button.vhd 2014/12/13.17:49:27 K.39
+FL C:/Xilinx/123/INT2SEG1.VHD 2005/01/15.21:53:14 K.39
+FL C:/Xilinx/123/INT2SEG2.VHD 2014/12/13.15:37:56 K.39
+FL C:/Xilinx/123/random_fail.vhd 2014/12/13.17:49:14 K.39
+FL C:/Xilinx/123/STPWATCH.VHD 2014/12/13.17:49:03 K.39
+FL C:/Xilinx/123/test.vhd 2014/12/13.15:39:20 K.39
+FL C:/Xilinx/123/TIMEBASE2.VHD 2014/11/27.18:43:04 K.39
+FL "C:/Xilinx/2014. 11. 30/21134190 11.28/CNT_1TO6.VHD" 2014/11/27.16:58:14 K.39
+FL "C:/Xilinx/2014. 11. 30/21134190 11.28/COUNTER.VHD" 2014/12/05.17:06:45 K.39
+FL "C:/Xilinx/2014. 11. 30/21134190 11.28/DEBOUNCE.VHD" 2005/01/15.21:53:14 K.39
+FL "C:/Xilinx/2014. 11. 30/21134190 11.28/dip_button.vhd" 2014/12/05.18:00:17 K.39
+FL "C:/Xilinx/2014. 11. 30/21134190 11.28/INT2SEG1.VHD" 2005/01/15.21:53:14 K.39
+FL "C:/Xilinx/2014. 11. 30/21134190 11.28/INT2SEG2.VHD" 2014/12/05.16:49:02 K.39
+FL "C:/Xilinx/2014. 11. 30/21134190 11.28/STPWATCH.VHD" 2014/12/05.17:53:55 K.39
+FL "C:/Xilinx/2014. 11. 30/21134190 11.28/test.vhd" 2014/12/05.17:44:25 K.39
+FL "C:/Xilinx/2014. 11. 30/21134190 11.28/TIMEBASE2.VHD" 2014/11/27.18:43:04 K.39
+FL "C:/Xilinx/201411.28/21134190 11.28/CNT_1TO6.VHD" 2014/11/27.16:58:14 K.39
+FL "C:/Xilinx/201411.28/21134190 11.28/COUNTER.VHD" 2014/11/19.20:53:32 K.39
+FL "C:/Xilinx/201411.28/21134190 11.28/DEBOUNCE.VHD" 2005/01/15.21:53:14 K.39
+FL "C:/Xilinx/201411.28/21134190 11.28/dip_button.vhd" 2014/11/30.20:31:14 K.39
+FL "C:/Xilinx/201411.28/21134190 11.28/INT2SEG1.VHD" 2005/01/15.21:53:14 K.39
+FL "C:/Xilinx/201411.28/21134190 11.28/INT2SEG2.VHD" 2014/11/19.21:04:16 K.39
+FL "C:/Xilinx/201411.28/21134190 11.28/STPWATCH.VHD" 2014/11/30.20:26:23 K.39
+FL "C:/Xilinx/201411.28/21134190 11.28/test.vhd" 2014/11/30.20:27:25 K.39
+FL "C:/Xilinx/201411.28/21134190 11.28/TIMEBASE2.VHD" 2014/11/27.18:43:04 K.39
+FL "C:/Xilinx/21134190 11.26/CNT_1TO6.VHD" 2014/11/27.16:58:14 K.39
+FL "C:/Xilinx/21134190 11.26/COUNTER.VHD" 2014/11/19.20:53:32 K.39
+FL "C:/Xilinx/21134190 11.26/DEBOUNCE.VHD" 2005/01/15.21:53:14 K.39
+FL "C:/Xilinx/21134190 11.26/dip_button.vhd" 2014/11/28.16:18:27 K.39
+FL "C:/Xilinx/21134190 11.26/INT2SEG1.VHD" 2005/01/15.21:53:14 K.39
+FL "C:/Xilinx/21134190 11.26/INT2SEG2.VHD" 2014/11/19.21:04:16 K.39
+FL "C:/Xilinx/21134190 11.26/STPWATCH.VHD" 2014/11/28.16:24:33 K.39
+FL "C:/Xilinx/21134190 11.26/test.vhd" 2014/11/28.15:49:24 K.39
+FL "C:/Xilinx/21134190 11.26/TIMEBASE2.VHD" 2014/11/27.18:43:04 K.39
+FL "C:/Xilinx/21134190 11.28/21134190 11.28/CNT_1TO6.VHD" 2014/11/27.16:58:14 K.39
+FL "C:/Xilinx/21134190 11.28/21134190 11.28/COUNTER.VHD" 2014/12/13.15:37:46 K.39
+FL "C:/Xilinx/21134190 11.28/21134190 11.28/DEBOUNCE.VHD" 2005/01/15.21:53:14 K.39
+FL "C:/Xilinx/21134190 11.28/21134190 11.28/dip_button.vhd" 2014/12/13.15:29:51 K.39
+FL "C:/Xilinx/21134190 11.28/21134190 11.28/INT2SEG1.VHD" 2005/01/15.21:53:14 K.39
+FL "C:/Xilinx/21134190 11.28/21134190 11.28/INT2SEG2.VHD" 2014/12/13.15:37:54 K.39
+FL "C:/Xilinx/21134190 11.28/21134190 11.28/STPWATCH.VHD" 2014/12/05.17:53:56 K.39
+FL "C:/Xilinx/21134190 11.28/21134190 11.28/test.vhd" 2014/12/13.15:39:19 K.39
+FL "C:/Xilinx/21134190 11.28/21134190 11.28/TIMEBASE2.VHD" 2014/11/27.18:43:04 K.39
+FL "C:/Xilinx/21134190 11.28/CNT_1TO6.VHD" 2014/11/27.16:58:14 K.39
+FL "C:/Xilinx/21134190 11.28/COUNTER.VHD" 2014/11/19.20:53:32 K.39
+FL "C:/Xilinx/21134190 11.28/DEBOUNCE.VHD" 2005/01/15.21:53:14 K.39
+FL "C:/Xilinx/21134190 11.28/dip_button.vhd" 2014/11/28.22:35:37 K.39
+FL "C:/Xilinx/21134190 11.28/INT2SEG1.VHD" 2005/01/15.21:53:14 K.39
+FL "C:/Xilinx/21134190 11.28/INT2SEG2.VHD" 2014/11/19.21:04:16 K.39
+FL "C:/Xilinx/21134190 11.28/STPWATCH.VHD" 2014/11/28.22:34:43 K.39
+FL "C:/Xilinx/21134190 11.28/test.vhd" 2014/11/28.20:52:56 K.39
+FL "C:/Xilinx/21134190 11.28/TIMEBASE2.VHD" 2014/11/27.18:43:04 K.39
+FL C:/Xilinx/test/CNT_1TO6.VHD 2014/11/19.20:59:56 K.39
+FL C:/Xilinx/test/COUNTER.VHD 2014/11/19.20:53:32 K.39
+FL C:/Xilinx/test/DEBOUNCE.VHD 2005/01/15.21:53:14 K.39
+FL C:/Xilinx/test/INT2SEG1.VHD 2005/01/15.21:53:14 K.39
+FL C:/Xilinx/test/INT2SEG2.VHD 2014/11/19.21:04:16 K.39
+FL C:/Xilinx/test/STPWATCH.VHD 2014/11/26.20:28:13 K.39
+FL C:/Xilinx/test/test.vhd 2014/11/26.20:20:54 K.39
+FL C:/Xilinx/test/TIMEBASE2.VHD 2014/11/19.20:59:08 K.39
+FL C:/Xilinx/wefoijweoifj/CNT_1TO6.VHD 2014/11/27.16:58:14 K.39
+EN work/Cnt_OneToSix 1418550905 FL C:/Xilinx/wefoijweoifj/CNT_1TO6.VHD \
       PB ieee/std_logic_1164 1217055545 PB ieee/STD_LOGIC_UNSIGNED 1217055547
-AR work/Cnt_OneToSix/beh 1416398668 \
-      FL D:/Stop_Watch/Stopw/atch/wefwef/CNT_1TO6.VHD EN work/Cnt_OneToSix 1416398667
-FL D:/Stop_Watch/Stopw/atch/wefwef/COUNTER.VHD 2014/11/19.20:53:31 K.39
-EN work/counter 1416398663 FL D:/Stop_Watch/Stopw/atch/wefwef/COUNTER.VHD \
+AR work/Cnt_OneToSix/beh 1418550906 \
+      FL C:/Xilinx/wefoijweoifj/CNT_1TO6.VHD EN work/Cnt_OneToSix 1418550905
+FL C:/Xilinx/wefoijweoifj/COUNTER.VHD 2014/12/13.15:37:48 K.39
+EN work/counter 1418550901 FL C:/Xilinx/wefoijweoifj/COUNTER.VHD \
       PB ieee/std_logic_1164 1217055545
-AR work/counter/design 1416398664 \
-      FL D:/Stop_Watch/Stopw/atch/wefwef/COUNTER.VHD EN work/counter 1416398663
-FL D:/Stop_Watch/Stopw/atch/wefwef/DEBOUNCE.VHD 2005/01/15.21:53:14 K.39
-EN work/debounce 1416398661 FL D:/Stop_Watch/Stopw/atch/wefwef/DEBOUNCE.VHD \
+AR work/counter/design 1418550902 \
+      FL C:/Xilinx/wefoijweoifj/COUNTER.VHD EN work/counter 1418550901
+FL C:/Xilinx/wefoijweoifj/DEBOUNCE.VHD 2005/01/15.21:53:14 K.39
+EN work/debounce 1418550899 FL C:/Xilinx/wefoijweoifj/DEBOUNCE.VHD \
       PB ieee/std_logic_1164 1217055545
-AR work/debounce/design 1416398662 \
-      FL D:/Stop_Watch/Stopw/atch/wefwef/DEBOUNCE.VHD EN work/debounce 1416398661
-FL D:/Stop_Watch/Stopw/atch/wefwef/INT2SEG1.VHD 2005/01/15.21:53:14 K.39
-EN work/int2seg1 1416398657 FL D:/Stop_Watch/Stopw/atch/wefwef/INT2SEG1.VHD \
+AR work/debounce/design 1418550900 \
+      FL C:/Xilinx/wefoijweoifj/DEBOUNCE.VHD EN work/debounce 1418550899
+FL C:/Xilinx/wefoijweoifj/dip_button.vhd 2014/12/14.18:18:48 K.39
+EN work/Random 1418550909 FL C:/Xilinx/wefoijweoifj/dip_button.vhd \
+      PB ieee/std_logic_1164 1217055545 PB ieee/std_logic_arith 1217055546 \
+      PB ieee/STD_LOGIC_UNSIGNED 1217055547
+AR work/Random/Behavioral 1418550910 \
+      FL C:/Xilinx/wefoijweoifj/dip_button.vhd EN work/Random 1418550909
+FL C:/Xilinx/wefoijweoifj/INT2SEG1.VHD 2005/01/15.21:53:14 K.39
+EN work/int2seg1 1418550895 FL C:/Xilinx/wefoijweoifj/INT2SEG1.VHD \
       PB ieee/std_logic_1164 1217055545
-AR work/int2seg1/behavior 1416398658 \
-      FL D:/Stop_Watch/Stopw/atch/wefwef/INT2SEG1.VHD EN work/int2seg1 1416398657
-FL D:/Stop_Watch/Stopw/atch/wefwef/INT2SEG2.VHD 2014/11/19.21:04:15 K.39
-EN work/int2seg2 1416398665 FL D:/Stop_Watch/Stopw/atch/wefwef/INT2SEG2.VHD \
+AR work/int2seg1/behavior 1418550896 \
+      FL C:/Xilinx/wefoijweoifj/INT2SEG1.VHD EN work/int2seg1 1418550895
+FL C:/Xilinx/wefoijweoifj/INT2SEG2.VHD 2014/12/13.15:37:56 K.39
+EN work/int2seg2 1418550903 FL C:/Xilinx/wefoijweoifj/INT2SEG2.VHD \
       PB ieee/std_logic_1164 1217055545
-AR work/int2seg2/design 1416398666 \
-      FL D:/Stop_Watch/Stopw/atch/wefwef/INT2SEG2.VHD EN work/int2seg2 1416398665 \
+AR work/int2seg2/design 1418550904 \
+      FL C:/Xilinx/wefoijweoifj/INT2SEG2.VHD EN work/int2seg2 1418550903 \
       CP int2seg1
-FL D:/Stop_Watch/Stopw/atch/wefwef/STPWATCH.VHD 2014/11/19.21:02:54 K.39
-EN work/StopWatch_02 1416398669 FL D:/Stop_Watch/Stopw/atch/wefwef/STPWATCH.VHD \
+FL C:/Xilinx/wefoijweoifj/random_fail.vhd 2014/12/14.18:15:56 K.39
+EN work/Random_fail 1418550911 FL C:/Xilinx/wefoijweoifj/random_fail.vhd \
+      PB ieee/std_logic_1164 1217055545 PB ieee/std_logic_arith 1217055546 \
+      PB ieee/STD_LOGIC_UNSIGNED 1217055547
+AR work/Random_fail/Behavioral 1418550912 \
+      FL C:/Xilinx/wefoijweoifj/random_fail.vhd EN work/Random_fail 1418550911
+FL C:/Xilinx/wefoijweoifj/STPWATCH.VHD 2014/12/14.18:53:34 K.39
+EN work/StopWatch_02 1418550913 FL C:/Xilinx/wefoijweoifj/STPWATCH.VHD \
       PB ieee/std_logic_1164 1217055545 PB ieee/STD_LOGIC_UNSIGNED 1217055547 \
       PB ieee/std_logic_arith 1217055546
-AR work/StopWatch_02/structural 1416398670 \
-      FL D:/Stop_Watch/Stopw/atch/wefwef/STPWATCH.VHD EN work/StopWatch_02 1416398669 \
-      CP TimeBase_Gen2 CP debounce CP counter CP int2seg2 CP Cnt_OneToSix
-FL D:/Stop_Watch/Stopw/atch/wefwef/TIMEBASE2.VHD 2014/11/19.20:59:06 K.39
-EN work/TimeBase_Gen2 1416398659 FL D:/Stop_Watch/Stopw/atch/wefwef/TIMEBASE2.VHD \
+AR work/StopWatch_02/structural 1418550914 \
+      FL C:/Xilinx/wefoijweoifj/STPWATCH.VHD EN work/StopWatch_02 1418550913 \
+      CP BUFGP CP TimeBase_Gen2 CP debounce CP counter CP int2seg2 CP Cnt_OneToSix \
+      CP updown CP Random CP random_fail
+FL C:/Xilinx/wefoijweoifj/test.vhd 2014/12/14.18:54:51 K.39
+EN work/updown 1418550907 FL C:/Xilinx/wefoijweoifj/test.vhd \
+      PB ieee/std_logic_1164 1217055545 PB ieee/std_logic_arith 1217055546 \
+      PB ieee/STD_LOGIC_UNSIGNED 1217055547
+AR work/updown/Behavioral 1418550908 \
+      FL C:/Xilinx/wefoijweoifj/test.vhd EN work/updown 1418550907
+FL C:/Xilinx/wefoijweoifj/TIMEBASE2.VHD 2014/12/14.18:04:54 K.39
+EN work/TimeBase_Gen2 1418550897 FL C:/Xilinx/wefoijweoifj/TIMEBASE2.VHD \
       PB ieee/std_logic_1164 1217055545 PB ieee/STD_LOGIC_UNSIGNED 1217055547
-AR work/TimeBase_Gen2/beh_timebase 1416398660 \
-      FL D:/Stop_Watch/Stopw/atch/wefwef/TIMEBASE2.VHD EN work/TimeBase_Gen2 1416398659
+AR work/TimeBase_Gen2/beh_timebase 1418550898 \
+      FL C:/Xilinx/wefoijweoifj/TIMEBASE2.VHD EN work/TimeBase_Gen2 1418550897
+FL D:/kwangil/11_19/CNT_1TO6.VHD 2014/11/19.20:59:56 K.39
+FL D:/kwangil/11_19/COUNTER.VHD 2014/11/19.20:53:32 K.39
+FL D:/kwangil/11_19/DEBOUNCE.VHD 2005/01/15.21:53:14 K.39
+FL D:/kwangil/11_19/INT2SEG1.VHD 2005/01/15.21:53:14 K.39
+FL D:/kwangil/11_19/INT2SEG2.VHD 2014/11/19.21:04:16 K.39
+FL D:/kwangil/11_19/STPWATCH.VHD 2014/11/25.22:10:03 K.39
+FL D:/kwangil/11_19/test.vhd 2014/11/25.22:08:20 K.39
+FL D:/kwangil/11_19/TIMEBASE2.VHD 2014/11/19.20:59:08 K.39
+FL D:/kwangil/test/CNT_1TO6.VHD 2014/11/19.20:59:56 K.39
+FL D:/kwangil/test/COUNTER.VHD 2014/11/19.20:53:32 K.39
+FL D:/kwangil/test/DEBOUNCE.VHD 2005/01/15.21:53:14 K.39
+FL D:/kwangil/test/INT2SEG1.VHD 2005/01/15.21:53:14 K.39
+FL D:/kwangil/test/INT2SEG2.VHD 2014/11/19.21:04:16 K.39
+FL D:/kwangil/test/STPWATCH.VHD 2014/11/25.22:24:36 K.39
+FL D:/kwangil/test/test.vhd 2014/11/25.22:13:34 K.39
+FL D:/kwangil/test/TIMEBASE2.VHD 2014/11/19.20:59:08 K.39
+FL D:/Stop_Watch/Stopw/atch/wefwef/CNT_1TO6.VHD 2014/11/19.20:59:55 K.39
+FL D:/Stop_Watch/Stopw/atch/wefwef/COUNTER.VHD 2014/11/19.20:53:31 K.39
+FL D:/Stop_Watch/Stopw/atch/wefwef/DEBOUNCE.VHD 2005/01/15.21:53:14 K.39
+FL D:/Stop_Watch/Stopw/atch/wefwef/INT2SEG1.VHD 2005/01/15.21:53:14 K.39
+FL D:/Stop_Watch/Stopw/atch/wefwef/INT2SEG2.VHD 2014/11/19.21:04:15 K.39
+FL D:/Stop_Watch/Stopw/atch/wefwef/STPWATCH.VHD 2014/11/19.21:02:54 K.39
+FL D:/Stop_Watch/Stopw/atch/wefwef/TIMEBASE2.VHD 2014/11/19.20:59:06 K.39
+FL D:/wefoijweoifj/CNT_1TO6.VHD 2014/11/27.16:58:14 K.39
+FL D:/wefoijweoifj/COUNTER.VHD 2014/12/13.15:37:48 K.39
+FL D:/wefoijweoifj/DEBOUNCE.VHD 2005/01/15.21:53:14 K.39
+FL D:/wefoijweoifj/dip_button.vhd 2014/12/14.18:15:29 K.39
+FL D:/wefoijweoifj/INT2SEG1.VHD 2005/01/15.21:53:14 K.39
+FL D:/wefoijweoifj/INT2SEG2.VHD 2014/12/13.15:37:56 K.39
+FL D:/wefoijweoifj/random_fail.vhd 2014/12/14.18:15:55 K.39
+FL D:/wefoijweoifj/STPWATCH.VHD 2014/12/14.18:13:40 K.39
+FL D:/wefoijweoifj/test.vhd 2014/12/14.18:15:21 K.39
+FL D:/wefoijweoifj/TIMEBASE2.VHD 2014/12/14.18:04:53 K.39

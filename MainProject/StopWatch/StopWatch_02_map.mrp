@@ -3,36 +3,39 @@ Xilinx Mapping Report File for Design 'StopWatch_02'
 
 Design Information
 ------------------
-Command Line   : map -ise D:/Stop_Watch/Stopw/atch/wefwef/wefwef.ise -intstyle
-ise -p xc2s100-pq208-5 -cm area -pr off -k 4 -c 100 -tx off -o
-StopWatch_02_map.ncd StopWatch_02.ngd StopWatch_02.pcf 
+Command Line   : map -ise C:/Xilinx/wefoijweoifj/wefwef.ise -intstyle ise -p
+xc2s100-pq208-5 -cm area -pr off -k 4 -c 100 -tx off -o StopWatch_02_map.ncd
+StopWatch_02.ngd StopWatch_02.pcf 
 Target Device  : xc2s100
 Target Package : pq208
 Target Speed   : -5
 Mapper Version : spartan2 -- $Revision: 1.46.12.2 $
-Mapped Date    : Wed Nov 19 21:04:26 2014
+Mapped Date    : Sun Dec 14 18:55:09 2014
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:    2
+Number of warnings:    8
 Logic Utilization:
-  Number of Slice Flip Flops:        52 out of  2,400    2%
-  Number of 4 input LUTs:           116 out of  2,400    4%
+  Total Number Slice Registers:     189 out of  2,400    7%
+    Number used as Flip Flops:                    174
+    Number used as Latches:                        15
+  Number of 4 input LUTs:           326 out of  2,400   13%
 Logic Distribution:
-    Number of occupied Slices:                          88 out of  1,200    7%
-    Number of Slices containing only related logic:     88 out of     88  100%
-    Number of Slices containing unrelated logic:         0 out of     88    0%
+    Number of occupied Slices:                         251 out of  1,200   20%
+    Number of Slices containing only related logic:    251 out of    251  100%
+    Number of Slices containing unrelated logic:         0 out of    251    0%
         *See NOTES below for an explanation of the effects of unrelated logic
-Total Number of 4 input LUTs:          149 out of  2,400    6%
-      Number used as logic:                       116
-      Number used as a route-thru:                 33
-   Number of bonded IOBs:            24 out of    140   17%
-      IOB Latches:                                  9
+Total Number of 4 input LUTs:          450 out of  2,400   18%
+      Number used as logic:                       326
+      Number used as a route-thru:                124
+   Number of bonded IOBs:            34 out of    140   24%
+      IOB Flip Flops:                               8
+      IOB Latches:                                 13
    Number of GCLKs:                   1 out of      4   25%
    Number of GCLKIOBs:                1 out of      4   25%
 
-Peak Memory Usage:  129 MB
+Peak Memory Usage:  132 MB
 Total REAL time to MAP completion:  1 secs 
 Total CPU time to MAP completion:   1 secs 
 
@@ -76,12 +79,30 @@ Section 1 - Errors
 
 Section 2 - Warnings
 --------------------
+WARNING:LIT:243 - Logical network FPGA_RST has no load.
+WARNING:LIT:395 - The above warning message base_net_load_rule is repeated 11
+   more times for the following (max. 5 shown):
+   count<7>,
+   count<6>,
+   count<5>,
+   count<4>,
+   count<3>
+   To see the details of these warning messages, please use the -detail switch.
+WARNING:MapLib:701 - Signal FPGA_CLK connected to top level port FPGA_CLK has
+   been removed.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net seg_not0001 is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_clk_100Hz_in is sourced
    by a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net u6/seg1_cmp_eq0000 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal <push2_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <push4_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
 
 Section 3 - Informational
 -------------------------
@@ -92,10 +113,35 @@ INFO:LIT:244 - All of the single ended outputs in this design are using slew
 
 Section 4 - Removed Logic Summary
 ---------------------------------
+   3 block(s) removed
    2 block(s) optimized away
+   3 signal(s) removed
 
 Section 5 - Removed Logic
 -------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "u10/O" is sourceless and has been removed.
+The signal "u10/IBUFG" is sourceless and has been removed.
+ Sourceless block "u10/BUFG" (CKBUF) removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "FPGA_CLK" is unused and has been removed.
+ Unused block "FPGA_CLK" (PAD) removed.
+Unused block "u10/IBUFG" (CKBUF) removed.
 
 Optimized Block(s):
 TYPE 		BLOCK
@@ -113,22 +159,32 @@ Section 6 - IOB Properties
 |                                    |         |           |             | Strength | Rate |          |          | Delay |
 +------------------------------------------------------------------------------------------------------------------------+
 | clk                                | GCLKIOB | INPUT     | LVTTL       |          |      |          |          |       |
-| digit<1>                           | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
-| digit<2>                           | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| DIP<0>                             | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| DIP<1>                             | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| DIP<2>                             | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| DIP<3>                             | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| DIP<4>                             | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| DIP<5>                             | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| DIP<6>                             | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| DIP<7>                             | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| LED2<0>                            | IOB     | OUTPUT    | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| LED2<1>                            | IOB     | OUTPUT    | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| LED2<2>                            | IOB     | OUTPUT    | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| LED2<3>                            | IOB     | OUTPUT    | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| LED2<4>                            | IOB     | OUTPUT    | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| LED2<5>                            | IOB     | OUTPUT    | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| LED2<6>                            | IOB     | OUTPUT    | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| LED2<7>                            | IOB     | OUTPUT    | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| digit<1>                           | IOB     | OUTPUT    | LVTTL       | 12       | SLOW | OUTLATCH |          |       |
+| digit<2>                           | IOB     | OUTPUT    | LVTTL       | 12       | SLOW | OUTLATCH |          |       |
 | digit<3>                           | IOB     | OUTPUT    | LVTTL       | 12       | SLOW | OUTLATCH |          |       |
 | digit<4>                           | IOB     | OUTPUT    | LVTTL       | 12       | SLOW | OUTLATCH |          |       |
-| digit<5>                           | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
-| digit<6>                           | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
-| led<0>                             | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
-| led<1>                             | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
-| led<2>                             | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
-| led<3>                             | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
-| led<4>                             | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
-| led<5>                             | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
-| led<6>                             | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
-| led<7>                             | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| digit<5>                           | IOB     | OUTPUT    | LVTTL       | 12       | SLOW | OUTLATCH |          |       |
+| digit<6>                           | IOB     | OUTPUT    | LVTTL       | 12       | SLOW | OUTLATCH |          |       |
 | push1                              | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
 | push2                              | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| push3                              | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| push4                              | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
 | reset                              | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
 | seg<0>                             | IOB     | OUTPUT    | LVTTL       | 12       | SLOW | OUTLATCH |          |       |
 | seg<1>                             | IOB     | OUTPUT    | LVTTL       | 12       | SLOW | OUTLATCH |          |       |

@@ -8,16 +8,10 @@ NET "digit<3>"  LOC = "p110"  ;
 NET "digit<4>"  LOC = "p111"  ;
 NET "digit<5>"  LOC = "p112"  ;
 NET "digit<6>"  LOC = "p113"  ;
-NET "led<0>"  LOC = "p95"  ;
-NET "led<1>"  LOC = "p96"  ;
-NET "led<2>"  LOC = "p97"  ;
-NET "led<3>"  LOC = "p98"  ;
-NET "led<4>"  LOC = "p99"  ;
-NET "led<5>"  LOC = "p100"  ;
-NET "led<6>"  LOC = "p101"  ;
-NET "led<7>"  LOC = "p102"  ;
 NET "push1"  LOC = "p68"  ;
 NET "push2"  LOC = "p69"  ;
+NET "push3"  LOC = "p70"  ;
+NET "push4"  LOC = "p71"  ;
 NET "reset"  LOC = "p75"  ;
 NET "seg<0>"  LOC = "p114"  ;
 NET "seg<1>"  LOC = "p115"  ;
@@ -26,7 +20,22 @@ NET "seg<3>"  LOC = "p120"  ;
 NET "seg<4>"  LOC = "p121"  ;
 NET "seg<5>"  LOC = "p122"  ;
 NET "seg<6>"  LOC = "p123"  ;
-
+NET "LED2<0>"  LOC = "p95"  ;
+NET "LED2<1>"  LOC = "p96"  ;
+NET "LED2<2>"  LOC = "p97"  ;
+NET "LED2<3>"  LOC = "p98"  ;
+NET "LED2<4>"  LOC = "p99"  ;
+NET "LED2<5>"  LOC = "p100"  ;
+NET "LED2<6>"  LOC = "p101"  ;
+NET "LED2<7>"  LOC = "p102"  ;
+NET "DIP<0>"  LOC = "p57"  ;
+NET "DIP<1>"  LOC = "p58"  ;
+NET "DIP<2>"  LOC = "p59"  ;
+NET "DIP<3>"  LOC = "p60"  ;
+NET "DIP<4>"  LOC = "p61"  ;
+NET "DIP<5>"  LOC = "p62"  ;
+NET "DIP<6>"  LOC = "p63"  ;
+NET "DIP<7>"  LOC = "p67"  ;
 #PACE: Start of PACE Area Constraints
 
 #PACE: Start of PACE Prohibit Constraints

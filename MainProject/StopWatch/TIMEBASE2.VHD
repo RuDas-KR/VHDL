@@ -8,7 +8,7 @@ entity TimeBase_Gen2 is
 	);
 	port(	clk		:  in	std_logic ;
 		reset		:  in	std_logic ;
-		clk_out	:  out 	std_logic  
+		clk_out	:  out 	std_logic
 	);
 end TimeBase_Gen2 ;
 
@@ -29,10 +29,10 @@ begin
 				tmp_clk := not tmp_clk;
 			else 
 			clk_cnt := clk_cnt + 1;
-
 			end if;
 		end if;
 		clk_out <= tmp_clk;
+
   	end process clock_gen;
 	----------------------------------------------------
 end beh_timebase;

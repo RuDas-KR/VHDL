@@ -6,7 +6,7 @@ C:\Xilinx\10.1\ISE.
 -5
 Opened constraints file StopWatch_02.pcf.
 
-Wed Nov 19 21:04:34 2014
+Sun Dec 14 18:55:21 2014
 
 C:\Xilinx\10.1\ISE\bin\nt\unwrapped\bitgen.exe -intstyle ise -w -g DebugBitstream:No -g Binary:no -g Gclkdel0:11111 -g Gclkdel1:11111 -g Gclkdel2:11111 -g Gclkdel3:11111 -g ConfigRate:4 -g CclkPin:PullUp -g M0Pin:PullUp -g M1Pin:PullUp -g M2Pin:PullUp -g ProgPin:PullUp -g DonePin:PullUp -g TckPin:PullUp -g TdiPin:PullUp -g TdoPin:PullUp -g TmsPin:PullUp -g UnusedPin:PullDown -g UserID:0xFFFFFFFF -g StartUpClk:CClk -g DONE_cycle:4 -g GTS_cycle:5 -g GSR_cycle:6 -g GWE_cycle:6 -g LCK_cycle:NoWait -g Security:None -g DonePipe:No -g DriveDone:No StopWatch_02.ncd 
 
@@ -102,7 +102,14 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net seg_not0001 is sourced by a
 WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_clk_100Hz_in is sourced
    by a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-DRC detected 0 errors and 2 warnings.  Please see the previously displayed
+WARNING:PhysDesignRules:372 - Gated clock. Clock net u6/seg1_cmp_eq0000 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal <push2_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <push4_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+DRC detected 0 errors and 5 warnings.  Please see the previously displayed
 individual error or warning messages for more details.
 Creating bit map...
 Saving bit stream in "stopwatch_02.bit".

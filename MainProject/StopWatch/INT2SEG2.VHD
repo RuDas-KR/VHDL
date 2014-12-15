@@ -32,18 +32,13 @@ begin
 	begin
 	    	if( reset='0' )  then  	dec_10 <= 0;  
 					dec_01 <= 0;
---	    	elsif (  int_value  >= 90 )  then	dec_10 <= 9;
---						dec_01 <= int_value - 90;
---		elsif (  int_value  >= 80 )  then	dec_10 <= 8;
---		 				dec_01 <= int_value - 80;
---		elsif (  int_value  >= 70 )  then	dec_10 <= 7;
---		 					dec_01 <= int_value - 70;
+--
 --		elsif (  int_value  >= 60 )  then	dec_10 <= 6;
 --							dec_01 <= int_value - 60;
-		elsif (  int_value  >= 50 )  then	dec_10 <= 5;
-							dec_01 <= int_value - 50;
-		elsif (  int_value  >= 40 )  then	dec_10 <= 4;
-							dec_01 <= int_value - 40;
+--		elsif (  int_value  >= 50 )  then	dec_10 <= 5;
+--							dec_01 <= int_value - 50;
+--		elsif (  int_value  >= 40 )  then	dec_10 <= 4;
+--							dec_01 <= int_value - 40;
 		elsif (  int_value  >= 30 )  then	dec_10 <= 3;
 	 						dec_01 <= int_value - 30;
 		elsif (  int_value  >= 20 )  then	dec_10 <= 2;

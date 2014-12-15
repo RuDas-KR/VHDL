@@ -1,5 +1,5 @@
 CommandLine
-C:\Xilinx\10.1\ISE\bin\nt\unwrapped\xst.exe -ise D:/Stop_Watch/Stopw/atch/wefwef/wefwef.ise -intstyle ise -ifn D:/Stop_Watch/Stopw/atch/wefwef/StopWatch_02.xst -ofn D:/Stop_Watch/Stopw/atch/wefwef/StopWatch_02.syr -finalclean 1
+C:\Xilinx\10.1\ISE\bin\nt\unwrapped\xst.exe -ise C:/Xilinx/wefoijweoifj/wefwef.ise -intstyle ise -ifn C:/Xilinx/wefoijweoifj/StopWatch_02.xst -ofn C:/Xilinx/wefoijweoifj/StopWatch_02.syr -finalclean 1
 s
 FormatString
 xst [-ifn <InputFile>] [-ofn <OutputFile>] [-ise <iseProjectFile>] [--quiet] [-intstyle <Style>] [--deb <DebugLevel>] [--finalclean <Clean>] [--PcubeFlow] [--globOptFlow] [--XstNtrc]
